@@ -796,7 +796,34 @@
                 // Setup Chart Defaults
                 Chart.defaults.font.family =
                     "'Prompt', -apple-system, sans-serif";
-                Chart.defaults.color = "#14213d";
+                Chart.defaults.color = "#1423d";
+
+                // Unified pattern creator for party pair colors
+                function createPartyPairPattern(mpColor, plColor, seed) {
+                    const canvas = document.createElement("canvas");
+                    canvas.width = 20;
+                    canvas.height = 20;
+                    const ctx = canvas.getContext("2d");
+
+                    // Fill with MP party color (base)
+                    ctx.fillStyle = mpColor;
+                    ctx.fillRect(0, 0, 20, 20);
+
+                    // Add PL party color as scattered dots (splashes)
+                    ctx.fillStyle = plColor;
+                    ctx.globalAlpha = 0.5;
+
+                    // Create consistent dot pattern using seed
+                    for (let i = 0; i < 15; i++) {
+                        const x = (seed * (i + 1) * 7) % 20;
+                        const y = (seed * (i + 1) * 13) % 20;
+                        ctx.beginPath();
+                        ctx.arc(x, y, 2, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+
+                    return ctx.createPattern(canvas, "repeat");
+                }
 
                 // 2. Chart: Top 10 Areas by Ghost Votes
                 const top10 = anomalies.slice(0, 10);
@@ -826,36 +853,18 @@
                         .join("");
                 }
 
-                // Create gradient backgrounds with party colors
+                // Create party pair patterns for bars using unified function
                 const barBackgrounds = top10.map((a) => {
                     const mpInfo = getPartyInfo(a.mp_winner_party);
                     const plInfo = getPartyInfo(a.pl_twin_party);
-
-                    // Create canvas for gradient pattern
-                    const canvas = document.createElement("canvas");
-                    canvas.width = 20;
-                    canvas.height = 20;
-                    const ctx = canvas.getContext("2d");
-
-                    // Fill with MP party color (base)
-                    ctx.fillStyle = mpInfo.color;
-                    ctx.fillRect(0, 0, 20, 20);
-
-                    // Add PL party color as scattered dots (splashes)
-                    ctx.fillStyle = plInfo.color;
-                    ctx.globalAlpha = 0.5;
-
-                    // Create consistent dot pattern using index as seed
-                    const seed = a.mp_winner_number + a.area_code.slice(-2);
-                    for (let i = 0; i < 15; i++) {
-                        const x = (seed * (i + 1) * 7) % 20;
-                        const y = (seed * (i + 1) * 13) % 20;
-                        ctx.beginPath();
-                        ctx.arc(x, y, 2, 0, Math.PI * 2);
-                        ctx.fill();
-                    }
-
-                    return ctx.createPattern(canvas, "repeat");
+                    const seed =
+                        parseInt(a.mp_winner_number) +
+                        parseInt(a.area_code.slice(-2));
+                    return createPartyPairPattern(
+                        mpInfo.color,
+                        plInfo.color,
+                        seed,
+                    );
                 });
 
                 new Chart(document.getElementById("topAreaChart"), {
@@ -934,7 +943,7 @@
                     (a, b) => numberCounts[b] - numberCounts[a],
                 );
 
-                // Create party pair patterns for doughnut segments
+                // Create party pair patterns for doughnut segments using unified function
                 const doughnutPatterns = sortedNumbers.map((num) => {
                     // Find most common parties for this number
                     const numAnomalies = anomalies.filter(
@@ -964,30 +973,12 @@
                         ? getPartyInfo(topPlParty[0])
                         : { color: numberColors[num] || "#ccc" };
 
-                    // Create canvas pattern
-                    const canvas = document.createElement("canvas");
-                    canvas.width = 20;
-                    canvas.height = 20;
-                    const ctx = canvas.getContext("2d");
-
-                    // Fill with MP party color (base)
-                    ctx.fillStyle = mpInfo.color;
-                    ctx.fillRect(0, 0, 20, 20);
-
-                    // Add PL party color as scattered dots
-                    ctx.fillStyle = plInfo.color;
-                    ctx.globalAlpha = 0.5;
-
-                    // Create consistent dot pattern
-                    for (let i = 0; i < 15; i++) {
-                        const x = (num * (i + 1) * 7) % 20;
-                        const y = (num * (i + 1) * 13) % 20;
-                        ctx.beginPath();
-                        ctx.arc(x, y, 2, 0, Math.PI * 2);
-                        ctx.fill();
-                    }
-
-                    return ctx.createPattern(canvas, "repeat");
+                    // Use unified pattern function with number as seed
+                    return createPartyPairPattern(
+                        mpInfo.color,
+                        plInfo.color,
+                        parseInt(num),
+                    );
                 });
 
                 // Store party info for legend/tooltips
