@@ -900,13 +900,55 @@
                 const numberDistIcons =
                     document.getElementById("numberDistIcons");
                 if (numberDistIcons) {
+                    // For each number, find the most common MP winner party and PL twin party
                     numberDistIcons.innerHTML = sortedNumbers
                         .map((num) => {
                             const color = numberColors[num] || "#ccc";
+
+                            // Find anomalies with this number
+                            const numAnomalies = anomalies.filter(
+                                (a) => a.mp_winner_number === num,
+                            );
+
+                            // Count MP winner parties for this number
+                            const mpPartyCount = {};
+                            const plPartyCount = {};
+                            numAnomalies.forEach((a) => {
+                                mpPartyCount[a.mp_winner_party] =
+                                    (mpPartyCount[a.mp_winner_party] || 0) + 1;
+                                plPartyCount[a.pl_twin_party] =
+                                    (plPartyCount[a.pl_twin_party] || 0) + 1;
+                            });
+
+                            // Get most common parties
+                            const topMpParty = Object.entries(
+                                mpPartyCount,
+                            ).sort((a, b) => b[1] - a[1])[0];
+                            const topPlParty = Object.entries(
+                                plPartyCount,
+                            ).sort((a, b) => b[1] - a[1])[0];
+
+                            const mpPartyCode = topMpParty
+                                ? topMpParty[0]
+                                : null;
+                            const plPartyCode = topPlParty
+                                ? topPlParty[0]
+                                : null;
+                            const mpInfo = mpPartyCode
+                                ? getPartyInfo(mpPartyCode)
+                                : null;
+                            const plInfo = plPartyCode
+                                ? getPartyInfo(plPartyCode)
+                                : null;
+
                             return `
                             <div class="chart-icon-wrapper">
-                                <div style="width: 40px; height: 40px; border-radius: 50%; background-color: ${color}; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; font-size: 1.2rem;">${num}</div>
-                                <span>เบอร์ ${num}</span>
+                                <div class="chart-icon-pair">
+                                    ${mpPartyCode ? `<img src="img/${mpPartyCode}.webp" onerror="this.style.display='none'" title="${mpInfo.name}">` : ""}
+                                    <div style="width: 36px; height: 36px; border-radius: 50%; background-color: ${color}; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; font-size: 1.1rem;">${num}</div>
+                                    ${plPartyCode ? `<img src="img/${plPartyCode}.webp" onerror="this.style.display='none'" title="${plInfo.name}">` : ""}
+                                </div>
+                                <span>เบอร์ ${num}${numAnomalies.length > 0 ? ` (${numAnomalies.length})` : ""}</span>
                             </div>
                         `;
                         })
@@ -958,8 +1000,60 @@
                             },
                             tooltip: {
                                 callbacks: {
-                                    label: (ctx) =>
-                                        ` เบอร์ ${sortedNumbers[ctx.dataIndex]}: พบ ${ctx.raw} เขต (${((ctx.raw / anomalies.length) * 100).toFixed(1)}%)`,
+                                    title: (ctx) => {
+                                        const num =
+                                            sortedNumbers[ctx[0].dataIndex];
+                                        return `เบอร์ ${num}`;
+                                    },
+                                    label: (ctx) => {
+                                        const num =
+                                            sortedNumbers[ctx.dataIndex];
+                                        return ` พบ ${ctx.raw} เขต (${((ctx.raw / anomalies.length) * 100).toFixed(1)}%)`;
+                                    },
+                                    afterBody: (ctx) => {
+                                        const num =
+                                            sortedNumbers[ctx[0].dataIndex];
+                                        const numAnomalies = anomalies.filter(
+                                            (a) => a.mp_winner_number === num,
+                                        );
+
+                                        // Count parties
+                                        const mpPartyCount = {};
+                                        const plPartyCount = {};
+                                        numAnomalies.forEach((a) => {
+                                            mpPartyCount[a.mp_winner_party] =
+                                                (mpPartyCount[
+                                                    a.mp_winner_party
+                                                ] || 0) + 1;
+                                            plPartyCount[a.pl_twin_party] =
+                                                (plPartyCount[
+                                                    a.pl_twin_party
+                                                ] || 0) + 1;
+                                        });
+
+                                        const topMpParty = Object.entries(
+                                            mpPartyCount,
+                                        ).sort((a, b) => b[1] - a[1])[0];
+                                        const topPlParty = Object.entries(
+                                            plPartyCount,
+                                        ).sort((a, b) => b[1] - a[1])[0];
+
+                                        let result =
+                                            "\nคู่พรรคที่พบบ่อยที่สุด:";
+                                        if (topMpParty) {
+                                            const mpInfo = getPartyInfo(
+                                                topMpParty[0],
+                                            );
+                                            result += `\n  ส.ส. เขต: ${mpInfo.name} (${topMpParty[1]} เขต)`;
+                                        }
+                                        if (topPlParty) {
+                                            const plInfo = getPartyInfo(
+                                                topPlParty[0],
+                                            );
+                                            result += `\n  พล.ท. แฝด: ${plInfo.name} (${topPlParty[1]} เขต)`;
+                                        }
+                                        return result;
+                                    },
                                 },
                             },
                         },
