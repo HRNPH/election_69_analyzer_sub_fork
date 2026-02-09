@@ -4,92 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>วิเคราะห์ความผิดปกติการเลือกตั้ง 69</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; color: #333; }
-        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .card { background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #ddd; }
-        .summary-stats { display: flex; gap: 20px; margin-bottom: 20px; }
-        .stat-box { flex: 1; background: #fff; padding: 15px; border-radius: 6px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .stat-value { font-size: 24px; font-weight: bold; color: #2563eb; }
-        .stat-label { font-size: 14px; color: #666; }
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th, td { text-align: left; padding: 10px; border-bottom: 1px solid #eee; }
-        th { background-color: #f1f1f1; }
-        .highlight { color: #d32f2f; font-weight: bold; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f8f9fa; }
+        .stat-card { transition: transform 0.2s; }
+        .stat-card:hover { transform: translateY(-5px); }
+        .highlight-anomaly { background-color: #fff5f5; border-left: 4px solid #dc3545; }
         canvas { max-height: 400px; }
+        .party-logo-sm { height: 20px; vertical-align: middle; }
+        .party-logo-md { height: 24px; vertical-align: middle; }
     </style>
 </head>
 <body>
-
-    <h1>🚨 ตรวจจับความผิดปกติการเลือกตั้ง 69</h1>
-    
-    <div class="summary-stats">
-        <div class="stat-box">
-            <div class="stat-value" id="total-anomalies">-</div>
-            <div class="stat-label">เขตที่พบคะแนนผิดปกติ</div>
+    <div class="container py-5">
+        <header class="mb-5 text-center">
+            <h1 class="display-5 fw-bold text-primary">🚨 ตรวจจับความผิดปกติการเลือกตั้ง 69</h1>
+            <p class="lead text-muted">วิเคราะห์ความสัมพันธ์ของคะแนน "บัตร 2 ใบ" ที่น่าสงสัย</p>
+        </header>
+        
+        <!-- Summary Stats -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 stat-card">
+                    <div class="card-body text-center">
+                        <h2 class="display-4 fw-bold text-primary" id="total-anomalies">-</h2>
+                        <p class="text-secondary mb-0">เขตที่พบคะแนนผิดปกติ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 stat-card">
+                    <div class="card-body text-center">
+                        <div id="top-party" class="h2 fw-bold text-dark">-</div>
+                        <p class="text-secondary mb-0">พรรคบัญชีรายชื่อที่ได้ประโยชน์สูงสุด</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 stat-card">
+                    <div class="card-body text-center">
+                        <h2 class="display-4 fw-bold text-danger" id="max-votes">-</h2>
+                        <p class="text-secondary mb-0">คะแนนหลงผิดสูงสุด (ต่อเขต)</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="stat-box">
-            <div class="stat-value" id="top-party">-</div>
-            <div class="stat-label">พรรคบัญชีรายชื่อที่ได้ประโยชน์สูงสุด</div>
+
+        <!-- Hypothesis Section -->
+        <div class="card shadow-sm mb-5 border-primary border-2">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">🔎 ปรากฏการณ์ "กาเบอร์เดิม" (กาบัตร 2 ใบเบอร์เดียวกัน)</h4>
+            </div>
+            <div class="card-body">
+                <p class="card-text fs-5">เกิดอะไรขึ้นเมื่อคนเลือก <strong>ส.ส. เขต เบอร์ X</strong> แล้วเผลอไปกาบัตรบัญชีรายชื่อ <strong>เบอร์ X</strong> ด้วย?</p>
+                <div class="alert alert-light border-start border-4 border-info bg-light">
+                    <em><strong>สิ่งที่ตรวจพบ:</strong> พรรคบัญชีรายชื่อที่คนอาจไม่รู้จัก แต่โชคดีได้ "เบอร์เดียวกับ ส.ส. ที่ชนะในเขตนั้น" กลับมีคะแนนสูงขึ้นมาอย่างผิดสังเกต เมื่อเทียบกับค่าเฉลี่ยปกติของพรรคนั้นๆ</em>
+                </div>
+            </div>
         </div>
-        <div class="stat-box">
-            <div class="stat-value" id="max-votes">-</div>
-            <div class="stat-label">คะแนนหลงผิดสูงสุด (ต่อเขต)</div>
+
+        <!-- Graphs Section -->
+        <div class="row mb-5">
+            <!-- Graph 1 -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">📊 กราฟ 1: 10 อันดับเขตที่น่าสงสัย</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted small">
+                            กราฟนี้แสดง 10 เขตเลือกตั้งที่มีจำนวนบัตรบัญชีรายชื่อ "หลงผิด" สูงที่สุด
+                            (คะแนนที่เลือกพรรคแฝดเบอร์เดียวกับ ส.ส. เขต)
+                            สะท้อนถึงพื้นที่ที่มีความสับสนในการลงคะแนนสูงสุด
+                        </p>
+                        <canvas id="topAreaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Graph 2 -->
+            <div class="col-lg-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">🎯 กราฟ 2: ความผิดปกติตามหมายเลขเบอร์</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted small">
+                            กราฟนี้แสดงสัดส่วนว่า "เบอร์" หมายเลขใด (เช่น เบอร์ 1, 2, 3) 
+                            ที่เป็นคู่แฝดแล้วเกิดปรากฏการณ์คะแนนพุ่งบ่อยที่สุด 
+                            ช่วยให้เห็นว่าเบอร์ไหนที่มีผลต่อความสับสนของผู้มีสิทธิเลือกตั้งมากเป็นพิเศษ
+                        </p>
+                        <canvas id="numberDistChart"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <h3>🔎 ปรากฏการณ์ "กาเบอร์เดิม" (กาบัตร 2 ใบเบอร์เดียวกัน)</h3>
-        <p>เกิดอะไรขึ้นเมื่อคนเลือก <strong>ส.ส. เขต เบอร์ X</strong> แล้วเผลอไปกาบัตรบัญชีรายชื่อ <strong>เบอร์ X</strong> ด้วย?</p>
-        <p><em>สิ่งที่ตรวจพบ: พรรคบัญชีรายชื่อที่คนอาจไม่รู้จัก แต่โชคดีได้ "เบอร์เดียวกับ ส.ส. ที่ชนะในเขตนั้น" กลับมีคะแนนสูงขึ้นมาอย่างผิดสังเกต</em></p>
-    </div>
+        <!-- Party Summary Table -->
+        <div class="card shadow-sm mb-5">
+            <div class="card-header bg-white">
+                <h4 class="mb-0">🏆 สรุปยอดรวม: พรรคที่ได้อานิสงส์สูงสุด</h4>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">รวมสถิติพรรคบัญชีรายชื่อที่ได้รับคะแนนที่น่าสงสัย (คะแนนผี) รวมสูงสุด 5 อันดับแรกจากทั่วประเทศ</p>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle" id="partySummaryTable">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="text-center" style="width: 60px;">#</th>
+                                <th>พรรคบัญชีรายชื่อ</th>
+                                <th class="text-end">จำนวนเขตที่พบ</th>
+                                <th class="text-end" style="width: 15%">คะแนนที่สงสัยรวม</th>
+                                <th class="text-end">เฉลี่ยต่อเขต</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-    <div class="card">
-        <h3>กราฟ 1: 10 อันดับเขตที่น่าสงสัย (คะแนนผีจากพรรคแฝด)</h3>
-        <canvas id="topAreaChart"></canvas>
-    </div>
-
-    <div class="card">
-        <h3>กราฟ 2: ความผิดปกติตามหมายเลขแฝด</h3>
-        <p>หมายเลข ส.ส. ใดที่มักเกี่ยวข้องกับคะแนนบัญชีรายชื่อที่พุ่งสูงผิดปกติ?</p>
-        <canvas id="numberDistChart"></canvas>
-    </div>
-
-    <div class="card">
-        <h3>🏆 สรุปยอดรวม: พรรคที่ได้อานิสงส์สูงสุด</h3>
-        <p>พรรคบัญชีรายชื่อที่ได้รับคะแนนที่น่าสงสัยรวมสูงสุด 5 อันดับแรก</p>
-        <table id="partySummaryTable">
-            <thead>
-                <tr>
-                    <th style="width: 50px;">#</th>
-                    <th>พรรคบัญชีรายชื่อ</th>
-                    <th style="text-align:right">จำนวนเขตที่พบ</th>
-                    <th style="text-align:right">คะแนนที่สงสัยรวม</th>
-                    <th style="text-align:right">เฉลี่ยต่อเขต</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </div>
-
-    <div class="card">
-        <h3>20 อันดับความผิดปกติโดยละเอียด</h3>
-        <table id="anomalyTable">
-            <thead>
-                <tr>
-                    <th>จังหวัด / เขต</th>
-                    <th>ส.ส. เขตที่ชนะ</th>
-                    <th>พรรคบัญชีรายชื่อ (เบอร์เดียวกัน)</th>
-                    <th>อันดับที่ได้</th>
-                    <th>คะแนนที่สงสัย</th>
-                    <th>% เทียบกับ ส.ส.</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-        <div style="text-align: center; margin-top: 20px;">
-            <button id="loadMoreBtn" style="padding: 10px 20px; background: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; display: none;" onclick="renderTableBatch()">โหลดข้อมูลเพิ่มเติม</button>
+        <!-- Detail Table -->
+        <div class="card shadow-sm mb-5">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">📋 20 อันดับความผิดปกติโดยละเอียด</h4>
+                <span class="badge bg-secondary">เรียงตามคะแนนที่น่าสงสัยมากไปน้อย</span>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0" id="anomalyTable">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-4">จังหวัด / เขต</th>
+                                <th>ส.ส. เขตที่ชนะ</th>
+                                <th>พรรคบัญชีรายชื่อ (เบอร์เดียวกัน)</th>
+                                <th>อันดับที่ได้</th>
+                                <th>คะแนนที่สงสัย</th>
+                                <th>% เทียบกับ ส.ส.</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-footer bg-white text-center py-3">
+                <button id="loadMoreBtn" class="btn btn-primary px-4" style="display: none;" onclick="renderTableBatch()">
+                    โหลดข้อมูลเพิ่มเติม
+                </button>
+            </div>
         </div>
     </div>
 
@@ -184,16 +247,16 @@
             const avg = Math.round(p.votes / p.count);
             
             const row = `<tr>
-                <td style="text-align:center; font-weight:bold;">${index + 1}</td>
+                <td class="text-center fw-bold text-muted">${index + 1}</td>
                 <td>
-                    <div style="display:flex; align-items:center; gap:8px;">
-                        <img src="img/${p.code}.webp" style="height: 24px;" onerror="this.style.display='none'">
-                        <span style="font-weight:bold; color:${pInfo.color}">${pInfo.name}</span>
+                    <div class="d-flex align-items-center">
+                        <img src="img/${p.code}.webp" class="party-logo-md me-2" onerror="this.style.display='none'">
+                        <span class="fw-bold" style="color:${pInfo.color}">${pInfo.name}</span>
                     </div>
                 </td>
-                <td style="text-align:right">${p.count.toLocaleString()}</td>
-                <td style="text-align:right; font-weight:bold; color:#2563eb;">${p.votes.toLocaleString()}</td>
-                <td style="text-align:right">${avg.toLocaleString()}</td>
+                <td class="text-end text-muted">${p.count.toLocaleString()}</td>
+                <td class="text-end fw-bold text-primary">${p.votes.toLocaleString()}</td>
+                <td class="text-end text-muted">${avg.toLocaleString()}</td>
             </tr>`;
             tableBody.innerHTML += row;
         });
@@ -209,27 +272,27 @@
             const location = getProvinceName(a.area_code);
 
             const row = `<tr>
-                <td>
-                    <div style="font-weight:bold">${location}</div>
-                    <div style="font-size:0.8em; color:#666">รหัสเขต ${a.area_code}</div>
+                <td class="ps-4">
+                    <div class="fw-bold text-dark">${location}</div>
+                    <div class="small text-muted">รหัสเขต ${a.area_code}</div>
                 </td>
                 <td>
-                    <div style="font-size:1.1em; font-weight:bold; color:#000;">เบอร์ ${a.mp_winner_number}</div>
-                    <div style="display:flex; align-items:center; gap:4px;">
-                         <img src="img/${a.mp_winner_party}.webp" style="height: 16px;" onerror="this.style.display='none'"> 
-                         <span style="font-size:0.9em; color:${mpParty.color}">${mpParty.name}</span>
+                    <div class="fs-5 fw-bold text-dark">เบอร์ ${a.mp_winner_number}</div>
+                    <div class="d-flex align-items-center">
+                         <img src="img/${a.mp_winner_party}.webp" class="party-logo-sm me-1" onerror="this.style.display='none'"> 
+                         <span class="small" style="color:${mpParty.color}">${mpParty.name}</span>
                     </div>
                 </td>
-                <td class="highlight" style="background-color:#fff5f5;">
-                    <div style="font-size:1.1em; font-weight:bold; color:#d32f2f;">เบอร์ ${a.mp_winner_number}</div>
-                    <div style="display:flex; align-items:center; gap:4px;">
-                        <img src="img/${a.pl_twin_party}.webp" style="height: 16px;" onerror="this.style.display='none'"> 
-                        <span style="font-size:0.9em; font-weight:bold; color:${plParty.color}">${plParty.name}</span>
+                <td class="highlight-anomaly">
+                    <div class="fs-5 fw-bold text-danger">เบอร์ ${a.mp_winner_number}</div>
+                    <div class="d-flex align-items-center">
+                        <img src="img/${a.pl_twin_party}.webp" class="party-logo-sm me-1" onerror="this.style.display='none'"> 
+                        <span class="small fw-bold" style="color:${plParty.color}">${plParty.name}</span>
                     </div>
                 </td>
-                <td>${a.pl_twin_rank}</td>
-                <td>${a.pl_twin_votes.toLocaleString()}</td>
-                <td>${(a.ratio_pl_to_mp * 100).toFixed(1)}%</td>
+                <td><span class="badge bg-light text-dark border">${a.pl_twin_rank}</span></td>
+                <td class="fw-bold text-danger">${a.pl_twin_votes.toLocaleString()}</td>
+                <td class="text-muted">${(a.ratio_pl_to_mp * 100).toFixed(1)}%</td>
             </tr>`;
             tableBody.innerHTML += row;
         });
