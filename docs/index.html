@@ -805,12 +805,12 @@
                     canvas.height = 20;
                     const ctx = canvas.getContext("2d");
 
-                    // Fill with MP party color (base)
-                    ctx.fillStyle = mpColor;
+                    // Fill with PL party color (base) - right side party
+                    ctx.fillStyle = plColor;
                     ctx.fillRect(0, 0, 20, 20);
 
-                    // Add PL party color as scattered dots (splashes)
-                    ctx.fillStyle = plColor;
+                    // Add MP party color as scattered dots (splashes) - left side party
+                    ctx.fillStyle = mpColor;
                     ctx.globalAlpha = 0.5;
 
                     // Create consistent dot pattern using seed
@@ -880,10 +880,10 @@
                                 data: top10.map((a) => a.pl_twin_votes),
                                 backgroundColor: barBackgrounds,
                                 borderColor: top10.map((a) => {
-                                    const mpInfo = getPartyInfo(
-                                        a.mp_winner_party,
+                                    const plInfo = getPartyInfo(
+                                        a.pl_twin_party,
                                     );
-                                    return mpInfo.color;
+                                    return plInfo.color;
                                 }),
                                 borderWidth: 2,
                             },
