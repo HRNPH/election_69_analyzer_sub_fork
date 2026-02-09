@@ -561,6 +561,10 @@
             let showOverlay = true; // Show party pair overlay (dots)
             let baseColorIsPL = true; // true = PL is base, false = MP is base
 
+            // Chart instances (stored to destroy before re-rendering)
+            let topAreaChartInstance = null;
+            let numberDistChartInstance = null;
+
             // Data mappings
             const partyMap = {};
             const provinceMap = {};
@@ -998,80 +1002,87 @@
                     );
                 });
 
-                new Chart(document.getElementById("topAreaChart"), {
-                    type: "bar",
-                    data: {
-                        labels: top10.map((a) => {
-                            const prov = getProvinceName(a.area_code);
-                            return prov;
-                        }),
-                        datasets: [
-                            {
-                                label: baseColorIsPL
-                                    ? "คะแนนพรรคบัญชีรายชื่อ (PL)"
-                                    : "คะแนนพรรค ส.ส. เขต (MP)",
-                                data: top10.map((a) => a.pl_twin_votes),
-                                backgroundColor: barBackgrounds,
-                                borderColor: top10.map((a) => {
-                                    const mpInfo = getPartyInfo(
-                                        a.mp_winner_party,
-                                    );
-                                    const plInfo = getPartyInfo(
-                                        a.pl_twin_party,
-                                    );
-                                    return baseColorIsPL
-                                        ? plInfo.color
-                                        : mpInfo.color;
-                                }),
-                                borderWidth: 2,
-                            },
-                        ],
-                    },
-                    options: {
-                        responsive: true,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                backgroundColor: "rgba(20, 33, 61, 0.95)",
-                                titleFont: { size: 14, family: "Prompt" },
-                                bodyFont: { size: 13, family: "Prompt" },
-                                padding: 12,
-                                callbacks: {
-                                    title: (items) => {
-                                        const index = items[0].dataIndex;
-                                        return `${getProvinceName(top10[index].area_code)}`;
-                                    },
-                                    label: (context) => {
-                                        const partyType = baseColorIsPL
-                                            ? "พรรคบัญชีรายชื่อ (PL)"
-                                            : "พรรค ส.ส. เขต (MP)";
-                                        return `คะแนน${partyType}: ${context.raw.toLocaleString()}`;
-                                    },
-                                    afterBody: (context) => {
-                                        const index = context[0].dataIndex;
-                                        const item = top10[index];
-                                        const mpP = getPartyInfo(
-                                            item.mp_winner_party,
-                                        );
-                                        const plP = getPartyInfo(
-                                            item.pl_twin_party,
-                                        );
+                // Destroy existing charts before re-rendering
+                if (topAreaChartInstance) {
+                    topAreaChartInstance.destroy();
+                }
 
-                                        // Swap labels based on baseColorIsPL
-                                        const leftLabel = baseColorIsPL
-                                            ? "ส.ส. เขต (MP)"
-                                            : "พรรคบัญชีรายชื่อ (PL)";
-                                        const rightLabel = baseColorIsPL
-                                            ? "พรรคบัญชีรายชื่อ (PL)"
-                                            : "ส.ส. เขต (MP)";
-                                        const leftParty = baseColorIsPL
-                                            ? mpP
-                                            : plP;
-                                        const rightParty = baseColorIsPL
-                                            ? plP
-                                            : mpP;
+                topAreaChartInstance = new Chart(
+                    document.getElementById("topAreaChart"),
+                    {
+                        type: "bar",
+                        data: {
+                            labels: top10.map((a) => {
+                                const prov = getProvinceName(a.area_code);
+                                return prov;
+                            }),
+                            datasets: [
+                                {
+                                    label: baseColorIsPL
+                                        ? "คะแนนพรรคบัญชีรายชื่อ (PL)"
+                                        : "คะแนนพรรค ส.ส. เขต (MP)",
+                                    data: top10.map((a) => a.pl_twin_votes),
+                                    backgroundColor: barBackgrounds,
+                                    borderColor: top10.map((a) => {
+                                        const mpInfo = getPartyInfo(
+                                            a.mp_winner_party,
+                                        );
+                                        const plInfo = getPartyInfo(
+                                            a.pl_twin_party,
+                                        );
+                                        return baseColorIsPL
+                                            ? plInfo.color
+                                            : mpInfo.color;
+                                    }),
+                                    borderWidth: 2,
+                                },
+                            ],
+                        },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    backgroundColor: "rgba(20, 33, 61, 0.95)",
+                                    titleFont: { size: 14, family: "Prompt" },
+                                    bodyFont: { size: 13, family: "Prompt" },
+                                    padding: 12,
+                                    callbacks: {
+                                        title: (items) => {
+                                            const index = items[0].dataIndex;
+                                            return `${getProvinceName(top10[index].area_code)}`;
+                                        },
+                                        label: (context) => {
+                                            const partyType = baseColorIsPL
+                                                ? "พรรคบัญชีรายชื่อ (PL)"
+                                                : "พรรค ส.ส. เขต (MP)";
+                                            return `คะแนน${partyType}: ${context.raw.toLocaleString()}`;
+                                        },
+                                        afterBody: (context) => {
+                                            const index = context[0].dataIndex;
+                                            const item = top10[index];
+                                            const mpP = getPartyInfo(
+                                                item.mp_winner_party,
+                                            );
+                                            const plP = getPartyInfo(
+                                                item.pl_twin_party,
+                                            );
 
-                                        return `
+                                            // Swap labels based on baseColorIsPL
+                                            const leftLabel = baseColorIsPL
+                                                ? "ส.ส. เขต (MP)"
+                                                : "พรรคบัญชีรายชื่อ (PL)";
+                                            const rightLabel = baseColorIsPL
+                                                ? "พรรคบัญชีรายชื่อ (PL)"
+                                                : "ส.ส. เขต (MP)";
+                                            const leftParty = baseColorIsPL
+                                                ? mpP
+                                                : plP;
+                                            const rightParty = baseColorIsPL
+                                                ? plP
+                                                : mpP;
+
+                                            return `
 ┌─────────────────────────────────┐
 │  🏆 ${leftLabel}: เบอร์ ${item.mp_winner_number}        │
 │  พรรค: ${leftParty.name}
@@ -1081,18 +1092,19 @@
 │  พรรค: ${rightParty.name}
 │  อันดับ: ที่ ${item.pl_twin_rank}
 └─────────────────────────────────┘`;
+                                        },
                                     },
                                 },
                             },
-                        },
-                        scales: {
-                            y: {
-                                beginAtZero: true,
-                                title: { display: true, text: "คะแนน" },
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    title: { display: true, text: "คะแนน" },
+                                },
                             },
                         },
                     },
-                });
+                );
 
                 // 3. Chart: Doughnut by NUMBER (1, 2, 3...)
                 const sortedNumbers = Object.keys(numberCounts).sort(
@@ -1226,122 +1238,143 @@
                         .join("");
                 }
 
-                new Chart(document.getElementById("numberDistChart"), {
-                    type: "doughnut",
-                    data: {
-                        labels: sortedNumbers.map((n) => `เบอร์ ${n}`),
-                        datasets: [
-                            {
-                                data: sortedNumbers.map((n) => numberCounts[n]),
-                                backgroundColor: doughnutPatterns,
-                                borderWidth: 2,
-                                borderColor: "#ffffff",
-                            },
-                        ],
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: {
-                                position: "right",
-                                labels: { font: { family: "Prompt" } },
-                                generateLabels: (chart) => {
-                                    const data = chart.data;
-                                    if (
-                                        data.labels.length &&
-                                        data.datasets.length
-                                    ) {
-                                        return data.labels.map((label, i) => {
-                                            const num = sortedNumbers[i];
-                                            return {
-                                                text: `${label} (${numberCounts[num]} เขต)`,
-                                                fillStyle:
-                                                    data.datasets[0]
-                                                        .backgroundColor[i],
-                                                hidden: false,
-                                                index: i,
-                                            };
-                                        });
-                                    }
-                                    return [];
+                // Destroy existing charts before re-rendering
+                if (numberDistChartInstance) {
+                    numberDistChartInstance.destroy();
+                }
+
+                numberDistChartInstance = new Chart(
+                    document.getElementById("numberDistChart"),
+                    {
+                        type: "doughnut",
+                        data: {
+                            labels: sortedNumbers.map((n) => `เบอร์ ${n}`),
+                            datasets: [
+                                {
+                                    data: sortedNumbers.map(
+                                        (n) => numberCounts[n],
+                                    ),
+                                    backgroundColor: doughnutPatterns,
+                                    borderWidth: 2,
+                                    borderColor: "#ffffff",
                                 },
-                            },
-                            tooltip: {
-                                callbacks: {
-                                    title: (ctx) => {
-                                        const num =
-                                            sortedNumbers[ctx[0].dataIndex];
-                                        return `เบอร์ ${num}`;
+                            ],
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: {
+                                    position: "right",
+                                    labels: { font: { family: "Prompt" } },
+                                    generateLabels: (chart) => {
+                                        const data = chart.data;
+                                        if (
+                                            data.labels.length &&
+                                            data.datasets.length
+                                        ) {
+                                            return data.labels.map(
+                                                (label, i) => {
+                                                    const num =
+                                                        sortedNumbers[i];
+                                                    return {
+                                                        text: `${label} (${numberCounts[num]} เขต)`,
+                                                        fillStyle:
+                                                            data.datasets[0]
+                                                                .backgroundColor[
+                                                                i
+                                                            ],
+                                                        hidden: false,
+                                                        index: i,
+                                                    };
+                                                },
+                                            );
+                                        }
+                                        return [];
                                     },
-                                    label: (ctx) => {
-                                        const num =
-                                            sortedNumbers[ctx.dataIndex];
-                                        return ` พบ ${ctx.raw} เขต (${((ctx.raw / anomalies.length) * 100).toFixed(1)}%)`;
-                                    },
-                                    afterBody: (ctx) => {
-                                        const num =
-                                            sortedNumbers[ctx[0].dataIndex];
-                                        const numAnomalies = anomalies.filter(
-                                            (a) => a.mp_winner_number === num,
-                                        );
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                        title: (ctx) => {
+                                            const num =
+                                                sortedNumbers[ctx[0].dataIndex];
+                                            return `เบอร์ ${num}`;
+                                        },
+                                        label: (ctx) => {
+                                            const num =
+                                                sortedNumbers[ctx.dataIndex];
+                                            return ` พบ ${ctx.raw} เขต (${((ctx.raw / anomalies.length) * 100).toFixed(1)}%)`;
+                                        },
+                                        afterBody: (ctx) => {
+                                            const num =
+                                                sortedNumbers[ctx[0].dataIndex];
+                                            const numAnomalies =
+                                                anomalies.filter(
+                                                    (a) =>
+                                                        a.mp_winner_number ===
+                                                        num,
+                                                );
 
-                                        // Count parties
-                                        const mpPartyCount = {};
-                                        const plPartyCount = {};
-                                        numAnomalies.forEach((a) => {
-                                            mpPartyCount[a.mp_winner_party] =
-                                                (mpPartyCount[
+                                            // Count parties
+                                            const mpPartyCount = {};
+                                            const plPartyCount = {};
+                                            numAnomalies.forEach((a) => {
+                                                mpPartyCount[
                                                     a.mp_winner_party
-                                                ] || 0) + 1;
-                                            plPartyCount[a.pl_twin_party] =
-                                                (plPartyCount[
-                                                    a.pl_twin_party
-                                                ] || 0) + 1;
-                                        });
+                                                ] =
+                                                    (mpPartyCount[
+                                                        a.mp_winner_party
+                                                    ] || 0) + 1;
+                                                plPartyCount[a.pl_twin_party] =
+                                                    (plPartyCount[
+                                                        a.pl_twin_party
+                                                    ] || 0) + 1;
+                                            });
 
-                                        const topMpParty = Object.entries(
-                                            mpPartyCount,
-                                        ).sort((a, b) => b[1] - a[1])[0];
-                                        const topPlParty = Object.entries(
-                                            plPartyCount,
-                                        ).sort((a, b) => b[1] - a[1])[0];
+                                            const topMpParty = Object.entries(
+                                                mpPartyCount,
+                                            ).sort((a, b) => b[1] - a[1])[0];
+                                            const topPlParty = Object.entries(
+                                                plPartyCount,
+                                            ).sort((a, b) => b[1] - a[1])[0];
 
-                                        // Use labels based on toggle state
-                                        const baseLabel = baseColorIsPL
-                                            ? "พล.ท. แฝด (PL)"
-                                            : "ส.ส. เขต (MP)";
-                                        const overlayLabel = baseColorIsPL
-                                            ? "ส.ส. เขต (MP)"
-                                            : "พล.ท. แฝด (PL)";
-                                        const baseParty = baseColorIsPL
-                                            ? topPlParty
-                                            : topMpParty;
-                                        const overlayParty = baseColorIsPL
-                                            ? topMpParty
-                                            : topPlParty;
+                                            // Use labels based on toggle state
+                                            const baseLabel = baseColorIsPL
+                                                ? "พล.ท. แฝด (PL)"
+                                                : "ส.ส. เขต (MP)";
+                                            const overlayLabel = baseColorIsPL
+                                                ? "ส.ส. เขต (MP)"
+                                                : "พล.ท. แฝด (PL)";
+                                            const baseParty = baseColorIsPL
+                                                ? topPlParty
+                                                : topMpParty;
+                                            const overlayParty = baseColorIsPL
+                                                ? topMpParty
+                                                : topPlParty;
 
-                                        let result =
-                                            "\nคู่พรรคที่พบบ่อยที่สุด:";
-                                        if (baseParty) {
-                                            const baseInfo = getPartyInfo(
-                                                baseParty[0],
-                                            );
-                                            result += `\n  🎨 ${baseLabel}: ${baseInfo.name} (${baseParty[1]} เขต)`;
-                                        }
-                                        if (overlayParty) {
-                                            const overlayInfo = getPartyInfo(
-                                                overlayParty[0],
-                                            );
-                                            result += `\n  ✨ ${overlayLabel}: ${overlayInfo.name} (${overlayParty[1]} เขต)`;
-                                        }
-                                        return result;
+                                            let result =
+                                                "\nคู่พรรคที่พบบ่อยที่สุด:";
+                                            if (baseParty) {
+                                                const baseInfo = getPartyInfo(
+                                                    baseParty[0],
+                                                );
+                                                result += `\n  🎨 ${baseLabel}: ${baseInfo.name} (${baseParty[1]} เขต)`;
+                                            }
+                                            if (overlayParty) {
+                                                const overlayInfo =
+                                                    getPartyInfo(
+                                                        overlayParty[0],
+                                                    );
+                                                result += `\n  ✨ ${overlayLabel}: ${overlayInfo.name} (${overlayParty[1]} เขต)`;
+                                            }
+                                            return result;
+                                        },
                                     },
                                 },
                             },
                         },
                     },
-                });
+                );
             }
 
             // Call loadData immediately
