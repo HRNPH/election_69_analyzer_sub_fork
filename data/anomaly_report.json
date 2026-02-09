@@ -3525,19 +3525,84 @@
       "count": 13,
       "total_ghost_votes": 38256,
       "areas": [
-        "3010",
-        "3007",
-        "3011",
-        "3015",
-        "3008",
-        "3005",
-        "3012",
-        "3009",
-        "3016",
-        "3002",
-        "3004",
-        "3006",
-        "3013"
+        {
+          "area_code": "3010",
+          "ghost_votes": 4364,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3007",
+          "ghost_votes": 4171,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3011",
+          "ghost_votes": 3781,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "3015",
+          "ghost_votes": 3322,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3008",
+          "ghost_votes": 3138,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "3005",
+          "ghost_votes": 3134,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "3012",
+          "ghost_votes": 2694,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "3009",
+          "ghost_votes": 2448,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "3016",
+          "ghost_votes": 2432,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "3002",
+          "ghost_votes": 2297,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "8"
+        },
+        {
+          "area_code": "3004",
+          "ghost_votes": 2212,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "3006",
+          "ghost_votes": 2171,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "3013",
+          "ghost_votes": 2092,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "5"
+        }
       ],
       "id": "30",
       "name": "นครราชสีมา"
@@ -3546,15 +3611,60 @@
       "count": 9,
       "total_ghost_votes": 27125,
       "areas": [
-        "3405",
-        "3410",
-        "3409",
-        "3411",
-        "3402",
-        "3401",
-        "3404",
-        "3406",
-        "3407"
+        {
+          "area_code": "3405",
+          "ghost_votes": 4255,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3410",
+          "ghost_votes": 3981,
+          "mp_winner_party": "PARTY-0021",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3409",
+          "ghost_votes": 2946,
+          "mp_winner_party": "PARTY-0021",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "3411",
+          "ghost_votes": 2874,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "3402",
+          "ghost_votes": 2871,
+          "mp_winner_party": "PARTY-0021",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3401",
+          "ghost_votes": 2831,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3404",
+          "ghost_votes": 2523,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "3406",
+          "ghost_votes": 2423,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "3407",
+          "ghost_votes": 2421,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "34",
       "name": "อุบลราชธานี"
@@ -3563,12 +3673,42 @@
       "count": 6,
       "total_ghost_votes": 22158,
       "areas": [
-        "6004",
-        "6003",
-        "6006",
-        "6005",
-        "6002",
-        "6001"
+        {
+          "area_code": "6004",
+          "ghost_votes": 5959,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "6003",
+          "ghost_votes": 5407,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "6006",
+          "ghost_votes": 4210,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "6005",
+          "ghost_votes": 2415,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "6002",
+          "ghost_votes": 2216,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "6001",
+          "ghost_votes": 1951,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        }
       ],
       "id": "60",
       "name": "นครสวรรค์"
@@ -3577,14 +3717,54 @@
       "count": 8,
       "total_ghost_votes": 21222,
       "areas": [
-        "4009",
-        "4008",
-        "4004",
-        "4003",
-        "4010",
-        "4005",
-        "4007",
-        "4006"
+        {
+          "area_code": "4009",
+          "ghost_votes": 3905,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "4008",
+          "ghost_votes": 2973,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "4004",
+          "ghost_votes": 2912,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "4003",
+          "ghost_votes": 2866,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "4010",
+          "ghost_votes": 2715,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "4005",
+          "ghost_votes": 2205,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "4007",
+          "ghost_votes": 1996,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "4006",
+          "ghost_votes": 1650,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        }
       ],
       "id": "40",
       "name": "ขอนแก่น"
@@ -3593,13 +3773,48 @@
       "count": 7,
       "total_ghost_votes": 20248,
       "areas": [
-        "3603",
-        "3606",
-        "3602",
-        "3605",
-        "3604",
-        "3607",
-        "3601"
+        {
+          "area_code": "3603",
+          "ghost_votes": 4169,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "3606",
+          "ghost_votes": 3880,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3602",
+          "ghost_votes": 3623,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "3605",
+          "ghost_votes": 2951,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3604",
+          "ghost_votes": 2495,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3607",
+          "ghost_votes": 2010,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "3601",
+          "ghost_votes": 1120,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "2"
+        }
       ],
       "id": "36",
       "name": "ชัยภูมิ"
@@ -3608,14 +3823,54 @@
       "count": 8,
       "total_ghost_votes": 20071,
       "areas": [
-        "3309",
-        "3303",
-        "3308",
-        "3306",
-        "3304",
-        "3305",
-        "3302",
-        "3301"
+        {
+          "area_code": "3309",
+          "ghost_votes": 3826,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3303",
+          "ghost_votes": 2827,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "3308",
+          "ghost_votes": 2762,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3306",
+          "ghost_votes": 2595,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3304",
+          "ghost_votes": 2201,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "3305",
+          "ghost_votes": 2089,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "3302",
+          "ghost_votes": 1953,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "3301",
+          "ghost_votes": 1818,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        }
       ],
       "id": "33",
       "name": "ศรีสะเกษ"
@@ -3624,15 +3879,60 @@
       "count": 9,
       "total_ghost_votes": 19935,
       "areas": [
-        "3108",
-        "3110",
-        "3104",
-        "3107",
-        "3109",
-        "3102",
-        "3101",
-        "3103",
-        "3106"
+        {
+          "area_code": "3108",
+          "ghost_votes": 2820,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3110",
+          "ghost_votes": 2588,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3104",
+          "ghost_votes": 2543,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "3107",
+          "ghost_votes": 2391,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3109",
+          "ghost_votes": 2191,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3102",
+          "ghost_votes": 2189,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3101",
+          "ghost_votes": 1888,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3103",
+          "ghost_votes": 1874,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "3106",
+          "ghost_votes": 1451,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        }
       ],
       "id": "31",
       "name": "บุรีรัมย์"
@@ -3641,14 +3941,54 @@
       "count": 8,
       "total_ghost_votes": 19159,
       "areas": [
-        "3208",
-        "3201",
-        "3206",
-        "3207",
-        "3202",
-        "3205",
-        "3204",
-        "3203"
+        {
+          "area_code": "3208",
+          "ghost_votes": 4228,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3201",
+          "ghost_votes": 2650,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3206",
+          "ghost_votes": 2430,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "3207",
+          "ghost_votes": 2242,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "3202",
+          "ghost_votes": 2156,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "7"
+        },
+        {
+          "area_code": "3205",
+          "ghost_votes": 2103,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "3204",
+          "ghost_votes": 1699,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "7"
+        },
+        {
+          "area_code": "3203",
+          "ghost_votes": 1651,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        }
       ],
       "id": "32",
       "name": "สุรินทร์"
@@ -3657,11 +3997,36 @@
       "count": 5,
       "total_ghost_votes": 18968,
       "areas": [
-        "7105",
-        "7104",
-        "7102",
-        "7101",
-        "7103"
+        {
+          "area_code": "7105",
+          "ghost_votes": 4700,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "7104",
+          "ghost_votes": 4660,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "7102",
+          "ghost_votes": 4275,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "7101",
+          "ghost_votes": 2679,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "7103",
+          "ghost_votes": 2654,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        }
       ],
       "id": "71",
       "name": "กาญจนบุรี"
@@ -3670,11 +4035,36 @@
       "count": 5,
       "total_ghost_votes": 16901,
       "areas": [
-        "6703",
-        "6705",
-        "6701",
-        "6706",
-        "6704"
+        {
+          "area_code": "6703",
+          "ghost_votes": 4190,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "6705",
+          "ghost_votes": 4041,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "6701",
+          "ghost_votes": 3638,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "6706",
+          "ghost_votes": 3180,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "6704",
+          "ghost_votes": 1852,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "7"
+        }
       ],
       "id": "67",
       "name": "เพชรบูรณ์"
@@ -3683,10 +4073,30 @@
       "count": 4,
       "total_ghost_votes": 16412,
       "areas": [
-        "1904",
-        "1902",
-        "1901",
-        "1903"
+        {
+          "area_code": "1904",
+          "ghost_votes": 5095,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "1902",
+          "ghost_votes": 4474,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "1901",
+          "ghost_votes": 3484,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "1903",
+          "ghost_votes": 3359,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        }
       ],
       "id": "19",
       "name": "สระบุรี"
@@ -3695,11 +4105,36 @@
       "count": 5,
       "total_ghost_votes": 14789,
       "areas": [
-        "5702",
-        "5705",
-        "5703",
-        "5704",
-        "5706"
+        {
+          "area_code": "5702",
+          "ghost_votes": 4255,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "5705",
+          "ghost_votes": 3572,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "5703",
+          "ghost_votes": 2857,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "5704",
+          "ghost_votes": 2308,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "5706",
+          "ghost_votes": 1797,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "7"
+        }
       ],
       "id": "57",
       "name": "เชียงราย"
@@ -3708,12 +4143,42 @@
       "count": 6,
       "total_ghost_votes": 14401,
       "areas": [
-        "4110",
-        "4106",
-        "4103",
-        "4102",
-        "4105",
-        "4104"
+        {
+          "area_code": "4110",
+          "ghost_votes": 3130,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "4106",
+          "ghost_votes": 2700,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "4103",
+          "ghost_votes": 2289,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "4102",
+          "ghost_votes": 2126,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "4105",
+          "ghost_votes": 2085,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "4104",
+          "ghost_votes": 2071,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "3"
+        }
       ],
       "id": "41",
       "name": "อุดรธานี"
@@ -3722,10 +4187,30 @@
       "count": 4,
       "total_ghost_votes": 13763,
       "areas": [
-        "7003",
-        "7002",
-        "7004",
-        "7001"
+        {
+          "area_code": "7003",
+          "ghost_votes": 6288,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "7002",
+          "ghost_votes": 3009,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "7004",
+          "ghost_votes": 2620,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "7001",
+          "ghost_votes": 1846,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        }
       ],
       "id": "70",
       "name": "ราชบุรี"
@@ -3734,11 +4219,36 @@
       "count": 5,
       "total_ghost_votes": 13661,
       "areas": [
-        "9604",
-        "9602",
-        "9601",
-        "9603",
-        "9605"
+        {
+          "area_code": "9604",
+          "ghost_votes": 2940,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "9602",
+          "ghost_votes": 2814,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "9601",
+          "ghost_votes": 2779,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "9603",
+          "ghost_votes": 2777,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "9605",
+          "ghost_votes": 2351,
+          "mp_winner_party": "PARTY-0033",
+          "mp_number": "1"
+        }
       ],
       "id": "96",
       "name": "นราธิวาส"
@@ -3747,10 +4257,30 @@
       "count": 4,
       "total_ghost_votes": 13589,
       "areas": [
-        "2004",
-        "2003",
-        "2008",
-        "2005"
+        {
+          "area_code": "2004",
+          "ghost_votes": 4008,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "2003",
+          "ghost_votes": 3434,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "2008",
+          "ghost_votes": 3120,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "2005",
+          "ghost_votes": 3027,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        }
       ],
       "id": "20",
       "name": "ชลบุรี"
@@ -3759,10 +4289,30 @@
       "count": 4,
       "total_ghost_votes": 12933,
       "areas": [
-        "5010",
-        "5009",
-        "5006",
-        "5007"
+        {
+          "area_code": "5010",
+          "ghost_votes": 4126,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "5009",
+          "ghost_votes": 3627,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "5006",
+          "ghost_votes": 3014,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "5007",
+          "ghost_votes": 2166,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "5"
+        }
       ],
       "id": "50",
       "name": "เชียงใหม่"
@@ -3771,9 +4321,24 @@
       "count": 3,
       "total_ghost_votes": 11885,
       "areas": [
-        "6201",
-        "6202",
-        "6203"
+        {
+          "area_code": "6201",
+          "ghost_votes": 5574,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "6202",
+          "ghost_votes": 3762,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "6203",
+          "ghost_votes": 2549,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "4"
+        }
       ],
       "id": "62",
       "name": "กำแพงเพชร"
@@ -3782,9 +4347,24 @@
       "count": 3,
       "total_ghost_votes": 11712,
       "areas": [
-        "2401",
-        "2403",
-        "2402"
+        {
+          "area_code": "2401",
+          "ghost_votes": 4193,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "2403",
+          "ghost_votes": 3968,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "2402",
+          "ghost_votes": 3551,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "4"
+        }
       ],
       "id": "24",
       "name": "ฉะเชิงเทรา"
@@ -3793,10 +4373,30 @@
       "count": 4,
       "total_ghost_votes": 11562,
       "areas": [
-        "4602",
-        "4605",
-        "4604",
-        "4606"
+        {
+          "area_code": "4602",
+          "ghost_votes": 3493,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "4605",
+          "ghost_votes": 3293,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "4604",
+          "ghost_votes": 2406,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "4606",
+          "ghost_votes": 2370,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "3"
+        }
       ],
       "id": "46",
       "name": "กาฬสินธุ์"
@@ -3805,10 +4405,30 @@
       "count": 4,
       "total_ghost_votes": 10952,
       "areas": [
-        "6402",
-        "6404",
-        "6403",
-        "6401"
+        {
+          "area_code": "6402",
+          "ghost_votes": 3973,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "6404",
+          "ghost_votes": 3066,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "6403",
+          "ghost_votes": 2050,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "6401",
+          "ghost_votes": 1863,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "5"
+        }
       ],
       "id": "64",
       "name": "สุโขทัย"
@@ -3817,9 +4437,24 @@
       "count": 3,
       "total_ghost_votes": 10897,
       "areas": [
-        "1604",
-        "1601",
-        "1602"
+        {
+          "area_code": "1604",
+          "ghost_votes": 4301,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "1601",
+          "ghost_votes": 3340,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "8"
+        },
+        {
+          "area_code": "1602",
+          "ghost_votes": 3256,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        }
       ],
       "id": "16",
       "name": "ลพบุรี"
@@ -3828,10 +4463,30 @@
       "count": 4,
       "total_ghost_votes": 10755,
       "areas": [
-        "1403",
-        "1404",
-        "1402",
-        "1405"
+        {
+          "area_code": "1403",
+          "ghost_votes": 4384,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "1404",
+          "ghost_votes": 2421,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "1402",
+          "ghost_votes": 2262,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "7"
+        },
+        {
+          "area_code": "1405",
+          "ghost_votes": 1688,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "7"
+        }
       ],
       "id": "14",
       "name": "พระนครศรีอยุธยา"
@@ -3840,11 +4495,36 @@
       "count": 5,
       "total_ghost_votes": 10551,
       "areas": [
-        "9402",
-        "9405",
-        "9403",
-        "9404",
-        "9401"
+        {
+          "area_code": "9402",
+          "ghost_votes": 2799,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "9405",
+          "ghost_votes": 2191,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "9403",
+          "ghost_votes": 2051,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "9404",
+          "ghost_votes": 1960,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "9401",
+          "ghost_votes": 1550,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        }
       ],
       "id": "94",
       "name": "ปัตตานี"
@@ -3853,11 +4533,36 @@
       "count": 5,
       "total_ghost_votes": 10550,
       "areas": [
-        "4502",
-        "4501",
-        "4503",
-        "4506",
-        "4507"
+        {
+          "area_code": "4502",
+          "ghost_votes": 4099,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "4501",
+          "ghost_votes": 2139,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "4503",
+          "ghost_votes": 1710,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "4506",
+          "ghost_votes": 1372,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "4507",
+          "ghost_votes": 1230,
+          "mp_winner_party": "PARTY-0048",
+          "mp_number": "4"
+        }
       ],
       "id": "45",
       "name": "ร้อยเอ็ด"
@@ -3866,9 +4571,24 @@
       "count": 3,
       "total_ghost_votes": 10390,
       "areas": [
-        "2503",
-        "2502",
-        "2501"
+        {
+          "area_code": "2503",
+          "ghost_votes": 5614,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "2502",
+          "ghost_votes": 2620,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "2501",
+          "ghost_votes": 2156,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "25",
       "name": "ปราจีนบุรี"
@@ -3877,13 +4597,48 @@
       "count": 7,
       "total_ghost_votes": 10379,
       "areas": [
-        "9007",
-        "9008",
-        "9005",
-        "9004",
-        "9001",
-        "9003",
-        "9009"
+        {
+          "area_code": "9007",
+          "ghost_votes": 2103,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "9008",
+          "ghost_votes": 1801,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "9005",
+          "ghost_votes": 1610,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "9004",
+          "ghost_votes": 1541,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "9001",
+          "ghost_votes": 1245,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "9003",
+          "ghost_votes": 1205,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "9009",
+          "ghost_votes": 874,
+          "mp_winner_party": "PARTY-0027",
+          "mp_number": "2"
+        }
       ],
       "id": "90",
       "name": "สงขลา"
@@ -3892,9 +4647,24 @@
       "count": 3,
       "total_ghost_votes": 10350,
       "areas": [
-        "7603",
-        "7602",
-        "7601"
+        {
+          "area_code": "7603",
+          "ghost_votes": 4697,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "7602",
+          "ghost_votes": 3473,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "7601",
+          "ghost_votes": 2180,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        }
       ],
       "id": "76",
       "name": "เพชรบุรี"
@@ -3903,10 +4673,30 @@
       "count": 4,
       "total_ghost_votes": 10109,
       "areas": [
-        "4202",
-        "4201",
-        "4203",
-        "4204"
+        {
+          "area_code": "4202",
+          "ghost_votes": 4390,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "4201",
+          "ghost_votes": 2062,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "7"
+        },
+        {
+          "area_code": "4203",
+          "ghost_votes": 1994,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "4204",
+          "ghost_votes": 1663,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "4"
+        }
       ],
       "id": "42",
       "name": "เลย"
@@ -3915,10 +4705,30 @@
       "count": 4,
       "total_ghost_votes": 9769,
       "areas": [
-        "7205",
-        "7204",
-        "7202",
-        "7201"
+        {
+          "area_code": "7205",
+          "ghost_votes": 3197,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "7204",
+          "ghost_votes": 3160,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "7202",
+          "ghost_votes": 1951,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "7201",
+          "ghost_votes": 1461,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "72",
       "name": "สุพรรณบุรี"
@@ -3927,10 +4737,30 @@
       "count": 4,
       "total_ghost_votes": 9731,
       "areas": [
-        "4705",
-        "4706",
-        "4703",
-        "4707"
+        {
+          "area_code": "4705",
+          "ghost_votes": 3235,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "4706",
+          "ghost_votes": 2620,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "4703",
+          "ghost_votes": 2002,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "4707",
+          "ghost_votes": 1874,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "3"
+        }
       ],
       "id": "47",
       "name": "สกลนคร"
@@ -3939,10 +4769,30 @@
       "count": 4,
       "total_ghost_votes": 9527,
       "areas": [
-        "4802",
-        "4804",
-        "4803",
-        "4801"
+        {
+          "area_code": "4802",
+          "ghost_votes": 3204,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "4804",
+          "ghost_votes": 2673,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "4803",
+          "ghost_votes": 1934,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "4801",
+          "ghost_votes": 1716,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "48",
       "name": "นครพนม"
@@ -3951,9 +4801,24 @@
       "count": 3,
       "total_ghost_votes": 8930,
       "areas": [
-        "3503",
-        "3501",
-        "3502"
+        {
+          "area_code": "3503",
+          "ghost_votes": 3627,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3501",
+          "ghost_votes": 3506,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3502",
+          "ghost_votes": 1797,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        }
       ],
       "id": "35",
       "name": "ยโสธร"
@@ -3962,8 +4827,18 @@
       "count": 2,
       "total_ghost_votes": 8725,
       "areas": [
-        "6602",
-        "6603"
+        {
+          "area_code": "6602",
+          "ghost_votes": 4792,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "6603",
+          "ghost_votes": 3933,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        }
       ],
       "id": "66",
       "name": "พิจิตร"
@@ -3972,10 +4847,30 @@
       "count": 4,
       "total_ghost_votes": 8675,
       "areas": [
-        "4402",
-        "4405",
-        "4404",
-        "4406"
+        {
+          "area_code": "4402",
+          "ghost_votes": 3013,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "4405",
+          "ghost_votes": 2284,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "4404",
+          "ghost_votes": 1871,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "4406",
+          "ghost_votes": 1507,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "44",
       "name": "มหาสารคาม"
@@ -3984,9 +4879,24 @@
       "count": 3,
       "total_ghost_votes": 8629,
       "areas": [
-        "7304",
-        "7301",
-        "7302"
+        {
+          "area_code": "7304",
+          "ghost_votes": 3251,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "8"
+        },
+        {
+          "area_code": "7301",
+          "ghost_votes": 2811,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "8"
+        },
+        {
+          "area_code": "7302",
+          "ghost_votes": 2567,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        }
       ],
       "id": "73",
       "name": "นครปฐม"
@@ -3995,9 +4905,24 @@
       "count": 3,
       "total_ghost_votes": 7782,
       "areas": [
-        "5302",
-        "5301",
-        "5303"
+        {
+          "area_code": "5302",
+          "ghost_votes": 2855,
+          "mp_winner_party": "PARTY-0044",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "5301",
+          "ghost_votes": 2650,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "5303",
+          "ghost_votes": 2277,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        }
       ],
       "id": "53",
       "name": "อุตรดิตถ์"
@@ -4006,9 +4931,24 @@
       "count": 3,
       "total_ghost_votes": 7613,
       "areas": [
-        "4303",
-        "4301",
-        "4302"
+        {
+          "area_code": "4303",
+          "ghost_votes": 3471,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "4301",
+          "ghost_votes": 2134,
+          "mp_winner_party": "PARTY-0043",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "4302",
+          "ghost_votes": 2008,
+          "mp_winner_party": "PARTY-0043",
+          "mp_number": "3"
+        }
       ],
       "id": "43",
       "name": "หนองคาย"
@@ -4017,8 +4957,18 @@
       "count": 2,
       "total_ghost_votes": 7308,
       "areas": [
-        "2701",
-        "2703"
+        {
+          "area_code": "2701",
+          "ghost_votes": 4108,
+          "mp_winner_party": "PARTY-0043",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "2703",
+          "ghost_votes": 3200,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        }
       ],
       "id": "27",
       "name": "สระแก้ว"
@@ -4027,9 +4977,24 @@
       "count": 3,
       "total_ghost_votes": 7255,
       "areas": [
-        "8101",
-        "8102",
-        "8103"
+        {
+          "area_code": "8101",
+          "ghost_votes": 3193,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "8102",
+          "ghost_votes": 2034,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "8103",
+          "ghost_votes": 2028,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        }
       ],
       "id": "81",
       "name": "กระบี่"
@@ -4038,8 +5003,18 @@
       "count": 2,
       "total_ghost_votes": 7213,
       "areas": [
-        "5801",
-        "5802"
+        {
+          "area_code": "5801",
+          "ghost_votes": 3709,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "5802",
+          "ghost_votes": 3504,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        }
       ],
       "id": "58",
       "name": "แม่ฮ่องสอน"
@@ -4048,8 +5023,18 @@
       "count": 2,
       "total_ghost_votes": 6751,
       "areas": [
-        "6302",
-        "6301"
+        {
+          "area_code": "6302",
+          "ghost_votes": 3702,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "6301",
+          "ghost_votes": 3049,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "63",
       "name": "ตาก"
@@ -4058,9 +5043,24 @@
       "count": 3,
       "total_ghost_votes": 6501,
       "areas": [
-        "2202",
-        "2203",
-        "2201"
+        {
+          "area_code": "2202",
+          "ghost_votes": 2711,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "2203",
+          "ghost_votes": 2247,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "2201",
+          "ghost_votes": 1543,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "22",
       "name": "จันทบุรี"
@@ -4069,8 +5069,18 @@
       "count": 2,
       "total_ghost_votes": 6420,
       "areas": [
-        "6505",
-        "6504"
+        {
+          "area_code": "6505",
+          "ghost_votes": 4276,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "6504",
+          "ghost_votes": 2144,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        }
       ],
       "id": "65",
       "name": "พิษณุโลก"
@@ -4079,8 +5089,18 @@
       "count": 2,
       "total_ghost_votes": 6172,
       "areas": [
-        "3903",
-        "3902"
+        {
+          "area_code": "3903",
+          "ghost_votes": 3903,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "3902",
+          "ghost_votes": 2269,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "3"
+        }
       ],
       "id": "39",
       "name": "หนองบัวลำภู"
@@ -4089,8 +5109,18 @@
       "count": 2,
       "total_ghost_votes": 5465,
       "areas": [
-        "5202",
-        "5204"
+        {
+          "area_code": "5202",
+          "ghost_votes": 2964,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "5204",
+          "ghost_votes": 2501,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        }
       ],
       "id": "52",
       "name": "ลำปาง"
@@ -4099,8 +5129,18 @@
       "count": 2,
       "total_ghost_votes": 5297,
       "areas": [
-        "1502",
-        "1501"
+        {
+          "area_code": "1502",
+          "ghost_votes": 3899,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "1501",
+          "ghost_votes": 1398,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        }
       ],
       "id": "15",
       "name": "อ่างทอง"
@@ -4109,8 +5149,18 @@
       "count": 2,
       "total_ghost_votes": 5276,
       "areas": [
-        "6102",
-        "6101"
+        {
+          "area_code": "6102",
+          "ghost_votes": 3020,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "6101",
+          "ghost_votes": 2256,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        }
       ],
       "id": "61",
       "name": "อุทัยธานี"
@@ -4119,8 +5169,18 @@
       "count": 2,
       "total_ghost_votes": 5186,
       "areas": [
-        "1802",
-        "1801"
+        {
+          "area_code": "1802",
+          "ghost_votes": 2976,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "1801",
+          "ghost_votes": 2210,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "3"
+        }
       ],
       "id": "18",
       "name": "ชัยนาท"
@@ -4129,8 +5189,18 @@
       "count": 2,
       "total_ghost_votes": 5125,
       "areas": [
-        "7404",
-        "7402"
+        {
+          "area_code": "7404",
+          "ghost_votes": 3006,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "7402",
+          "ghost_votes": 2119,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "74",
       "name": "สมุทรสาคร"
@@ -4139,9 +5209,24 @@
       "count": 3,
       "total_ghost_votes": 5090,
       "areas": [
-        "5603",
-        "5602",
-        "5601"
+        {
+          "area_code": "5603",
+          "ghost_votes": 2429,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "5602",
+          "ghost_votes": 1791,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "5601",
+          "ghost_votes": 870,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        }
       ],
       "id": "56",
       "name": "พะเยา"
@@ -4150,9 +5235,24 @@
       "count": 3,
       "total_ghost_votes": 5077,
       "areas": [
-        "9503",
-        "9502",
-        "9501"
+        {
+          "area_code": "9503",
+          "ghost_votes": 2074,
+          "mp_winner_party": "PARTY-0033",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "9502",
+          "ghost_votes": 1676,
+          "mp_winner_party": "PARTY-0033",
+          "mp_number": "7"
+        },
+        {
+          "area_code": "9501",
+          "ghost_votes": 1327,
+          "mp_winner_party": "PARTY-0033",
+          "mp_number": "3"
+        }
       ],
       "id": "95",
       "name": "ยะลา"
@@ -4161,9 +5261,24 @@
       "count": 3,
       "total_ghost_votes": 4925,
       "areas": [
-        "1308",
-        "1302",
-        "1307"
+        {
+          "area_code": "1308",
+          "ghost_votes": 1916,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        },
+        {
+          "area_code": "1302",
+          "ghost_votes": 1611,
+          "mp_winner_party": "PARTY-0009",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "1307",
+          "ghost_votes": 1398,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        }
       ],
       "id": "13",
       "name": "ปทุมธานี"
@@ -4172,8 +5287,18 @@
       "count": 2,
       "total_ghost_votes": 4924,
       "areas": [
-        "5503",
-        "5502"
+        {
+          "area_code": "5503",
+          "ghost_votes": 2480,
+          "mp_winner_party": "PARTY-0046",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "5502",
+          "ghost_votes": 2444,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "3"
+        }
       ],
       "id": "55",
       "name": "น่าน"
@@ -4182,10 +5307,30 @@
       "count": 4,
       "total_ghost_votes": 4818,
       "areas": [
-        "9204",
-        "9202",
-        "9201",
-        "9203"
+        {
+          "area_code": "9204",
+          "ghost_votes": 1582,
+          "mp_winner_party": "PARTY-0027",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "9202",
+          "ghost_votes": 1254,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        },
+        {
+          "area_code": "9201",
+          "ghost_votes": 1198,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "9203",
+          "ghost_votes": 784,
+          "mp_winner_party": "PARTY-0027",
+          "mp_number": "5"
+        }
       ],
       "id": "92",
       "name": "ตรัง"
@@ -4194,8 +5339,18 @@
       "count": 2,
       "total_ghost_votes": 4744,
       "areas": [
-        "3702",
-        "3701"
+        {
+          "area_code": "3702",
+          "ghost_votes": 2717,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "3701",
+          "ghost_votes": 2027,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        }
       ],
       "id": "37",
       "name": "อำนาจเจริญ"
@@ -4204,9 +5359,24 @@
       "count": 3,
       "total_ghost_votes": 4134,
       "areas": [
-        "8403",
-        "8402",
-        "8405"
+        {
+          "area_code": "8403",
+          "ghost_votes": 1483,
+          "mp_winner_party": "PARTY-0021",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "8402",
+          "ghost_votes": 1335,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        },
+        {
+          "area_code": "8405",
+          "ghost_votes": 1316,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "5"
+        }
       ],
       "id": "84",
       "name": "สุราษฎร์ธานี"
@@ -4215,7 +5385,12 @@
       "count": 1,
       "total_ghost_votes": 4033,
       "areas": [
-        "1701"
+        {
+          "area_code": "1701",
+          "ghost_votes": 4033,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        }
       ],
       "id": "17",
       "name": "สิงห์บุรี"
@@ -4224,8 +5399,18 @@
       "count": 2,
       "total_ghost_votes": 3664,
       "areas": [
-        "2104",
-        "2103"
+        {
+          "area_code": "2104",
+          "ghost_votes": 2238,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "2"
+        },
+        {
+          "area_code": "2103",
+          "ghost_votes": 1426,
+          "mp_winner_party": "PARTY-0027",
+          "mp_number": "5"
+        }
       ],
       "id": "21",
       "name": "ระยอง"
@@ -4234,7 +5419,12 @@
       "count": 1,
       "total_ghost_votes": 3516,
       "areas": [
-        "2601"
+        {
+          "area_code": "2601",
+          "ghost_votes": 3516,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "2"
+        }
       ],
       "id": "26",
       "name": "นครนายก"
@@ -4243,9 +5433,24 @@
       "count": 3,
       "total_ghost_votes": 3459,
       "areas": [
-        "8002",
-        "8008",
-        "8003"
+        {
+          "area_code": "8002",
+          "ghost_votes": 1230,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "8008",
+          "ghost_votes": 1173,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        },
+        {
+          "area_code": "8003",
+          "ghost_votes": 1056,
+          "mp_winner_party": "PARTY-0027",
+          "mp_number": "1"
+        }
       ],
       "id": "80",
       "name": "นครศรีธรรมราช"
@@ -4254,7 +5459,12 @@
       "count": 1,
       "total_ghost_votes": 3451,
       "areas": [
-        "4902"
+        {
+          "area_code": "4902",
+          "ghost_votes": 3451,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "1"
+        }
       ],
       "id": "49",
       "name": "มุกดาหาร"
@@ -4263,7 +5473,12 @@
       "count": 1,
       "total_ghost_votes": 3076,
       "areas": [
-        "2301"
+        {
+          "area_code": "2301",
+          "ghost_votes": 3076,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "23",
       "name": "ตราด"
@@ -4272,7 +5487,12 @@
       "count": 1,
       "total_ghost_votes": 2737,
       "areas": [
-        "7702"
+        {
+          "area_code": "7702",
+          "ghost_votes": 2737,
+          "mp_winner_party": "PARTY-0042",
+          "mp_number": "1"
+        }
       ],
       "id": "77",
       "name": "ประจวบคีรีขันธ์"
@@ -4281,7 +5501,12 @@
       "count": 1,
       "total_ghost_votes": 2455,
       "areas": [
-        "3803"
+        {
+          "area_code": "3803",
+          "ghost_votes": 2455,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "38",
       "name": "บึงกาฬ"
@@ -4290,7 +5515,12 @@
       "count": 1,
       "total_ghost_votes": 1921,
       "areas": [
-        "5102"
+        {
+          "area_code": "5102",
+          "ghost_votes": 1921,
+          "mp_winner_party": "PARTY-0046",
+          "mp_number": "3"
+        }
       ],
       "id": "51",
       "name": "ลำพูน"
@@ -4299,7 +5529,12 @@
       "count": 1,
       "total_ghost_votes": 1634,
       "areas": [
-        "5402"
+        {
+          "area_code": "5402",
+          "ghost_votes": 1634,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "54",
       "name": "แพร่"
@@ -4308,7 +5543,12 @@
       "count": 1,
       "total_ghost_votes": 1370,
       "areas": [
-        "9101"
+        {
+          "area_code": "9101",
+          "ghost_votes": 1370,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "3"
+        }
       ],
       "id": "91",
       "name": "สตูล"
@@ -4317,7 +5557,12 @@
       "count": 1,
       "total_ghost_votes": 1302,
       "areas": [
-        "8201"
+        {
+          "area_code": "8201",
+          "ghost_votes": 1302,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "5"
+        }
       ],
       "id": "82",
       "name": "พังงา"
@@ -4326,7 +5571,12 @@
       "count": 1,
       "total_ghost_votes": 1267,
       "areas": [
-        "1106"
+        {
+          "area_code": "1106",
+          "ghost_votes": 1267,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "4"
+        }
       ],
       "id": "11",
       "name": "สมุทรปราการ"
@@ -4335,7 +5585,12 @@
       "count": 1,
       "total_ghost_votes": 1185,
       "areas": [
-        "9302"
+        {
+          "area_code": "9302",
+          "ghost_votes": 1185,
+          "mp_winner_party": "PARTY-0037",
+          "mp_number": "1"
+        }
       ],
       "id": "93",
       "name": "พัทลุง"
@@ -4343,193 +5598,669 @@
   ],
   "mp_party_stats": [
     {
+      "party_code": "PARTY-0037",
       "count": 140,
       "total_ghost_votes": 373273,
-      "provinces": {
-        "นครสวรรค์": 5,
-        "ปราจีนบุรี": 3,
-        "พิจิตร": 2,
-        "เพชรบุรี": 3,
-        "กาญจนบุรี": 3,
-        "สระบุรี": 3,
-        "พระนครศรีอยุธยา": 4,
-        "นครราชสีมา": 3,
-        "พิษณุโลก": 2,
-        "อุบลราชธานี": 3,
-        "สุรินทร์": 8,
-        "เพชรบูรณ์": 5,
-        "ชัยภูมิ": 3,
-        "สิงห์บุรี": 1,
-        "ชลบุรี": 4,
-        "อ่างทอง": 2,
-        "ศรีสะเกษ": 8,
-        "ยโสธร": 3,
-        "เชียงราย": 1,
-        "แม่ฮ่องสอน": 1,
-        "หนองคาย": 1,
-        "ลพบุรี": 2,
-        "กาฬสินธุ์": 1,
-        "นครปฐม": 2,
-        "สุพรรณบุรี": 4,
-        "กระบี่": 3,
-        "ตราด": 1,
-        "สุโขทัย": 1,
-        "ตาก": 1,
-        "อุทัยธานี": 2,
-        "มหาสารคาม": 3,
-        "สมุทรสาคร": 2,
-        "ชัยนาท": 1,
-        "นราธิวาส": 1,
-        "บุรีรัมย์": 9,
-        "ปัตตานี": 4,
-        "อำนาจเจริญ": 2,
-        "ขอนแก่น": 2,
-        "จันทบุรี": 3,
-        "อุดรธานี": 3,
-        "อุตรดิตถ์": 1,
-        "สกลนคร": 1,
-        "ราชบุรี": 2,
-        "บึงกาฬ": 1,
-        "ระยอง": 1,
-        "ร้อยเอ็ด": 1,
-        "สงขลา": 3,
-        "เลย": 1,
-        "นครพนม": 2,
-        "ปทุมธานี": 2,
-        "แพร่": 1,
-        "สตูล": 1,
-        "สุราษฎร์ธานี": 1,
-        "พังงา": 1,
-        "สมุทรปราการ": 1,
-        "ตรัง": 2,
-        "นครศรีธรรมราช": 2,
-        "พัทลุง": 1
-      },
-      "party_code": "PARTY-0037"
+      "provinces": [
+        {
+          "name": "ศรีสะเกษ",
+          "count": 8,
+          "votes": 20071
+        },
+        {
+          "name": "บุรีรัมย์",
+          "count": 9,
+          "votes": 19935
+        },
+        {
+          "name": "สุรินทร์",
+          "count": 8,
+          "votes": 19159
+        },
+        {
+          "name": "เพชรบูรณ์",
+          "count": 5,
+          "votes": 16901
+        },
+        {
+          "name": "นครสวรรค์",
+          "count": 5,
+          "votes": 16751
+        },
+        {
+          "name": "ชลบุรี",
+          "count": 4,
+          "votes": 13589
+        },
+        {
+          "name": "กาญจนบุรี",
+          "count": 3,
+          "votes": 11589
+        },
+        {
+          "name": "สระบุรี",
+          "count": 3,
+          "votes": 11317
+        },
+        {
+          "name": "พระนครศรีอยุธยา",
+          "count": 4,
+          "votes": 10755
+        },
+        {
+          "name": "ชัยภูมิ",
+          "count": 3,
+          "votes": 10544
+        },
+        {
+          "name": "ปราจีนบุรี",
+          "count": 3,
+          "votes": 10390
+        },
+        {
+          "name": "เพชรบุรี",
+          "count": 3,
+          "votes": 10350
+        },
+        {
+          "name": "สุพรรณบุรี",
+          "count": 4,
+          "votes": 9769
+        },
+        {
+          "name": "อุบลราชธานี",
+          "count": 3,
+          "votes": 9550
+        },
+        {
+          "name": "นครราชสีมา",
+          "count": 3,
+          "votes": 9244
+        },
+        {
+          "name": "ยโสธร",
+          "count": 3,
+          "votes": 8930
+        },
+        {
+          "name": "พิจิตร",
+          "count": 2,
+          "votes": 8725
+        },
+        {
+          "name": "ปัตตานี",
+          "count": 4,
+          "votes": 8591
+        },
+        {
+          "name": "กระบี่",
+          "count": 3,
+          "votes": 7255
+        },
+        {
+          "name": "อุดรธานี",
+          "count": 3,
+          "votes": 7074
+        },
+        {
+          "name": "ลพบุรี",
+          "count": 2,
+          "votes": 6596
+        },
+        {
+          "name": "จันทบุรี",
+          "count": 3,
+          "votes": 6501
+        },
+        {
+          "name": "พิษณุโลก",
+          "count": 2,
+          "votes": 6420
+        },
+        {
+          "name": "มหาสารคาม",
+          "count": 3,
+          "votes": 6391
+        },
+        {
+          "name": "นครปฐม",
+          "count": 2,
+          "votes": 6062
+        },
+        {
+          "name": "อ่างทอง",
+          "count": 2,
+          "votes": 5297
+        },
+        {
+          "name": "อุทัยธานี",
+          "count": 2,
+          "votes": 5276
+        },
+        {
+          "name": "สมุทรสาคร",
+          "count": 2,
+          "votes": 5125
+        },
+        {
+          "name": "อำนาจเจริญ",
+          "count": 2,
+          "votes": 4744
+        },
+        {
+          "name": "สงขลา",
+          "count": 3,
+          "votes": 4553
+        },
+        {
+          "name": "ราชบุรี",
+          "count": 2,
+          "votes": 4466
+        },
+        {
+          "name": "ขอนแก่น",
+          "count": 2,
+          "votes": 4365
+        },
+        {
+          "name": "สิงห์บุรี",
+          "count": 1,
+          "votes": 4033
+        },
+        {
+          "name": "นครพนม",
+          "count": 2,
+          "votes": 3650
+        },
+        {
+          "name": "เชียงราย",
+          "count": 1,
+          "votes": 3572
+        },
+        {
+          "name": "แม่ฮ่องสอน",
+          "count": 1,
+          "votes": 3504
+        },
+        {
+          "name": "หนองคาย",
+          "count": 1,
+          "votes": 3471
+        },
+        {
+          "name": "ปทุมธานี",
+          "count": 2,
+          "votes": 3314
+        },
+        {
+          "name": "กาฬสินธุ์",
+          "count": 1,
+          "votes": 3293
+        },
+        {
+          "name": "ตราด",
+          "count": 1,
+          "votes": 3076
+        },
+        {
+          "name": "สุโขทัย",
+          "count": 1,
+          "votes": 3066
+        },
+        {
+          "name": "ตาก",
+          "count": 1,
+          "votes": 3049
+        },
+        {
+          "name": "ชัยนาท",
+          "count": 1,
+          "votes": 2976
+        },
+        {
+          "name": "นราธิวาส",
+          "count": 1,
+          "votes": 2940
+        },
+        {
+          "name": "อุตรดิตถ์",
+          "count": 1,
+          "votes": 2650
+        },
+        {
+          "name": "สกลนคร",
+          "count": 1,
+          "votes": 2620
+        },
+        {
+          "name": "บึงกาฬ",
+          "count": 1,
+          "votes": 2455
+        },
+        {
+          "name": "ตรัง",
+          "count": 2,
+          "votes": 2452
+        },
+        {
+          "name": "นครศรีธรรมราช",
+          "count": 2,
+          "votes": 2403
+        },
+        {
+          "name": "ระยอง",
+          "count": 1,
+          "votes": 2238
+        },
+        {
+          "name": "ร้อยเอ็ด",
+          "count": 1,
+          "votes": 2139
+        },
+        {
+          "name": "เลย",
+          "count": 1,
+          "votes": 1994
+        },
+        {
+          "name": "แพร่",
+          "count": 1,
+          "votes": 1634
+        },
+        {
+          "name": "สตูล",
+          "count": 1,
+          "votes": 1370
+        },
+        {
+          "name": "สุราษฎร์ธานี",
+          "count": 1,
+          "votes": 1335
+        },
+        {
+          "name": "พังงา",
+          "count": 1,
+          "votes": 1302
+        },
+        {
+          "name": "สมุทรปราการ",
+          "count": 1,
+          "votes": 1267
+        },
+        {
+          "name": "พัทลุง",
+          "count": 1,
+          "votes": 1185
+        }
+      ]
     },
     {
+      "party_code": "PARTY-0009",
       "count": 47,
       "total_ghost_votes": 129346,
-      "provinces": {
-        "กาญจนบุรี": 2,
-        "เลย": 3,
-        "ลพบุรี": 1,
-        "เชียงราย": 1,
-        "ฉะเชิงเทรา": 1,
-        "นครราชสีมา": 10,
-        "สุโขทัย": 3,
-        "ขอนแก่น": 3,
-        "ชัยภูมิ": 3,
-        "กาฬสินธุ์": 3,
-        "นครพนม": 2,
-        "อุดรธานี": 3,
-        "อุบลราชธานี": 3,
-        "กำแพงเพชร": 1,
-        "มหาสารคาม": 1,
-        "อุตรดิตถ์": 1,
-        "หนองบัวลำภู": 1,
-        "ชัยนาท": 1,
-        "สกลนคร": 2,
-        "ปทุมธานี": 1,
-        "ร้อยเอ็ด": 1
-      },
-      "party_code": "PARTY-0009"
+      "provinces": [
+        {
+          "name": "นครราชสีมา",
+          "count": 10,
+          "votes": 29012
+        },
+        {
+          "name": "ขอนแก่น",
+          "count": 3,
+          "votes": 8813
+        },
+        {
+          "name": "กาฬสินธุ์",
+          "count": 3,
+          "votes": 8269
+        },
+        {
+          "name": "เลย",
+          "count": 3,
+          "votes": 8115
+        },
+        {
+          "name": "สุโขทัย",
+          "count": 3,
+          "votes": 7886
+        },
+        {
+          "name": "อุบลราชธานี",
+          "count": 3,
+          "votes": 7777
+        },
+        {
+          "name": "ชัยภูมิ",
+          "count": 3,
+          "votes": 7694
+        },
+        {
+          "name": "กาญจนบุรี",
+          "count": 2,
+          "votes": 7379
+        },
+        {
+          "name": "อุดรธานี",
+          "count": 3,
+          "votes": 7327
+        },
+        {
+          "name": "นครพนม",
+          "count": 2,
+          "votes": 5877
+        },
+        {
+          "name": "ลพบุรี",
+          "count": 1,
+          "votes": 4301
+        },
+        {
+          "name": "เชียงราย",
+          "count": 1,
+          "votes": 4255
+        },
+        {
+          "name": "ฉะเชิงเทรา",
+          "count": 1,
+          "votes": 4193
+        },
+        {
+          "name": "สกลนคร",
+          "count": 2,
+          "votes": 3876
+        },
+        {
+          "name": "กำแพงเพชร",
+          "count": 1,
+          "votes": 2549
+        },
+        {
+          "name": "มหาสารคาม",
+          "count": 1,
+          "votes": 2284
+        },
+        {
+          "name": "อุตรดิตถ์",
+          "count": 1,
+          "votes": 2277
+        },
+        {
+          "name": "หนองบัวลำภู",
+          "count": 1,
+          "votes": 2269
+        },
+        {
+          "name": "ชัยนาท",
+          "count": 1,
+          "votes": 2210
+        },
+        {
+          "name": "ปทุมธานี",
+          "count": 1,
+          "votes": 1611
+        },
+        {
+          "name": "ร้อยเอ็ด",
+          "count": 1,
+          "votes": 1372
+        }
+      ]
     },
     {
+      "party_code": "PARTY-0042",
       "count": 44,
       "total_ghost_votes": 132029,
-      "provinces": {
-        "ราชบุรี": 2,
-        "กำแพงเพชร": 2,
-        "นครสวรรค์": 1,
-        "สระบุรี": 1,
-        "เชียงใหม่": 4,
-        "ร้อยเอ็ด": 2,
-        "ฉะเชิงเทรา": 2,
-        "หนองบัวลำภู": 1,
-        "แม่ฮ่องสอน": 1,
-        "ตาก": 1,
-        "นครนายก": 1,
-        "มุกดาหาร": 1,
-        "สกลนคร": 1,
-        "สระแก้ว": 1,
-        "ขอนแก่น": 3,
-        "ลำปาง": 2,
-        "เชียงราย": 3,
-        "นราธิวาส": 3,
-        "ประจวบคีรีขันธ์": 1,
-        "นครปฐม": 1,
-        "น่าน": 1,
-        "พะเยา": 3,
-        "ชัยภูมิ": 1,
-        "ปัตตานี": 1,
-        "สงขลา": 3,
-        "สุราษฎร์ธานี": 1
-      },
-      "party_code": "PARTY-0042"
+      "provinces": [
+        {
+          "name": "เชียงใหม่",
+          "count": 4,
+          "votes": 12933
+        },
+        {
+          "name": "กำแพงเพชร",
+          "count": 2,
+          "votes": 9336
+        },
+        {
+          "name": "ราชบุรี",
+          "count": 2,
+          "votes": 9297
+        },
+        {
+          "name": "นราธิวาส",
+          "count": 3,
+          "votes": 8370
+        },
+        {
+          "name": "ขอนแก่น",
+          "count": 3,
+          "votes": 8044
+        },
+        {
+          "name": "ฉะเชิงเทรา",
+          "count": 2,
+          "votes": 7519
+        },
+        {
+          "name": "เชียงราย",
+          "count": 3,
+          "votes": 6962
+        },
+        {
+          "name": "ร้อยเอ็ด",
+          "count": 2,
+          "votes": 5809
+        },
+        {
+          "name": "ลำปาง",
+          "count": 2,
+          "votes": 5465
+        },
+        {
+          "name": "นครสวรรค์",
+          "count": 1,
+          "votes": 5407
+        },
+        {
+          "name": "สระบุรี",
+          "count": 1,
+          "votes": 5095
+        },
+        {
+          "name": "พะเยา",
+          "count": 3,
+          "votes": 5090
+        },
+        {
+          "name": "สงขลา",
+          "count": 3,
+          "votes": 4952
+        },
+        {
+          "name": "หนองบัวลำภู",
+          "count": 1,
+          "votes": 3903
+        },
+        {
+          "name": "แม่ฮ่องสอน",
+          "count": 1,
+          "votes": 3709
+        },
+        {
+          "name": "ตาก",
+          "count": 1,
+          "votes": 3702
+        },
+        {
+          "name": "นครนายก",
+          "count": 1,
+          "votes": 3516
+        },
+        {
+          "name": "มุกดาหาร",
+          "count": 1,
+          "votes": 3451
+        },
+        {
+          "name": "สกลนคร",
+          "count": 1,
+          "votes": 3235
+        },
+        {
+          "name": "สระแก้ว",
+          "count": 1,
+          "votes": 3200
+        },
+        {
+          "name": "ประจวบคีรีขันธ์",
+          "count": 1,
+          "votes": 2737
+        },
+        {
+          "name": "นครปฐม",
+          "count": 1,
+          "votes": 2567
+        },
+        {
+          "name": "น่าน",
+          "count": 1,
+          "votes": 2444
+        },
+        {
+          "name": "ชัยภูมิ",
+          "count": 1,
+          "votes": 2010
+        },
+        {
+          "name": "ปัตตานี",
+          "count": 1,
+          "votes": 1960
+        },
+        {
+          "name": "สุราษฎร์ธานี",
+          "count": 1,
+          "votes": 1316
+        }
+      ]
     },
     {
+      "party_code": "PARTY-0027",
       "count": 5,
       "total_ghost_votes": 5722,
-      "provinces": {
-        "ตรัง": 2,
-        "ระยอง": 1,
-        "นครศรีธรรมราช": 1,
-        "สงขลา": 1
-      },
-      "party_code": "PARTY-0027"
+      "provinces": [
+        {
+          "name": "ตรัง",
+          "count": 2,
+          "votes": 2366
+        },
+        {
+          "name": "ระยอง",
+          "count": 1,
+          "votes": 1426
+        },
+        {
+          "name": "นครศรีธรรมราช",
+          "count": 1,
+          "votes": 1056
+        },
+        {
+          "name": "สงขลา",
+          "count": 1,
+          "votes": 874
+        }
+      ]
     },
     {
+      "party_code": "PARTY-0021",
       "count": 4,
       "total_ghost_votes": 11281,
-      "provinces": {
-        "อุบลราชธานี": 3,
-        "สุราษฎร์ธานี": 1
-      },
-      "party_code": "PARTY-0021"
+      "provinces": [
+        {
+          "name": "อุบลราชธานี",
+          "count": 3,
+          "votes": 9798
+        },
+        {
+          "name": "สุราษฎร์ธานี",
+          "count": 1,
+          "votes": 1483
+        }
+      ]
     },
     {
+      "party_code": "PARTY-0033",
       "count": 4,
       "total_ghost_votes": 7428,
-      "provinces": {
-        "นราธิวาส": 1,
-        "ยะลา": 3
-      },
-      "party_code": "PARTY-0033"
+      "provinces": [
+        {
+          "name": "ยะลา",
+          "count": 3,
+          "votes": 5077
+        },
+        {
+          "name": "นราธิวาส",
+          "count": 1,
+          "votes": 2351
+        }
+      ]
     },
     {
+      "party_code": "PARTY-0043",
       "count": 3,
       "total_ghost_votes": 8250,
-      "provinces": {
-        "สระแก้ว": 1,
-        "หนองคาย": 2
-      },
-      "party_code": "PARTY-0043"
+      "provinces": [
+        {
+          "name": "หนองคาย",
+          "count": 2,
+          "votes": 4142
+        },
+        {
+          "name": "สระแก้ว",
+          "count": 1,
+          "votes": 4108
+        }
+      ]
     },
     {
+      "party_code": "PARTY-0046",
       "count": 2,
       "total_ghost_votes": 4401,
-      "provinces": {
-        "น่าน": 1,
-        "ลำพูน": 1
-      },
-      "party_code": "PARTY-0046"
+      "provinces": [
+        {
+          "name": "น่าน",
+          "count": 1,
+          "votes": 2480
+        },
+        {
+          "name": "ลำพูน",
+          "count": 1,
+          "votes": 1921
+        }
+      ]
     },
     {
+      "party_code": "PARTY-0044",
       "count": 1,
       "total_ghost_votes": 2855,
-      "provinces": {
-        "อุตรดิตถ์": 1
-      },
-      "party_code": "PARTY-0044"
+      "provinces": [
+        {
+          "name": "อุตรดิตถ์",
+          "count": 1,
+          "votes": 2855
+        }
+      ]
     },
     {
+      "party_code": "PARTY-0048",
       "count": 1,
       "total_ghost_votes": 1230,
-      "provinces": {
-        "ร้อยเอ็ด": 1
-      },
-      "party_code": "PARTY-0048"
+      "provinces": [
+        {
+          "name": "ร้อยเอ็ด",
+          "count": 1,
+          "votes": 1230
+        }
+      ]
     }
   ]
 }

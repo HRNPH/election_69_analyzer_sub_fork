@@ -171,12 +171,21 @@ def main():
         entry["name"] = p_name
         entry["count"] += 1
         entry["total_ghost_votes"] += a["pl_twin_votes"]
-        entry["areas"].append(a["area_code"])
+        entry["areas"].append({
+            "area_code": a["area_code"],
+            "ghost_votes": a["pl_twin_votes"],
+            "mp_winner_party": a["mp_winner_party"],
+            "mp_number": a["mp_winner_number"]
+        })
         
+    # Sort areas inside each province by ghost votes
+    for p in province_stats.values():
+        p["areas"].sort(key=lambda x: x["ghost_votes"], reverse=True)
+
     sorted_provinces = sorted(province_stats.values(), key=lambda x: x["total_ghost_votes"], reverse=True)
 
     # 2. By Winning MP Party
-    mp_party_stats = defaultdict(lambda: {"count": 0, "total_ghost_votes": 0, "provinces": defaultdict(int)})
+    mp_party_stats = defaultdict(lambda: {"count": 0, "total_ghost_votes": 0, "provinces": defaultdict(lambda: {"count": 0, "votes": 0})})
     for a in anomalies:
         party = a["mp_winner_party"]
         p_name = a["province_name"]
@@ -184,9 +193,26 @@ def main():
         entry["party_code"] = party
         entry["count"] += 1
         entry["total_ghost_votes"] += a["pl_twin_votes"]
-        entry["provinces"][p_name] += 1
         
-    sorted_mp_parties = sorted(mp_party_stats.values(), key=lambda x: x["count"], reverse=True)
+        prov_entry = entry["provinces"][p_name]
+        prov_entry["count"] += 1
+        prov_entry["votes"] += a["pl_twin_votes"]
+        
+    # Convert defaultdict to list and sort inner provinces
+    sorted_mp_parties = []
+    for party_code, data in mp_party_stats.items():
+        # Convert provinces dict to sorted list
+        prov_list = [{"name": name, "count": d["count"], "votes": d["votes"]} for name, d in data["provinces"].items()]
+        prov_list.sort(key=lambda x: x["votes"], reverse=True)
+        
+        sorted_mp_parties.append({
+            "party_code": party_code,
+            "count": data["count"],
+            "total_ghost_votes": data["total_ghost_votes"],
+            "provinces": prov_list
+        })
+        
+    sorted_mp_parties.sort(key=lambda x: x["count"], reverse=True)
     
     # Save to JSON
     output_data = {
