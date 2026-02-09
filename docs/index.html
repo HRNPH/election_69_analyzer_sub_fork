@@ -801,20 +801,25 @@
                 // 2. Chart: Top 10 Areas by Ghost Votes
                 const top10 = anomalies.slice(0, 10);
 
-                // Add party icons above the bar chart
+                // Add party pair icons above the bar chart (one pair per bar)
                 const topAreaIcons = document.getElementById("topAreaIcons");
                 if (topAreaIcons) {
-                    // Get unique party list from top 10
-                    const uniqueParties = [
-                        ...new Set(top10.map((a) => a.pl_twin_party)),
-                    ];
-                    topAreaIcons.innerHTML = uniqueParties
-                        .map((partyCode) => {
-                            const pInfo = getPartyInfo(partyCode);
+                    topAreaIcons.innerHTML = top10
+                        .map((a, index) => {
+                            const mpInfo = getPartyInfo(a.mp_winner_party);
+                            const plInfo = getPartyInfo(a.pl_twin_party);
+                            const prov = getProvinceName(a.area_code);
+                            const color =
+                                numberColors[a.mp_winner_number] || "#666";
+
                             return `
                             <div class="chart-icon-wrapper">
-                                <img src="img/${partyCode}.webp" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🏛️</text></svg>'" alt="${pInfo.name}">
-                                <span>${pInfo.name.substring(0, 15)}${pInfo.name.length > 15 ? "..." : ""}</span>
+                                <div class="chart-icon-pair">
+                                    <img src="img/${a.mp_winner_party}.webp" onerror="this.style.display='none'" title="${mpInfo.name}">
+                                    <div style="width: 32px; height: 32px; border-radius: 50%; background-color: ${color}; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; font-size: 0.9rem;">${a.mp_winner_number}</div>
+                                    <img src="img/${a.pl_twin_party}.webp" onerror="this.style.display='none'" title="${plInfo.name}">
+                                </div>
+                                <span>${index + 1}. ${prov.substring(0, 20)}${prov.length > 20 ? "..." : ""}</span>
                             </div>
                         `;
                         })
