@@ -57,6 +57,23 @@
     </div>
 
     <div class="card">
+        <h3>🏆 สรุปยอดรวม: พรรคที่ได้อานิสงส์สูงสุด</h3>
+        <p>พรรคบัญชีรายชื่อที่ได้รับคะแนนที่น่าสงสัยรวมสูงสุด 5 อันดับแรก</p>
+        <table id="partySummaryTable">
+            <thead>
+                <tr>
+                    <th style="width: 50px;">#</th>
+                    <th>พรรคบัญชีรายชื่อ</th>
+                    <th style="text-align:right">จำนวนเขตที่พบ</th>
+                    <th style="text-align:right">คะแนนที่สงสัยรวม</th>
+                    <th style="text-align:right">เฉลี่ยต่อเขต</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="card">
         <h3>20 อันดับความผิดปกติโดยละเอียด</h3>
         <table id="anomalyTable">
             <thead>
@@ -103,6 +120,7 @@
 
             allAnomalies = reportData.anomalies;
             renderDashboard(reportData);
+            renderPartySummary(allAnomalies);
             renderTableBatch();
         } catch (error) {
             console.error('Error loading data:', error);
@@ -138,6 +156,47 @@
 
     function getPartyInfo(code) {
         return partyMap[code] || { name: code, color: '#666666' };
+    }
+
+    function renderPartySummary(anomalies) {
+        const partyStats = {};
+        anomalies.forEach(a => {
+            if (!partyStats[a.pl_twin_party]) {
+                partyStats[a.pl_twin_party] = {
+                    code: a.pl_twin_party,
+                    count: 0,
+                    votes: 0
+                };
+            }
+            partyStats[a.pl_twin_party].count++;
+            partyStats[a.pl_twin_party].votes += a.pl_twin_votes;
+        });
+
+        const sortedParties = Object.values(partyStats).sort((a,b) => b.votes - a.votes);
+        const top5 = sortedParties.slice(0, 5);
+        const tableBody = document.querySelector('#partySummaryTable tbody');
+        
+        // Clear existing rows if any
+        tableBody.innerHTML = '';
+
+        top5.forEach((p, index) => {
+            const pInfo = getPartyInfo(p.code);
+            const avg = Math.round(p.votes / p.count);
+            
+            const row = `<tr>
+                <td style="text-align:center; font-weight:bold;">${index + 1}</td>
+                <td>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <img src="img/${p.code}.webp" style="height: 24px;" onerror="this.style.display='none'">
+                        <span style="font-weight:bold; color:${pInfo.color}">${pInfo.name}</span>
+                    </div>
+                </td>
+                <td style="text-align:right">${p.count.toLocaleString()}</td>
+                <td style="text-align:right; font-weight:bold; color:#2563eb;">${p.votes.toLocaleString()}</td>
+                <td style="text-align:right">${avg.toLocaleString()}</td>
+            </tr>`;
+            tableBody.innerHTML += row;
+        });
     }
 
     function renderTableBatch() {
