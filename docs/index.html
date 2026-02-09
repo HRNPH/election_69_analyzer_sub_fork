@@ -97,7 +97,7 @@
         .cursor-pointer { cursor: pointer; }
         .detail-row { background-color: #fcfcfc; }
         .detail-table { font-size: 0.9em; margin-bottom: 0; }
-        .detail-table th { background-color: transparent; color: #666; font-weight: 500; border-bottom: 1px solid #eee; }
+        .detail-table thead th { background-color: transparent; color: #666; font-weight: 500; border-bottom: 1px solid #eee; }
         .accordion-button::after { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2314213d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
         .rotate-icon { transition: transform 0.2s; }
         .collapsed .rotate-icon { transform: rotate(-90deg); }
@@ -301,8 +301,8 @@
     const ITEMS_PER_PAGE = 20;
     
     // Data mappings
-    let partyMap = {};
-    let provinceMap = {};
+    const partyMap = {};
+    const provinceMap = {};
 
     async function loadData() {
         try {
@@ -509,7 +509,7 @@
                         <span class="small fw-bold text-dark">${plParty.name}</span>
                     </div>
                 </td>
-                <td><span class="badge badge-rank border">${a.pl_twin_rank}</span></td>
+                <td><span class="badge badge-rank border text-accent">${a.pl_twin_rank}</span></td>
                 <td class="fw-bold text-accent">${a.pl_twin_votes.toLocaleString()}</td>
                 <td class="text-secondary">${(a.mp_twin_candidate_votes || 0).toLocaleString()}</td>
                 <td class="text-secondary small">${(a.ratio_pl_to_mp * 100).toFixed(1)}%</td>
@@ -590,11 +590,6 @@
             }
         });
 
-        // 3. Chart: Twin Number Distribution
-        // Group by Party Name for cleaner legend
-        const partyNameCounts = {};
-        const partyColors = [];
-        
         // Improve color mapping for doughnut
         const sortedParties = Object.keys(partyCounts).sort((a,b) => partyCounts[b] - partyCounts[a]);
         const doughnutData = sortedParties.map(code => partyCounts[code]);
