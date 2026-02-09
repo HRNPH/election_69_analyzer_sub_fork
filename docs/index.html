@@ -822,6 +822,67 @@
                 }
             }
 
+            // Toggle functions (global scope)
+            function toggleOverlay() {
+                showOverlay = !showOverlay;
+                updateToggleButtons();
+                updateColorLegends();
+                // Re-render charts
+                renderDashboard({ anomalies: allAnomalies });
+            }
+
+            function toggleBaseColor() {
+                baseColorIsPL = !baseColorIsPL;
+                updateToggleButtons();
+                updateColorLegends();
+                // Re-render charts
+                renderDashboard({ anomalies: allAnomalies });
+            }
+
+            function updateToggleButtons() {
+                const overlayBtns = document.querySelectorAll(
+                    '[id^="overlayToggleBtn"]',
+                );
+                const baseBtns = document.querySelectorAll(
+                    '[id^="baseColorToggleBtn"]',
+                );
+
+                overlayBtns.forEach((btn) => {
+                    btn.textContent = showOverlay
+                        ? "✨ ระบายสีคู่พรรค: เปิด"
+                        : "✨ ระบายสีคู่พรรค: ปิด";
+                    btn.classList.toggle("btn-outline-primary", !showOverlay);
+                    btn.classList.toggle("btn-primary", showOverlay);
+                });
+
+                baseBtns.forEach((btn) => {
+                    const baseName = baseColorIsPL
+                        ? "พรรคบัญชีรายชื่อ (PL)"
+                        : "พรรค ส.ส. เขต (MP)";
+                    btn.textContent = `🎨 สีหลัก: ${baseName}`;
+                });
+            }
+
+            function updateColorLegends() {
+                const baseName = baseColorIsPL
+                    ? "พรรคบัญชีรายชื่อ (PL)"
+                    : "พรรค ส.ส. เขต (MP)";
+                const overlayName = baseColorIsPL
+                    ? "พรรค ส.ส. เขต (MP)"
+                    : "พรรคบัญชีรายชื่อ (PL)";
+
+                const legendText = showOverlay
+                    ? `<strong>สีกราฟ:</strong> สีพื้นหลัก = ${baseName} | จุดประกอบ = ${overlayName}`
+                    : `<strong>สีกราฟ:</strong> สีพื้นหลัก = ${baseName} (ไม่มีการระบายสีคู่พรรค)`;
+
+                const barLegend = document.getElementById("barColorLegend");
+                const doughnutLegend = document.getElementById(
+                    "doughnutColorLegend",
+                );
+                if (barLegend) barLegend.innerHTML = legendText;
+                if (doughnutLegend) doughnutLegend.innerHTML = legendText;
+            }
+
             function renderDashboard(data) {
                 const anomalies = data.anomalies;
 
@@ -893,68 +954,6 @@
                     }
 
                     return ctx.createPattern(canvas, "repeat");
-                }
-
-                // Toggle functions
-                function toggleOverlay() {
-                    showOverlay = !showOverlay;
-                    updateToggleButtons();
-                    updateColorLegends();
-                    // Re-render charts
-                    renderDashboard({ anomalies: allAnomalies });
-                }
-
-                function toggleBaseColor() {
-                    baseColorIsPL = !baseColorIsPL;
-                    updateToggleButtons();
-                    updateColorLegends();
-                    // Re-render charts
-                    renderDashboard({ anomalies: allAnomalies });
-                }
-
-                function updateToggleButtons() {
-                    const overlayBtns = document.querySelectorAll(
-                        '[id^="overlayToggleBtn"]',
-                    );
-                    const baseBtns = document.querySelectorAll(
-                        '[id^="baseColorToggleBtn"]',
-                    );
-
-                    overlayBtns.forEach((btn) => {
-                        btn.textContent = showOverlay
-                            ? "✨ ระบายสีคู่พรรค: เปิด"
-                            : "✨ ระบายสีคู่พรรค: ปิด";
-                        btn.classList.toggle(
-                            "btn-outline-primary",
-                            !showOverlay,
-                        );
-                        btn.classList.toggle("btn-primary", showOverlay);
-                    });
-
-                    baseBtns.forEach((btn) => {
-                        const baseName = baseColorIsPL
-                            ? "พรรคบัญชีรายชื่อ (PL)"
-                            : "พรรค ส.ส. เขต (MP)";
-                        btn.textContent = `🎨 สีหลัก: ${baseName}`;
-                    });
-                }
-
-                function updateColorLegends() {
-                    const baseName = baseColorIsPL
-                        ? "พรรคบัญชีรายชื่อ (PL)"
-                        : "พรรค ส.ส. เขต (MP)";
-                    const overlayName = baseColorIsPL
-                        ? "พรรค ส.ส. เขต (MP)"
-                        : "พรรคบัญชีรายชื่อ (PL)";
-
-                    const legendText = showOverlay
-                        ? `<strong>สีกราฟ:</strong> สีพื้นหลัก = ${baseName} | จุดประกอบ = ${overlayName}`
-                        : `<strong>สีกราฟ:</strong> สีพื้นหลัก = ${baseName} (ไม่มีการระบายสีคู่พรรค)`;
-
-                    document.getElementById("barColorLegend").innerHTML =
-                        legendText;
-                    document.getElementById("doughnutColorLegend").innerHTML =
-                        legendText;
                 }
 
                 // 2. Chart: Top 10 Areas by Ghost Votes
@@ -1345,17 +1344,14 @@
                 });
             }
 
-            // Initialize toggle buttons and legends after first load
-            function initializeToggles() {
-                updateToggleButtons();
-                updateColorLegends();
-            }
-
             // Call loadData immediately
             loadData();
 
-            // Initialize toggles after data loads (small delay to ensure DOM is ready)
-            setTimeout(initializeToggles, 500);
+            // Initialize toggle buttons after data loads (small delay to ensure DOM is ready)
+            setTimeout(() => {
+                updateToggleButtons();
+                updateColorLegends();
+            }, 500);
         </script>
     </body>
 </html>
