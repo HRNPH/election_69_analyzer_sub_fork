@@ -826,6 +826,54 @@
                         .join("");
                 }
 
+                // Custom plugin to draw PL party color dots/splashes on bars
+                const partyDotsPlugin = {
+                    id: "partyDotsOverlay",
+                    afterDatasetsDraw(chart, args, options) {
+                        const { ctx } = chart;
+                        const dataset = chart.getDatasetMeta(0);
+
+                        dataset.data.forEach((datapoint, index) => {
+                            const item = top10[index];
+                            const plInfo = getPartyInfo(item.pl_twin_party);
+                            const plColor = plInfo.color;
+
+                            const { x, y, width, height } =
+                                dataset.dataset.getBarProps(index, "x", "y");
+
+                            // Draw dots/splashes pattern on the bar
+                            ctx.save();
+                            ctx.fillStyle = plColor;
+                            ctx.globalAlpha = 0.6;
+
+                            // Draw random-looking dots scattered on the bar
+                            const dotSize = 4;
+                            const numDots = Math.floor(height / 12); // More dots for taller bars
+
+                            // Use a seeded random based on index for consistent dots
+                            for (let i = 0; i < numDots; i++) {
+                                const seed = (index * 100 + i) * 9301 + 49297;
+                                const random = (seed % 233280) / 233280;
+
+                                const dotX = x + random * width;
+                                const dotY = y + (i / numDots) * height + 4;
+
+                                ctx.beginPath();
+                                ctx.arc(
+                                    dotX,
+                                    dotY,
+                                    dotSize / 2,
+                                    0,
+                                    Math.PI * 2,
+                                );
+                                ctx.fill();
+                            }
+
+                            ctx.restore();
+                        });
+                    },
+                };
+
                 new Chart(document.getElementById("topAreaChart"), {
                     type: "bar",
                     data: {
@@ -837,16 +885,18 @@
                             {
                                 label: "คะแนนพรรคแฝด",
                                 data: top10.map((a) => a.pl_twin_votes),
-                                backgroundColor: top10.map(
-                                    (a) =>
-                                        numberColors[a.mp_winner_number] ||
-                                        "#666",
-                                ),
-                                borderColor: "rgba(0,0,0,0.1)",
+                                backgroundColor: top10.map((a) => {
+                                    const mpInfo = getPartyInfo(
+                                        a.mp_winner_party,
+                                    );
+                                    return mpInfo.color;
+                                }),
+                                borderColor: "rgba(0,0,0,0.15)",
                                 borderWidth: 1,
                             },
                         ],
                     },
+                    plugins: [partyDotsPlugin],
                     options: {
                         responsive: true,
                         plugins: {
