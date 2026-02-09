@@ -27,22 +27,22 @@
     <div class="summary-stats">
         <div class="stat-box">
             <div class="stat-value" id="total-anomalies">-</div>
-            <div class="stat-label">เขตที่น่าสงสัยทั้งหมด</div>
+            <div class="stat-label">เขตที่พบคะแนนผิดปกติ</div>
         </div>
         <div class="stat-box">
             <div class="stat-value" id="top-party">-</div>
-            <div class="stat-label">พรรคแฝดที่ถูกพบมากที่สุด</div>
+            <div class="stat-label">พรรคบัญชีรายชื่อที่ได้ประโยชน์สูงสุด</div>
         </div>
         <div class="stat-box">
             <div class="stat-value" id="max-votes">-</div>
-            <div class="stat-label">คะแนนผีสูงสุด (เขตเดียว)</div>
+            <div class="stat-label">คะแนนหลงผิดสูงสุด (ต่อเขต)</div>
         </div>
     </div>
 
     <div class="card">
-        <h3>สมมติฐาน: "ซื้อ 1 แถม 2" (ปรากฏการณ์เบอร์แฝด)</h3>
-        <p>หากผู้สมัคร ส.ส. ชนะด้วย <strong>เบอร์ X</strong>, พรรคบัญชีรายชื่อที่ได้ <strong>เบอร์ X</strong> (ซึ่งอาจไม่เกี่ยวข้องกัน) จะมีความนิยมพุ่งสูงขึ้นอย่างผิดปกติหรือไม่?</p>
-        <p><em>การตรวจสอบ: ไม่นับรวมพรรคใหญ่ (6, 9), พรรคเลขตัวเดียว (1-5, 7-8) ติดอันดับ Top 7 อย่างเหนือความคาดหมายหรือไม่?</em></p>
+        <h3>🔎 ปรากฏการณ์ "กาเบอร์เดิม" (กาบัตร 2 ใบเบอร์เดียวกัน)</h3>
+        <p>เกิดอะไรขึ้นเมื่อคนเลือก <strong>ส.ส. เขต เบอร์ X</strong> แล้วเผลอไปกาบัตรบัญชีรายชื่อ <strong>เบอร์ X</strong> ด้วย?</p>
+        <p><em>สิ่งที่ตรวจพบ: พรรคบัญชีรายชื่อที่คนอาจไม่รู้จัก แต่โชคดีได้ "เบอร์เดียวกับ ส.ส. ที่ชนะในเขตนั้น" กลับมีคะแนนสูงขึ้นมาอย่างผิดสังเกต</em></p>
     </div>
 
     <div class="card">
@@ -61,12 +61,12 @@
         <table id="anomalyTable">
             <thead>
                 <tr>
-                    <th>เขต</th>
-                    <th>ส.ส. ผู้ชนะ</th>
-                    <th>พรรคแฝด (ปาร์ตี้ลิสต์)</th>
-                    <th>อันดับแฝด</th>
-                    <th>คะแนนผี</th>
-                    <th>อัตราส่วน (PL/MP)</th>
+                    <th>จังหวัด / เขต</th>
+                    <th>ส.ส. เขตที่ชนะ</th>
+                    <th>พรรคบัญชีรายชื่อ (เบอร์เดียวกัน)</th>
+                    <th>อันดับที่ได้</th>
+                    <th>คะแนนที่สงสัย</th>
+                    <th>% เทียบกับ ส.ส.</th>
                 </tr>
             </thead>
             <tbody></tbody>
@@ -152,16 +152,21 @@
             const row = `<tr>
                 <td>
                     <div style="font-weight:bold">${location}</div>
-                    <div style="font-size:0.8em; color:#666">รหัส ${a.area_code}</div>
+                    <div style="font-size:0.8em; color:#666">รหัสเขต ${a.area_code}</div>
                 </td>
                 <td>
-                    <strong>#${a.mp_winner_number}</strong> 
-                    (<img src="img/${a.mp_winner_party}.webp" style="height: 20px; vertical-align: middle;" onerror="this.style.display='none'"> 
-                    <span style="color:${mpParty.color}">${mpParty.name}</span>)
+                    <div style="font-size:1.1em; font-weight:bold; color:#000;">เบอร์ ${a.mp_winner_number}</div>
+                    <div style="display:flex; align-items:center; gap:4px;">
+                         <img src="img/${a.mp_winner_party}.webp" style="height: 16px;" onerror="this.style.display='none'"> 
+                         <span style="font-size:0.9em; color:${mpParty.color}">${mpParty.name}</span>
+                    </div>
                 </td>
-                <td class="highlight">
-                    <img src="img/${a.pl_twin_party}.webp" style="height: 24px; vertical-align: middle; margin-right: 5px;" onerror="this.style.display='none'"> 
-                    <span style="color:${plParty.color}; font-weight:bold">${plParty.name}</span>
+                <td class="highlight" style="background-color:#fff5f5;">
+                    <div style="font-size:1.1em; font-weight:bold; color:#d32f2f;">เบอร์ ${a.mp_winner_number}</div>
+                    <div style="display:flex; align-items:center; gap:4px;">
+                        <img src="img/${a.pl_twin_party}.webp" style="height: 16px;" onerror="this.style.display='none'"> 
+                        <span style="font-size:0.9em; font-weight:bold; color:${plParty.color}">${plParty.name}</span>
+                    </div>
                 </td>
                 <td>${a.pl_twin_rank}</td>
                 <td>${a.pl_twin_votes.toLocaleString()}</td>
