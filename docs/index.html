@@ -318,12 +318,31 @@
                                 <br />(สีของแท่งกราฟแบ่งตาม
                                 <strong>หมายเลขเบอร์ผู้สมัคร</strong>)
                             </p>
+
+                            <!-- Toggle Controls -->
+                            <div class="d-flex gap-2 mb-2 flex-wrap">
+                                <button
+                                    class="btn btn-sm btn-outline-primary"
+                                    onclick="toggleOverlay()"
+                                    id="overlayToggleBtn"
+                                >
+                                    ✨ ระบายสีคู่พรรค: เปิด
+                                </button>
+                                <button
+                                    class="btn btn-sm btn-outline-secondary"
+                                    onclick="toggleBaseColor()"
+                                    id="baseColorToggleBtn"
+                                >
+                                    🎨 สีหลัก: พรรคบัญชีรายชื่อ (PL)
+                                </button>
+                            </div>
+
                             <div
                                 class="alert alert-info d-flex align-items-center mb-2"
                                 style="font-size: 0.8rem"
                             >
                                 <div class="me-2">🎨</div>
-                                <div class="small">
+                                <div class="small" id="barColorLegend">
                                     <strong>สีกราฟ:</strong> สีพื้นหลัก =
                                     พรรคบัญชีรายชื่อ (PL) | จุดประกอบ = พรรค
                                     ส.ส. เขต (MP)
@@ -349,12 +368,31 @@
                                 (1-9)
                                 ที่เป็นคู่แฝดแล้วเกิดปรากฏการณ์คะแนนพุ่งบ่อยที่สุด
                             </p>
+
+                            <!-- Toggle Controls -->
+                            <div class="d-flex gap-2 mb-2 flex-wrap">
+                                <button
+                                    class="btn btn-sm btn-outline-primary"
+                                    onclick="toggleOverlay()"
+                                    id="overlayToggleBtn2"
+                                >
+                                    ✨ ระบายสีคู่พรรค: เปิด
+                                </button>
+                                <button
+                                    class="btn btn-sm btn-outline-secondary"
+                                    onclick="toggleBaseColor()"
+                                    id="baseColorToggleBtn2"
+                                >
+                                    🎨 สีหลัก: พรรคบัญชีรายชื่อ (PL)
+                                </button>
+                            </div>
+
                             <div
                                 class="alert alert-info d-flex align-items-center mb-2"
                                 style="font-size: 0.8rem"
                             >
                                 <div class="me-2">🎨</div>
-                                <div class="small">
+                                <div class="small" id="doughnutColorLegend">
                                     <strong>สีกราฟ:</strong> สีพื้นหลัก =
                                     พรรคบัญชีรายชื่อ (PL) | จุดประกอบ = พรรค
                                     ส.ส. เขต (MP)
@@ -518,6 +556,10 @@
             let allAnomalies = [];
             let displayedCount = 0;
             const ITEMS_PER_PAGE = 20;
+
+            // Toggle state variables
+            let showOverlay = true; // Show party pair overlay (dots)
+            let baseColorIsPL = true; // true = PL is base, false = MP is base
 
             // Data mappings
             const partyMap = {};
@@ -827,24 +869,92 @@
                     canvas.height = 20;
                     const ctx = canvas.getContext("2d");
 
-                    // Fill with PL party color (base) - right side party
-                    ctx.fillStyle = plColor;
+                    // Determine base and overlay colors based on toggle
+                    const baseColor = baseColorIsPL ? plColor : mpColor;
+                    const overlayColor = baseColorIsPL ? mpColor : plColor;
+
+                    // Fill with base color
+                    ctx.fillStyle = baseColor;
                     ctx.fillRect(0, 0, 20, 20);
 
-                    // Add MP party color as scattered dots (splashes) - left side party
-                    ctx.fillStyle = mpColor;
-                    ctx.globalAlpha = 0.5;
+                    // Add overlay color as scattered dots (if enabled)
+                    if (showOverlay) {
+                        ctx.fillStyle = overlayColor;
+                        ctx.globalAlpha = 0.5;
 
-                    // Create consistent dot pattern using seed
-                    for (let i = 0; i < 15; i++) {
-                        const x = (seed * (i + 1) * 7) % 20;
-                        const y = (seed * (i + 1) * 13) % 20;
-                        ctx.beginPath();
-                        ctx.arc(x, y, 2, 0, Math.PI * 2);
-                        ctx.fill();
+                        // Create consistent dot pattern using seed
+                        for (let i = 0; i < 15; i++) {
+                            const x = (seed * (i + 1) * 7) % 20;
+                            const y = (seed * (i + 1) * 13) % 20;
+                            ctx.beginPath();
+                            ctx.arc(x, y, 2, 0, Math.PI * 2);
+                            ctx.fill();
+                        }
                     }
 
                     return ctx.createPattern(canvas, "repeat");
+                }
+
+                // Toggle functions
+                function toggleOverlay() {
+                    showOverlay = !showOverlay;
+                    updateToggleButtons();
+                    updateColorLegends();
+                    // Re-render charts
+                    renderDashboard({ anomalies: allAnomalies });
+                }
+
+                function toggleBaseColor() {
+                    baseColorIsPL = !baseColorIsPL;
+                    updateToggleButtons();
+                    updateColorLegends();
+                    // Re-render charts
+                    renderDashboard({ anomalies: allAnomalies });
+                }
+
+                function updateToggleButtons() {
+                    const overlayBtns = document.querySelectorAll(
+                        '[id^="overlayToggleBtn"]',
+                    );
+                    const baseBtns = document.querySelectorAll(
+                        '[id^="baseColorToggleBtn"]',
+                    );
+
+                    overlayBtns.forEach((btn) => {
+                        btn.textContent = showOverlay
+                            ? "✨ ระบายสีคู่พรรค: เปิด"
+                            : "✨ ระบายสีคู่พรรค: ปิด";
+                        btn.classList.toggle(
+                            "btn-outline-primary",
+                            !showOverlay,
+                        );
+                        btn.classList.toggle("btn-primary", showOverlay);
+                    });
+
+                    baseBtns.forEach((btn) => {
+                        const baseName = baseColorIsPL
+                            ? "พรรคบัญชีรายชื่อ (PL)"
+                            : "พรรค ส.ส. เขต (MP)";
+                        btn.textContent = `🎨 สีหลัก: ${baseName}`;
+                    });
+                }
+
+                function updateColorLegends() {
+                    const baseName = baseColorIsPL
+                        ? "พรรคบัญชีรายชื่อ (PL)"
+                        : "พรรค ส.ส. เขต (MP)";
+                    const overlayName = baseColorIsPL
+                        ? "พรรค ส.ส. เขต (MP)"
+                        : "พรรคบัญชีรายชื่อ (PL)";
+
+                    const legendText = showOverlay
+                        ? `<strong>สีกราฟ:</strong> สีพื้นหลัก = ${baseName} | จุดประกอบ = ${overlayName}`
+                        : `<strong>สีกราฟ:</strong> สีพื้นหลัก = ${baseName} (ไม่มีการระบายสีคู่พรรค)`;
+
+                    document.getElementById("barColorLegend").innerHTML =
+                        legendText;
+                    document.getElementById("doughnutColorLegend").innerHTML =
+                        legendText;
                 }
 
                 // 2. Chart: Top 10 Areas by Ghost Votes
@@ -902,10 +1012,15 @@
                                 data: top10.map((a) => a.pl_twin_votes),
                                 backgroundColor: barBackgrounds,
                                 borderColor: top10.map((a) => {
+                                    const mpInfo = getPartyInfo(
+                                        a.mp_winner_party,
+                                    );
                                     const plInfo = getPartyInfo(
                                         a.pl_twin_party,
                                     );
-                                    return plInfo.color;
+                                    return baseColorIsPL
+                                        ? plInfo.color
+                                        : mpInfo.color;
                                 }),
                                 borderWidth: 2,
                             },
@@ -1196,8 +1311,17 @@
                 });
             }
 
+            // Initialize toggle buttons and legends after first load
+            function initializeToggles() {
+                updateToggleButtons();
+                updateColorLegends();
+            }
+
             // Call loadData immediately
             loadData();
+
+            // Initialize toggles after data loads (small delay to ensure DOM is ready)
+            setTimeout(initializeToggles, 500);
         </script>
     </body>
 </html>
