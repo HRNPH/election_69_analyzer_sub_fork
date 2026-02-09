@@ -167,7 +167,7 @@
                     <div class="card-body">
                         <p class="text-secondary small mb-4">
                             10 เขตเลือกตั้งที่มีจำนวนบัตรบัญชีรายชื่อ "หลงผิด" สูงที่สุด
-                            (คะแนนที่เลือกพรรคแฝดเบอร์เดียวกับ ส.ส. เขต)
+                            <br>(สีของแท่งกราฟแบ่งตาม <strong>หมายเลขเบอร์ผู้สมัคร</strong>)
                         </p>
                         <canvas id="topAreaChart"></canvas>
                     </div>
@@ -181,7 +181,7 @@
                     </div>
                     <div class="card-body">
                         <p class="text-secondary small mb-4">
-                            สัดส่วนว่า "เบอร์" หมายเลขใด (เช่น เบอร์ 1, 2, 3) 
+                            สัดส่วนว่า <strong>"เบอร์"</strong> หมายเลขใด (1-9) 
                             ที่เป็นคู่แฝดแล้วเกิดปรากฏการณ์คะแนนพุ่งบ่อยที่สุด
                         </p>
                         <canvas id="numberDistChart"></canvas>
@@ -239,7 +239,7 @@
             </div>
         </div>
 
-        <!-- Party Summary Table (Renamed to 'Top Beneficiary Parties') -->
+        <!-- Party Summary Table -->
         <div class="card shadow-sm mb-5">
             <div class="card-header">
                 <h4 class="mb-0">🏆 สรุปพรรคบัญชีรายชื่อที่ได้อานิสงส์สูงสุด (Top Beneficiaries)</h4>
@@ -303,6 +303,20 @@
     // Data mappings
     const partyMap = {};
     const provinceMap = {};
+
+    // Defined Color Palette for Numbers 1-10
+    const numberColors = {
+        1: '#ef476f', // Pink/Red
+        2: '#fca311', // Orange/Gold (Theme Accent)
+        3: '#06d6a0', // Green
+        4: '#118ab2', // Blue
+        5: '#073b4c', // Dark Blue
+        6: '#9d4edd', // Purple
+        7: '#ffbe0b', // Yellow
+        8: '#fb5607', // Orange Red
+        9: '#3a86ff', // Soft Blue
+        0: '#8338ec'  // Violet
+    };
 
     async function loadData() {
         try {
@@ -535,11 +549,16 @@
         document.getElementById('total-anomalies').textContent = anomalies.length;
         document.getElementById('max-votes').textContent = Math.max(...anomalies.map(a => a.pl_twin_votes)).toLocaleString();
 
-        // Count by Twin Party
-        const partyCounts = {};
+        // Calculate counts by NUMBER (not party) as requested
+        const numberCounts = {};
         anomalies.forEach(a => {
-            partyCounts[a.pl_twin_party] = (partyCounts[a.pl_twin_party] || 0) + 1;
+            const num = a.mp_winner_number;
+            numberCounts[num] = (numberCounts[num] || 0) + 1;
         });
+        
+        // Find top PARTY for the stat box (still useful context)
+        const partyCounts = {};
+        anomalies.forEach(a => { partyCounts[a.pl_twin_party] = (partyCounts[a.pl_twin_party] || 0) + 1; });
         const topPartyCode = Object.entries(partyCounts).sort((a,b) => b[1] - a[1])[0];
         
         if (topPartyCode) {
@@ -560,12 +579,13 @@
             data: {
                 labels: top10.map(a => {
                     const prov = getProvinceName(a.area_code);
-                    return `${prov} (แฝด #${a.mp_winner_number})`;
+                    return prov; // Simplified label
                 }),
                 datasets: [{
-                    label: 'คะแนนพรรคแฝดที่น่าสงสัย',
+                    label: 'คะแนนพรรคแฝด',
                     data: top10.map(a => a.pl_twin_votes),
-                    backgroundColor: top10.map(a => getPartyInfo(a.pl_twin_party).color), // Use party color
+                    // Use Number-based colors
+                    backgroundColor: top10.map(a => numberColors[a.mp_winner_number] || '#666'), 
                     borderColor: 'rgba(0,0,0,0.1)',
                     borderWidth: 1
                 }]
@@ -575,37 +595,64 @@
                 plugins: {
                     legend: { display: false },
                     tooltip: {
+                        backgroundColor: 'rgba(20, 33, 61, 0.9)',
+                        titleFont: { size: 14, family: 'Prompt' },
+                        bodyFont: { size: 13, family: 'Prompt' },
+                        padding: 12,
                         callbacks: {
+                            // Enhanced Tooltip
+                            title: (items) => {
+                                const index = items[0].dataIndex;
+                                return `${getProvinceName(top10[index].area_code)}`;
+                            },
+                            label: (context) => {
+                                return `คะแนนพรรคแฝด: ${context.raw.toLocaleString()}`;
+                            },
                             afterLabel: (context) => {
                                 const index = context.dataIndex;
                                 const item = top10[index];
                                 const mpP = getPartyInfo(item.mp_winner_party);
                                 const plP = getPartyInfo(item.pl_twin_party);
-                                return `ส.ส.พรรค: ${mpP.name} | แฝดปาร์ตี้ลิสต์: ${plP.name} (อันดับ ${item.pl_twin_rank})`;
+                                return [
+                                    `--------------------------`,
+                                    `🏆 ส.ส. เขต: เบอร์ ${item.mp_winner_number} (${mpP.name})`,
+                                    `👻 แฝดปาร์ตี้ลิสต์: เบอร์ ${item.mp_winner_number} (${plP.name})`,
+                                    `📊 อันดับคะแนนแฝด: ที่ ${item.pl_twin_rank}`
+                                ];
                             }
                         }
                     }
                 },
-                scales: { y: { beginAtZero: true, title: { display: true, text: 'คะแนนที่ได้รับ' } } }
+                scales: { y: { beginAtZero: true, title: { display: true, text: 'คะแนน' } } }
             }
         });
 
-        // Improve color mapping for doughnut
-        const sortedParties = Object.keys(partyCounts).sort((a,b) => partyCounts[b] - partyCounts[a]);
-        const doughnutData = sortedParties.map(code => partyCounts[code]);
-        const doughnutLabels = sortedParties.map(code => getPartyInfo(code).name);
-        const doughnutColors = sortedParties.map(code => getPartyInfo(code).color);
+        // 3. Chart: Doughnut by NUMBER (1, 2, 3...)
+        const sortedNumbers = Object.keys(numberCounts).sort((a,b) => numberCounts[b] - numberCounts[a]);
         
         new Chart(document.getElementById('numberDistChart'), {
             type: 'doughnut',
             data: {
-                labels: doughnutLabels,
+                labels: sortedNumbers.map(n => `เบอร์ ${n}`),
                 datasets: [{
-                    data: doughnutData,
-                    backgroundColor: doughnutColors
+                    data: sortedNumbers.map(n => numberCounts[n]),
+                    backgroundColor: sortedNumbers.map(n => numberColors[n] || '#ccc'),
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
                 }]
             },
-            options: { responsive: true, maintainAspectRatio: false }
+            options: { 
+                responsive: true, 
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'right', labels: { font: { family: 'Prompt' } } },
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => ` พบ ${ctx.raw} เขต (${((ctx.raw/anomalies.length)*100).toFixed(1)}%)`
+                        }
+                    }
+                } 
+            }
         });
     }
 
