@@ -76,6 +76,10 @@ def main():
         # Find this party in the PL results
         pl_twin_entry = next((e for e in pl_entries if e.get("partyCode") == target_party_id), None)
         
+        # New: Find MP Candidate for this Twin Party in the same area
+        mp_twin_entry = next((e for e in mp_entries if e.get("partyCode") == target_party_id), None)
+        mp_twin_votes = mp_twin_entry.get("voteTotal", 0) if mp_twin_entry else 0
+        
         if pl_twin_entry:
             pl_votes = pl_twin_entry.get("voteTotal", 0)
             pl_rank = pl_twin_entry.get("rank")
@@ -113,6 +117,7 @@ def main():
                         "pl_twin_party": target_party_id,
                         "pl_twin_rank": pl_rank,
                         "pl_twin_votes": pl_votes,
+                        "mp_twin_candidate_votes": mp_twin_votes,
                         "ratio_pl_to_mp": round(ratio, 4), # Ratio of Twin PL votes to Winner MP votes
                         "anomaly_score": pl_votes # Simple score: raw votes obtained by the twin party
                     })
@@ -138,10 +143,10 @@ def main():
     
     # Print Top 10 Summary
     print("\n=== Top 10 Anomalies (Sorted by Twin Party Votes) ===")
-    print(f"{'Area':<6} | {'MP Num':<6} | {'Twin Party':<12} | {'Twin Rank':<10} | {'Twin Votes':<10}")
-    print("-" * 60)
+    print(f"{'Area':<6} | {'MP Num':<6} | {'Twin Party':<12} | {'Twin Rank':<10} | {'Twin PL Votes':<14} | {'Twin MP Votes':<14}")
+    print("-" * 80)
     for a in anomalies[:10]:
-        print(f"{a['area_code']:<6} | {a['mp_winner_number']:<6} | {a['pl_twin_party']:<12} | {a['pl_twin_rank']:<10} | {a['pl_twin_votes']:<10}")
+        print(f"{a['area_code']:<6} | {a['mp_winner_number']:<6} | {a['pl_twin_party']:<12} | {a['pl_twin_rank']:<10} | {a['pl_twin_votes']:<14} | {a['mp_twin_candidate_votes']:<14}")
 
 if __name__ == "__main__":
     main()
