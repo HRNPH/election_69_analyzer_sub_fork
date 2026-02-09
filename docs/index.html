@@ -934,6 +934,92 @@
                     (a, b) => numberCounts[b] - numberCounts[a],
                 );
 
+                // Create party pair patterns for doughnut segments
+                const doughnutPatterns = sortedNumbers.map((num) => {
+                    // Find most common parties for this number
+                    const numAnomalies = anomalies.filter(
+                        (a) => a.mp_winner_number === num,
+                    );
+
+                    const mpPartyCount = {};
+                    const plPartyCount = {};
+                    numAnomalies.forEach((a) => {
+                        mpPartyCount[a.mp_winner_party] =
+                            (mpPartyCount[a.mp_winner_party] || 0) + 1;
+                        plPartyCount[a.pl_twin_party] =
+                            (plPartyCount[a.pl_twin_party] || 0) + 1;
+                    });
+
+                    const topMpParty = Object.entries(mpPartyCount).sort(
+                        (a, b) => b[1] - a[1],
+                    )[0];
+                    const topPlParty = Object.entries(plPartyCount).sort(
+                        (a, b) => b[1] - a[1],
+                    )[0];
+
+                    const mpInfo = topMpParty
+                        ? getPartyInfo(topMpParty[0])
+                        : { color: numberColors[num] || "#ccc" };
+                    const plInfo = topPlParty
+                        ? getPartyInfo(topPlParty[0])
+                        : { color: numberColors[num] || "#ccc" };
+
+                    // Create canvas pattern
+                    const canvas = document.createElement("canvas");
+                    canvas.width = 20;
+                    canvas.height = 20;
+                    const ctx = canvas.getContext("2d");
+
+                    // Fill with MP party color (base)
+                    ctx.fillStyle = mpInfo.color;
+                    ctx.fillRect(0, 0, 20, 20);
+
+                    // Add PL party color as scattered dots
+                    ctx.fillStyle = plInfo.color;
+                    ctx.globalAlpha = 0.5;
+
+                    // Create consistent dot pattern
+                    for (let i = 0; i < 15; i++) {
+                        const x = (num * (i + 1) * 7) % 20;
+                        const y = (num * (i + 1) * 13) % 20;
+                        ctx.beginPath();
+                        ctx.arc(x, y, 2, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+
+                    return ctx.createPattern(canvas, "repeat");
+                });
+
+                // Store party info for legend/tooltips
+                const numberPartyPairs = {};
+                sortedNumbers.forEach((num) => {
+                    const numAnomalies = anomalies.filter(
+                        (a) => a.mp_winner_number === num,
+                    );
+                    const mpPartyCount = {};
+                    const plPartyCount = {};
+                    numAnomalies.forEach((a) => {
+                        mpPartyCount[a.mp_winner_party] =
+                            (mpPartyCount[a.mp_winner_party] || 0) + 1;
+                        plPartyCount[a.pl_twin_party] =
+                            (plPartyCount[a.pl_twin_party] || 0) + 1;
+                    });
+                    const topMpParty = Object.entries(mpPartyCount).sort(
+                        (a, b) => b[1] - a[1],
+                    )[0];
+                    const topPlParty = Object.entries(plPartyCount).sort(
+                        (a, b) => b[1] - a[1],
+                    )[0];
+                    numberPartyPairs[num] = {
+                        mpParty: topMpParty
+                            ? getPartyInfo(topMpParty[0])
+                            : null,
+                        plParty: topPlParty
+                            ? getPartyInfo(topPlParty[0])
+                            : null,
+                    };
+                });
+
                 // Add number icons above the doughnut chart
                 const numberDistIcons =
                     document.getElementById("numberDistIcons");
@@ -1000,9 +1086,7 @@
                         datasets: [
                             {
                                 data: sortedNumbers.map((n) => numberCounts[n]),
-                                backgroundColor: sortedNumbers.map(
-                                    (n) => numberColors[n] || "#ccc",
-                                ),
+                                backgroundColor: doughnutPatterns,
                                 borderWidth: 2,
                                 borderColor: "#ffffff",
                             },
