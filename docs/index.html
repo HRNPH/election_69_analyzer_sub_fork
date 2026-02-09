@@ -1008,7 +1008,9 @@
                         }),
                         datasets: [
                             {
-                                label: "คะแนนพรรคแฝด",
+                                label: baseColorIsPL
+                                    ? "คะแนนพรรคบัญชีรายชื่อ (PL)"
+                                    : "คะแนนพรรค ส.ส. เขต (MP)",
                                 data: top10.map((a) => a.pl_twin_votes),
                                 backgroundColor: barBackgrounds,
                                 borderColor: top10.map((a) => {
@@ -1041,7 +1043,10 @@
                                         return `${getProvinceName(top10[index].area_code)}`;
                                     },
                                     label: (context) => {
-                                        return `คะแนนพรรคแฝด: ${context.raw.toLocaleString()}`;
+                                        const partyType = baseColorIsPL
+                                            ? "พรรคบัญชีรายชื่อ (PL)"
+                                            : "พรรค ส.ส. เขต (MP)";
+                                        return `คะแนน${partyType}: ${context.raw.toLocaleString()}`;
                                     },
                                     afterBody: (context) => {
                                         const index = context[0].dataIndex;
@@ -1052,14 +1057,29 @@
                                         const plP = getPartyInfo(
                                             item.pl_twin_party,
                                         );
+
+                                        // Swap labels based on baseColorIsPL
+                                        const leftLabel = baseColorIsPL
+                                            ? "ส.ส. เขต (MP)"
+                                            : "พรรคบัญชีรายชื่อ (PL)";
+                                        const rightLabel = baseColorIsPL
+                                            ? "พรรคบัญชีรายชื่อ (PL)"
+                                            : "ส.ส. เขต (MP)";
+                                        const leftParty = baseColorIsPL
+                                            ? mpP
+                                            : plP;
+                                        const rightParty = baseColorIsPL
+                                            ? plP
+                                            : mpP;
+
                                         return `
 ┌─────────────────────────────────┐
-│  🏆 ส.ส. เขต: เบอร์ ${item.mp_winner_number}        │
-│  พรรค: ${mpP.name}
+│  🏆 ${leftLabel}: เบอร์ ${item.mp_winner_number}        │
+│  พรรค: ${leftParty.name}
 └─────────────────────────────────┘
 ┌─────────────────────────────────┐
-│  👻 แฝด พล.ท. (เบอร์ ${item.mp_winner_number})        │
-│  พรรค: ${plP.name}
+│  👻 แฝด ${rightLabel} (เบอร์ ${item.mp_winner_number})        │
+│  พรรค: ${rightParty.name}
 │  อันดับ: ที่ ${item.pl_twin_rank}
 └─────────────────────────────────┘`;
                                     },
@@ -1288,19 +1308,33 @@
                                             plPartyCount,
                                         ).sort((a, b) => b[1] - a[1])[0];
 
+                                        // Use labels based on toggle state
+                                        const baseLabel = baseColorIsPL
+                                            ? "พล.ท. แฝด (PL)"
+                                            : "ส.ส. เขต (MP)";
+                                        const overlayLabel = baseColorIsPL
+                                            ? "ส.ส. เขต (MP)"
+                                            : "พล.ท. แฝด (PL)";
+                                        const baseParty = baseColorIsPL
+                                            ? topPlParty
+                                            : topMpParty;
+                                        const overlayParty = baseColorIsPL
+                                            ? topMpParty
+                                            : topPlParty;
+
                                         let result =
                                             "\nคู่พรรคที่พบบ่อยที่สุด:";
-                                        if (topMpParty) {
-                                            const mpInfo = getPartyInfo(
-                                                topMpParty[0],
+                                        if (baseParty) {
+                                            const baseInfo = getPartyInfo(
+                                                baseParty[0],
                                             );
-                                            result += `\n  ส.ส. เขต: ${mpInfo.name} (${topMpParty[1]} เขต)`;
+                                            result += `\n  🎨 ${baseLabel}: ${baseInfo.name} (${baseParty[1]} เขต)`;
                                         }
-                                        if (topPlParty) {
-                                            const plInfo = getPartyInfo(
-                                                topPlParty[0],
+                                        if (overlayParty) {
+                                            const overlayInfo = getPartyInfo(
+                                                overlayParty[0],
                                             );
-                                            result += `\n  พล.ท. แฝด: ${plInfo.name} (${topPlParty[1]} เขต)`;
+                                            result += `\n  ✨ ${overlayLabel}: ${overlayInfo.name} (${overlayParty[1]} เขต)`;
                                         }
                                         return result;
                                     },
