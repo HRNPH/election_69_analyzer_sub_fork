@@ -15,7 +15,9 @@
       "pl_twin_votes": 6288,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1289,
-      "anomaly_score": 6288
+      "anomaly_score": 6288,
+      "province_id": "70",
+      "province_name": "ราชบุรี"
     },
     {
       "area_code": "6004",
@@ -27,7 +29,9 @@
       "pl_twin_votes": 5959,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1155,
-      "anomaly_score": 5959
+      "anomaly_score": 5959,
+      "province_id": "60",
+      "province_name": "นครสวรรค์"
     },
     {
       "area_code": "2503",
@@ -39,7 +43,9 @@
       "pl_twin_votes": 5614,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1308,
-      "anomaly_score": 5614
+      "anomaly_score": 5614,
+      "province_id": "25",
+      "province_name": "ปราจีนบุรี"
     },
     {
       "area_code": "6201",
@@ -51,7 +57,9 @@
       "pl_twin_votes": 5574,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1313,
-      "anomaly_score": 5574
+      "anomaly_score": 5574,
+      "province_id": "62",
+      "province_name": "กำแพงเพชร"
     },
     {
       "area_code": "6003",
@@ -63,7 +71,9 @@
       "pl_twin_votes": 5407,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1074,
-      "anomaly_score": 5407
+      "anomaly_score": 5407,
+      "province_id": "60",
+      "province_name": "นครสวรรค์"
     },
     {
       "area_code": "1904",
@@ -75,7 +85,9 @@
       "pl_twin_votes": 5095,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1122,
-      "anomaly_score": 5095
+      "anomaly_score": 5095,
+      "province_id": "19",
+      "province_name": "สระบุรี"
     },
     {
       "area_code": "6602",
@@ -87,7 +99,9 @@
       "pl_twin_votes": 4792,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1085,
-      "anomaly_score": 4792
+      "anomaly_score": 4792,
+      "province_id": "66",
+      "province_name": "พิจิตร"
     },
     {
       "area_code": "7105",
@@ -99,7 +113,9 @@
       "pl_twin_votes": 4700,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.127,
-      "anomaly_score": 4700
+      "anomaly_score": 4700,
+      "province_id": "71",
+      "province_name": "กาญจนบุรี"
     },
     {
       "area_code": "7603",
@@ -111,7 +127,9 @@
       "pl_twin_votes": 4697,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.07,
-      "anomaly_score": 4697
+      "anomaly_score": 4697,
+      "province_id": "76",
+      "province_name": "เพชรบุรี"
     },
     {
       "area_code": "7104",
@@ -123,7 +141,9 @@
       "pl_twin_votes": 4660,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0944,
-      "anomaly_score": 4660
+      "anomaly_score": 4660,
+      "province_id": "71",
+      "province_name": "กาญจนบุรี"
     },
     {
       "area_code": "1902",
@@ -135,7 +155,9 @@
       "pl_twin_votes": 4474,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1282,
-      "anomaly_score": 4474
+      "anomaly_score": 4474,
+      "province_id": "19",
+      "province_name": "สระบุรี"
     },
     {
       "area_code": "4202",
@@ -147,7 +169,9 @@
       "pl_twin_votes": 4390,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1686,
-      "anomaly_score": 4390
+      "anomaly_score": 4390,
+      "province_id": "42",
+      "province_name": "เลย"
     },
     {
       "area_code": "1403",
@@ -159,7 +183,9 @@
       "pl_twin_votes": 4384,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0798,
-      "anomaly_score": 4384
+      "anomaly_score": 4384,
+      "province_id": "14",
+      "province_name": "พระนครศรีอยุธยา"
     },
     {
       "area_code": "3010",
@@ -171,7 +197,9 @@
       "pl_twin_votes": 4364,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.108,
-      "anomaly_score": 4364
+      "anomaly_score": 4364,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "1604",
@@ -183,7 +211,9 @@
       "pl_twin_votes": 4301,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0899,
-      "anomaly_score": 4301
+      "anomaly_score": 4301,
+      "province_id": "16",
+      "province_name": "ลพบุรี"
     },
     {
       "area_code": "6505",
@@ -195,7 +225,9 @@
       "pl_twin_votes": 4276,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1346,
-      "anomaly_score": 4276
+      "anomaly_score": 4276,
+      "province_id": "65",
+      "province_name": "พิษณุโลก"
     },
     {
       "area_code": "7102",
@@ -207,7 +239,9 @@
       "pl_twin_votes": 4275,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1132,
-      "anomaly_score": 4275
+      "anomaly_score": 4275,
+      "province_id": "71",
+      "province_name": "กาญจนบุรี"
     },
     {
       "area_code": "3405",
@@ -219,7 +253,9 @@
       "pl_twin_votes": 4255,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0909,
-      "anomaly_score": 4255
+      "anomaly_score": 4255,
+      "province_id": "34",
+      "province_name": "อุบลราชธานี"
     },
     {
       "area_code": "5702",
@@ -231,7 +267,9 @@
       "pl_twin_votes": 4255,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1299,
-      "anomaly_score": 4255
+      "anomaly_score": 4255,
+      "province_id": "57",
+      "province_name": "เชียงราย"
     },
     {
       "area_code": "3208",
@@ -243,7 +281,9 @@
       "pl_twin_votes": 4228,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0858,
-      "anomaly_score": 4228
+      "anomaly_score": 4228,
+      "province_id": "32",
+      "province_name": "สุรินทร์"
     },
     {
       "area_code": "6006",
@@ -255,7 +295,9 @@
       "pl_twin_votes": 4210,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1261,
-      "anomaly_score": 4210
+      "anomaly_score": 4210,
+      "province_id": "60",
+      "province_name": "นครสวรรค์"
     },
     {
       "area_code": "2401",
@@ -267,7 +309,9 @@
       "pl_twin_votes": 4193,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1134,
-      "anomaly_score": 4193
+      "anomaly_score": 4193,
+      "province_id": "24",
+      "province_name": "ฉะเชิงเทรา"
     },
     {
       "area_code": "6703",
@@ -279,7 +323,9 @@
       "pl_twin_votes": 4190,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1117,
-      "anomaly_score": 4190
+      "anomaly_score": 4190,
+      "province_id": "67",
+      "province_name": "เพชรบูรณ์"
     },
     {
       "area_code": "3007",
@@ -291,7 +337,9 @@
       "pl_twin_votes": 4171,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1117,
-      "anomaly_score": 4171
+      "anomaly_score": 4171,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "3603",
@@ -303,7 +351,9 @@
       "pl_twin_votes": 4169,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0942,
-      "anomaly_score": 4169
+      "anomaly_score": 4169,
+      "province_id": "36",
+      "province_name": "ชัยภูมิ"
     },
     {
       "area_code": "5010",
@@ -315,7 +365,9 @@
       "pl_twin_votes": 4126,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1281,
-      "anomaly_score": 4126
+      "anomaly_score": 4126,
+      "province_id": "50",
+      "province_name": "เชียงใหม่"
     },
     {
       "area_code": "2701",
@@ -327,7 +379,9 @@
       "pl_twin_votes": 4108,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.077,
-      "anomaly_score": 4108
+      "anomaly_score": 4108,
+      "province_id": "27",
+      "province_name": "สระแก้ว"
     },
     {
       "area_code": "4502",
@@ -339,7 +393,9 @@
       "pl_twin_votes": 4099,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0996,
-      "anomaly_score": 4099
+      "anomaly_score": 4099,
+      "province_id": "45",
+      "province_name": "ร้อยเอ็ด"
     },
     {
       "area_code": "6705",
@@ -351,7 +407,9 @@
       "pl_twin_votes": 4041,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0951,
-      "anomaly_score": 4041
+      "anomaly_score": 4041,
+      "province_id": "67",
+      "province_name": "เพชรบูรณ์"
     },
     {
       "area_code": "1701",
@@ -363,7 +421,9 @@
       "pl_twin_votes": 4033,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0652,
-      "anomaly_score": 4033
+      "anomaly_score": 4033,
+      "province_id": "17",
+      "province_name": "สิงห์บุรี"
     },
     {
       "area_code": "2004",
@@ -375,7 +435,9 @@
       "pl_twin_votes": 4008,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0931,
-      "anomaly_score": 4008
+      "anomaly_score": 4008,
+      "province_id": "20",
+      "province_name": "ชลบุรี"
     },
     {
       "area_code": "3410",
@@ -387,7 +449,9 @@
       "pl_twin_votes": 3981,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.067,
-      "anomaly_score": 3981
+      "anomaly_score": 3981,
+      "province_id": "34",
+      "province_name": "อุบลราชธานี"
     },
     {
       "area_code": "6402",
@@ -399,7 +463,9 @@
       "pl_twin_votes": 3973,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.127,
-      "anomaly_score": 3973
+      "anomaly_score": 3973,
+      "province_id": "64",
+      "province_name": "สุโขทัย"
     },
     {
       "area_code": "2403",
@@ -411,7 +477,9 @@
       "pl_twin_votes": 3968,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0799,
-      "anomaly_score": 3968
+      "anomaly_score": 3968,
+      "province_id": "24",
+      "province_name": "ฉะเชิงเทรา"
     },
     {
       "area_code": "6603",
@@ -423,7 +491,9 @@
       "pl_twin_votes": 3933,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1086,
-      "anomaly_score": 3933
+      "anomaly_score": 3933,
+      "province_id": "66",
+      "province_name": "พิจิตร"
     },
     {
       "area_code": "4009",
@@ -435,7 +505,9 @@
       "pl_twin_votes": 3905,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0973,
-      "anomaly_score": 3905
+      "anomaly_score": 3905,
+      "province_id": "40",
+      "province_name": "ขอนแก่น"
     },
     {
       "area_code": "3903",
@@ -447,7 +519,9 @@
       "pl_twin_votes": 3903,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1565,
-      "anomaly_score": 3903
+      "anomaly_score": 3903,
+      "province_id": "39",
+      "province_name": "หนองบัวลำภู"
     },
     {
       "area_code": "1502",
@@ -459,7 +533,9 @@
       "pl_twin_votes": 3899,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0679,
-      "anomaly_score": 3899
+      "anomaly_score": 3899,
+      "province_id": "15",
+      "province_name": "อ่างทอง"
     },
     {
       "area_code": "3606",
@@ -471,7 +547,9 @@
       "pl_twin_votes": 3880,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0811,
-      "anomaly_score": 3880
+      "anomaly_score": 3880,
+      "province_id": "36",
+      "province_name": "ชัยภูมิ"
     },
     {
       "area_code": "3309",
@@ -483,7 +561,9 @@
       "pl_twin_votes": 3826,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1033,
-      "anomaly_score": 3826
+      "anomaly_score": 3826,
+      "province_id": "33",
+      "province_name": "ศรีสะเกษ"
     },
     {
       "area_code": "3011",
@@ -495,7 +575,9 @@
       "pl_twin_votes": 3781,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0757,
-      "anomaly_score": 3781
+      "anomaly_score": 3781,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "6202",
@@ -507,7 +589,9 @@
       "pl_twin_votes": 3762,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0948,
-      "anomaly_score": 3762
+      "anomaly_score": 3762,
+      "province_id": "62",
+      "province_name": "กำแพงเพชร"
     },
     {
       "area_code": "5801",
@@ -519,7 +603,9 @@
       "pl_twin_votes": 3709,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.11,
-      "anomaly_score": 3709
+      "anomaly_score": 3709,
+      "province_id": "58",
+      "province_name": "แม่ฮ่องสอน"
     },
     {
       "area_code": "6302",
@@ -531,7 +617,9 @@
       "pl_twin_votes": 3702,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.156,
-      "anomaly_score": 3702
+      "anomaly_score": 3702,
+      "province_id": "63",
+      "province_name": "ตาก"
     },
     {
       "area_code": "6701",
@@ -543,7 +631,9 @@
       "pl_twin_votes": 3638,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0749,
-      "anomaly_score": 3638
+      "anomaly_score": 3638,
+      "province_id": "67",
+      "province_name": "เพชรบูรณ์"
     },
     {
       "area_code": "3503",
@@ -555,7 +645,9 @@
       "pl_twin_votes": 3627,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0867,
-      "anomaly_score": 3627
+      "anomaly_score": 3627,
+      "province_id": "35",
+      "province_name": "ยโสธร"
     },
     {
       "area_code": "5009",
@@ -567,7 +659,9 @@
       "pl_twin_votes": 3627,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0886,
-      "anomaly_score": 3627
+      "anomaly_score": 3627,
+      "province_id": "50",
+      "province_name": "เชียงใหม่"
     },
     {
       "area_code": "3602",
@@ -579,7 +673,9 @@
       "pl_twin_votes": 3623,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0691,
-      "anomaly_score": 3623
+      "anomaly_score": 3623,
+      "province_id": "36",
+      "province_name": "ชัยภูมิ"
     },
     {
       "area_code": "5705",
@@ -591,7 +687,9 @@
       "pl_twin_votes": 3572,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0724,
-      "anomaly_score": 3572
+      "anomaly_score": 3572,
+      "province_id": "57",
+      "province_name": "เชียงราย"
     },
     {
       "area_code": "2402",
@@ -603,7 +701,9 @@
       "pl_twin_votes": 3551,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0729,
-      "anomaly_score": 3551
+      "anomaly_score": 3551,
+      "province_id": "24",
+      "province_name": "ฉะเชิงเทรา"
     },
     {
       "area_code": "2601",
@@ -615,7 +715,9 @@
       "pl_twin_votes": 3516,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1287,
-      "anomaly_score": 3516
+      "anomaly_score": 3516,
+      "province_id": "26",
+      "province_name": "นครนายก"
     },
     {
       "area_code": "3501",
@@ -627,7 +729,9 @@
       "pl_twin_votes": 3506,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.075,
-      "anomaly_score": 3506
+      "anomaly_score": 3506,
+      "province_id": "35",
+      "province_name": "ยโสธร"
     },
     {
       "area_code": "5802",
@@ -639,7 +743,9 @@
       "pl_twin_votes": 3504,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1497,
-      "anomaly_score": 3504
+      "anomaly_score": 3504,
+      "province_id": "58",
+      "province_name": "แม่ฮ่องสอน"
     },
     {
       "area_code": "4602",
@@ -651,7 +757,9 @@
       "pl_twin_votes": 3493,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.084,
-      "anomaly_score": 3493
+      "anomaly_score": 3493,
+      "province_id": "46",
+      "province_name": "กาฬสินธุ์"
     },
     {
       "area_code": "1901",
@@ -663,7 +771,9 @@
       "pl_twin_votes": 3484,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1163,
-      "anomaly_score": 3484
+      "anomaly_score": 3484,
+      "province_id": "19",
+      "province_name": "สระบุรี"
     },
     {
       "area_code": "7602",
@@ -675,7 +785,9 @@
       "pl_twin_votes": 3473,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0548,
-      "anomaly_score": 3473
+      "anomaly_score": 3473,
+      "province_id": "76",
+      "province_name": "เพชรบุรี"
     },
     {
       "area_code": "4303",
@@ -687,7 +799,9 @@
       "pl_twin_votes": 3471,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1015,
-      "anomaly_score": 3471
+      "anomaly_score": 3471,
+      "province_id": "43",
+      "province_name": "หนองคาย"
     },
     {
       "area_code": "4902",
@@ -699,7 +813,9 @@
       "pl_twin_votes": 3451,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0867,
-      "anomaly_score": 3451
+      "anomaly_score": 3451,
+      "province_id": "49",
+      "province_name": "มุกดาหาร"
     },
     {
       "area_code": "2003",
@@ -711,7 +827,9 @@
       "pl_twin_votes": 3434,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0861,
-      "anomaly_score": 3434
+      "anomaly_score": 3434,
+      "province_id": "20",
+      "province_name": "ชลบุรี"
     },
     {
       "area_code": "1903",
@@ -723,7 +841,9 @@
       "pl_twin_votes": 3359,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0938,
-      "anomaly_score": 3359
+      "anomaly_score": 3359,
+      "province_id": "19",
+      "province_name": "สระบุรี"
     },
     {
       "area_code": "1601",
@@ -735,7 +855,9 @@
       "pl_twin_votes": 3340,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0929,
-      "anomaly_score": 3340
+      "anomaly_score": 3340,
+      "province_id": "16",
+      "province_name": "ลพบุรี"
     },
     {
       "area_code": "3015",
@@ -747,7 +869,9 @@
       "pl_twin_votes": 3322,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.097,
-      "anomaly_score": 3322
+      "anomaly_score": 3322,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "4605",
@@ -759,7 +883,9 @@
       "pl_twin_votes": 3293,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0754,
-      "anomaly_score": 3293
+      "anomaly_score": 3293,
+      "province_id": "46",
+      "province_name": "กาฬสินธุ์"
     },
     {
       "area_code": "1602",
@@ -771,7 +897,9 @@
       "pl_twin_votes": 3256,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.059,
-      "anomaly_score": 3256
+      "anomaly_score": 3256,
+      "province_id": "16",
+      "province_name": "ลพบุรี"
     },
     {
       "area_code": "7304",
@@ -783,7 +911,9 @@
       "pl_twin_votes": 3251,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0682,
-      "anomaly_score": 3251
+      "anomaly_score": 3251,
+      "province_id": "73",
+      "province_name": "นครปฐม"
     },
     {
       "area_code": "4705",
@@ -795,7 +925,9 @@
       "pl_twin_votes": 3235,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1239,
-      "anomaly_score": 3235
+      "anomaly_score": 3235,
+      "province_id": "47",
+      "province_name": "สกลนคร"
     },
     {
       "area_code": "4802",
@@ -807,7 +939,9 @@
       "pl_twin_votes": 3204,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.066,
-      "anomaly_score": 3204
+      "anomaly_score": 3204,
+      "province_id": "48",
+      "province_name": "นครพนม"
     },
     {
       "area_code": "2703",
@@ -819,7 +953,9 @@
       "pl_twin_votes": 3200,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0887,
-      "anomaly_score": 3200
+      "anomaly_score": 3200,
+      "province_id": "27",
+      "province_name": "สระแก้ว"
     },
     {
       "area_code": "7205",
@@ -831,7 +967,9 @@
       "pl_twin_votes": 3197,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0559,
-      "anomaly_score": 3197
+      "anomaly_score": 3197,
+      "province_id": "72",
+      "province_name": "สุพรรณบุรี"
     },
     {
       "area_code": "8101",
@@ -843,7 +981,9 @@
       "pl_twin_votes": 3193,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0666,
-      "anomaly_score": 3193
+      "anomaly_score": 3193,
+      "province_id": "81",
+      "province_name": "กระบี่"
     },
     {
       "area_code": "6706",
@@ -855,7 +995,9 @@
       "pl_twin_votes": 3180,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0543,
-      "anomaly_score": 3180
+      "anomaly_score": 3180,
+      "province_id": "67",
+      "province_name": "เพชรบูรณ์"
     },
     {
       "area_code": "7204",
@@ -867,7 +1009,9 @@
       "pl_twin_votes": 3160,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0598,
-      "anomaly_score": 3160
+      "anomaly_score": 3160,
+      "province_id": "72",
+      "province_name": "สุพรรณบุรี"
     },
     {
       "area_code": "3008",
@@ -879,7 +1023,9 @@
       "pl_twin_votes": 3138,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0651,
-      "anomaly_score": 3138
+      "anomaly_score": 3138,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "3005",
@@ -891,7 +1037,9 @@
       "pl_twin_votes": 3134,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0842,
-      "anomaly_score": 3134
+      "anomaly_score": 3134,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "4110",
@@ -903,7 +1051,9 @@
       "pl_twin_votes": 3130,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1064,
-      "anomaly_score": 3130
+      "anomaly_score": 3130,
+      "province_id": "41",
+      "province_name": "อุดรธานี"
     },
     {
       "area_code": "2008",
@@ -915,7 +1065,9 @@
       "pl_twin_votes": 3120,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.089,
-      "anomaly_score": 3120
+      "anomaly_score": 3120,
+      "province_id": "20",
+      "province_name": "ชลบุรี"
     },
     {
       "area_code": "2301",
@@ -927,7 +1079,9 @@
       "pl_twin_votes": 3076,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0493,
-      "anomaly_score": 3076
+      "anomaly_score": 3076,
+      "province_id": "23",
+      "province_name": "ตราด"
     },
     {
       "area_code": "6404",
@@ -939,7 +1093,9 @@
       "pl_twin_votes": 3066,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0683,
-      "anomaly_score": 3066
+      "anomaly_score": 3066,
+      "province_id": "64",
+      "province_name": "สุโขทัย"
     },
     {
       "area_code": "6301",
@@ -951,7 +1107,9 @@
       "pl_twin_votes": 3049,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0873,
-      "anomaly_score": 3049
+      "anomaly_score": 3049,
+      "province_id": "63",
+      "province_name": "ตาก"
     },
     {
       "area_code": "2005",
@@ -963,7 +1121,9 @@
       "pl_twin_votes": 3027,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0607,
-      "anomaly_score": 3027
+      "anomaly_score": 3027,
+      "province_id": "20",
+      "province_name": "ชลบุรี"
     },
     {
       "area_code": "6102",
@@ -975,7 +1135,9 @@
       "pl_twin_votes": 3020,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0593,
-      "anomaly_score": 3020
+      "anomaly_score": 3020,
+      "province_id": "61",
+      "province_name": "อุทัยธานี"
     },
     {
       "area_code": "5006",
@@ -987,7 +1149,9 @@
       "pl_twin_votes": 3014,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0995,
-      "anomaly_score": 3014
+      "anomaly_score": 3014,
+      "province_id": "50",
+      "province_name": "เชียงใหม่"
     },
     {
       "area_code": "4402",
@@ -999,7 +1163,9 @@
       "pl_twin_votes": 3013,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1003,
-      "anomaly_score": 3013
+      "anomaly_score": 3013,
+      "province_id": "44",
+      "province_name": "มหาสารคาม"
     },
     {
       "area_code": "7002",
@@ -1011,7 +1177,9 @@
       "pl_twin_votes": 3009,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0729,
-      "anomaly_score": 3009
+      "anomaly_score": 3009,
+      "province_id": "70",
+      "province_name": "ราชบุรี"
     },
     {
       "area_code": "7404",
@@ -1023,7 +1191,9 @@
       "pl_twin_votes": 3006,
       "mp_twin_candidate_votes": 338,
       "ratio_pl_to_mp": 0.0749,
-      "anomaly_score": 3006
+      "anomaly_score": 3006,
+      "province_id": "74",
+      "province_name": "สมุทรสาคร"
     },
     {
       "area_code": "1802",
@@ -1035,7 +1205,9 @@
       "pl_twin_votes": 2976,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0571,
-      "anomaly_score": 2976
+      "anomaly_score": 2976,
+      "province_id": "18",
+      "province_name": "ชัยนาท"
     },
     {
       "area_code": "4008",
@@ -1047,7 +1219,9 @@
       "pl_twin_votes": 2973,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0919,
-      "anomaly_score": 2973
+      "anomaly_score": 2973,
+      "province_id": "40",
+      "province_name": "ขอนแก่น"
     },
     {
       "area_code": "5202",
@@ -1059,7 +1233,9 @@
       "pl_twin_votes": 2964,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0872,
-      "anomaly_score": 2964
+      "anomaly_score": 2964,
+      "province_id": "52",
+      "province_name": "ลำปาง"
     },
     {
       "area_code": "3605",
@@ -1071,7 +1247,9 @@
       "pl_twin_votes": 2951,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1111,
-      "anomaly_score": 2951
+      "anomaly_score": 2951,
+      "province_id": "36",
+      "province_name": "ชัยภูมิ"
     },
     {
       "area_code": "3409",
@@ -1083,7 +1261,9 @@
       "pl_twin_votes": 2946,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0754,
-      "anomaly_score": 2946
+      "anomaly_score": 2946,
+      "province_id": "34",
+      "province_name": "อุบลราชธานี"
     },
     {
       "area_code": "9604",
@@ -1095,7 +1275,9 @@
       "pl_twin_votes": 2940,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0741,
-      "anomaly_score": 2940
+      "anomaly_score": 2940,
+      "province_id": "96",
+      "province_name": "นราธิวาส"
     },
     {
       "area_code": "4004",
@@ -1107,7 +1289,9 @@
       "pl_twin_votes": 2912,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0752,
-      "anomaly_score": 2912
+      "anomaly_score": 2912,
+      "province_id": "40",
+      "province_name": "ขอนแก่น"
     },
     {
       "area_code": "3411",
@@ -1119,7 +1303,9 @@
       "pl_twin_votes": 2874,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.053,
-      "anomaly_score": 2874
+      "anomaly_score": 2874,
+      "province_id": "34",
+      "province_name": "อุบลราชธานี"
     },
     {
       "area_code": "3402",
@@ -1131,7 +1317,9 @@
       "pl_twin_votes": 2871,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0848,
-      "anomaly_score": 2871
+      "anomaly_score": 2871,
+      "province_id": "34",
+      "province_name": "อุบลราชธานี"
     },
     {
       "area_code": "4003",
@@ -1143,7 +1331,9 @@
       "pl_twin_votes": 2866,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1041,
-      "anomaly_score": 2866
+      "anomaly_score": 2866,
+      "province_id": "40",
+      "province_name": "ขอนแก่น"
     },
     {
       "area_code": "5703",
@@ -1155,7 +1345,9 @@
       "pl_twin_votes": 2857,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0892,
-      "anomaly_score": 2857
+      "anomaly_score": 2857,
+      "province_id": "57",
+      "province_name": "เชียงราย"
     },
     {
       "area_code": "5302",
@@ -1167,7 +1359,9 @@
       "pl_twin_votes": 2855,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.096,
-      "anomaly_score": 2855
+      "anomaly_score": 2855,
+      "province_id": "53",
+      "province_name": "อุตรดิตถ์"
     },
     {
       "area_code": "3401",
@@ -1179,7 +1373,9 @@
       "pl_twin_votes": 2831,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0951,
-      "anomaly_score": 2831
+      "anomaly_score": 2831,
+      "province_id": "34",
+      "province_name": "อุบลราชธานี"
     },
     {
       "area_code": "3303",
@@ -1191,7 +1387,9 @@
       "pl_twin_votes": 2827,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0568,
-      "anomaly_score": 2827
+      "anomaly_score": 2827,
+      "province_id": "33",
+      "province_name": "ศรีสะเกษ"
     },
     {
       "area_code": "3108",
@@ -1203,7 +1401,9 @@
       "pl_twin_votes": 2820,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0566,
-      "anomaly_score": 2820
+      "anomaly_score": 2820,
+      "province_id": "31",
+      "province_name": "บุรีรัมย์"
     },
     {
       "area_code": "9602",
@@ -1215,7 +1415,9 @@
       "pl_twin_votes": 2814,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0699,
-      "anomaly_score": 2814
+      "anomaly_score": 2814,
+      "province_id": "96",
+      "province_name": "นราธิวาส"
     },
     {
       "area_code": "7301",
@@ -1227,7 +1429,9 @@
       "pl_twin_votes": 2811,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0545,
-      "anomaly_score": 2811
+      "anomaly_score": 2811,
+      "province_id": "73",
+      "province_name": "นครปฐม"
     },
     {
       "area_code": "9402",
@@ -1239,7 +1443,9 @@
       "pl_twin_votes": 2799,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.077,
-      "anomaly_score": 2799
+      "anomaly_score": 2799,
+      "province_id": "94",
+      "province_name": "ปัตตานี"
     },
     {
       "area_code": "9601",
@@ -1251,7 +1457,9 @@
       "pl_twin_votes": 2779,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0735,
-      "anomaly_score": 2779
+      "anomaly_score": 2779,
+      "province_id": "96",
+      "province_name": "นราธิวาส"
     },
     {
       "area_code": "9603",
@@ -1263,7 +1471,9 @@
       "pl_twin_votes": 2777,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.077,
-      "anomaly_score": 2777
+      "anomaly_score": 2777,
+      "province_id": "96",
+      "province_name": "นราธิวาส"
     },
     {
       "area_code": "3308",
@@ -1275,7 +1485,9 @@
       "pl_twin_votes": 2762,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0519,
-      "anomaly_score": 2762
+      "anomaly_score": 2762,
+      "province_id": "33",
+      "province_name": "ศรีสะเกษ"
     },
     {
       "area_code": "7702",
@@ -1287,7 +1499,9 @@
       "pl_twin_votes": 2737,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0661,
-      "anomaly_score": 2737
+      "anomaly_score": 2737,
+      "province_id": "77",
+      "province_name": "ประจวบคีรีขันธ์"
     },
     {
       "area_code": "3702",
@@ -1299,7 +1513,9 @@
       "pl_twin_votes": 2717,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0668,
-      "anomaly_score": 2717
+      "anomaly_score": 2717,
+      "province_id": "37",
+      "province_name": "อำนาจเจริญ"
     },
     {
       "area_code": "4010",
@@ -1311,7 +1527,9 @@
       "pl_twin_votes": 2715,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0741,
-      "anomaly_score": 2715
+      "anomaly_score": 2715,
+      "province_id": "40",
+      "province_name": "ขอนแก่น"
     },
     {
       "area_code": "2202",
@@ -1323,7 +1541,9 @@
       "pl_twin_votes": 2711,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0725,
-      "anomaly_score": 2711
+      "anomaly_score": 2711,
+      "province_id": "22",
+      "province_name": "จันทบุรี"
     },
     {
       "area_code": "4106",
@@ -1335,7 +1555,9 @@
       "pl_twin_votes": 2700,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0768,
-      "anomaly_score": 2700
+      "anomaly_score": 2700,
+      "province_id": "41",
+      "province_name": "อุดรธานี"
     },
     {
       "area_code": "3012",
@@ -1347,7 +1569,9 @@
       "pl_twin_votes": 2694,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0605,
-      "anomaly_score": 2694
+      "anomaly_score": 2694,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "7101",
@@ -1359,7 +1583,9 @@
       "pl_twin_votes": 2679,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0807,
-      "anomaly_score": 2679
+      "anomaly_score": 2679,
+      "province_id": "71",
+      "province_name": "กาญจนบุรี"
     },
     {
       "area_code": "4804",
@@ -1371,7 +1597,9 @@
       "pl_twin_votes": 2673,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0688,
-      "anomaly_score": 2673
+      "anomaly_score": 2673,
+      "province_id": "48",
+      "province_name": "นครพนม"
     },
     {
       "area_code": "7103",
@@ -1383,7 +1611,9 @@
       "pl_twin_votes": 2654,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0566,
-      "anomaly_score": 2654
+      "anomaly_score": 2654,
+      "province_id": "71",
+      "province_name": "กาญจนบุรี"
     },
     {
       "area_code": "3201",
@@ -1395,7 +1625,9 @@
       "pl_twin_votes": 2650,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0609,
-      "anomaly_score": 2650
+      "anomaly_score": 2650,
+      "province_id": "32",
+      "province_name": "สุรินทร์"
     },
     {
       "area_code": "5301",
@@ -1407,7 +1639,9 @@
       "pl_twin_votes": 2650,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0759,
-      "anomaly_score": 2650
+      "anomaly_score": 2650,
+      "province_id": "53",
+      "province_name": "อุตรดิตถ์"
     },
     {
       "area_code": "2502",
@@ -1419,7 +1653,9 @@
       "pl_twin_votes": 2620,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0628,
-      "anomaly_score": 2620
+      "anomaly_score": 2620,
+      "province_id": "25",
+      "province_name": "ปราจีนบุรี"
     },
     {
       "area_code": "4706",
@@ -1431,7 +1667,9 @@
       "pl_twin_votes": 2620,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0799,
-      "anomaly_score": 2620
+      "anomaly_score": 2620,
+      "province_id": "47",
+      "province_name": "สกลนคร"
     },
     {
       "area_code": "7004",
@@ -1443,7 +1681,9 @@
       "pl_twin_votes": 2620,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0497,
-      "anomaly_score": 2620
+      "anomaly_score": 2620,
+      "province_id": "70",
+      "province_name": "ราชบุรี"
     },
     {
       "area_code": "3306",
@@ -1455,7 +1695,9 @@
       "pl_twin_votes": 2595,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.099,
-      "anomaly_score": 2595
+      "anomaly_score": 2595,
+      "province_id": "33",
+      "province_name": "ศรีสะเกษ"
     },
     {
       "area_code": "3110",
@@ -1467,7 +1709,9 @@
       "pl_twin_votes": 2588,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0542,
-      "anomaly_score": 2588
+      "anomaly_score": 2588,
+      "province_id": "31",
+      "province_name": "บุรีรัมย์"
     },
     {
       "area_code": "7302",
@@ -1479,7 +1723,9 @@
       "pl_twin_votes": 2567,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0624,
-      "anomaly_score": 2567
+      "anomaly_score": 2567,
+      "province_id": "73",
+      "province_name": "นครปฐม"
     },
     {
       "area_code": "6203",
@@ -1491,7 +1737,9 @@
       "pl_twin_votes": 2549,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0834,
-      "anomaly_score": 2549
+      "anomaly_score": 2549,
+      "province_id": "62",
+      "province_name": "กำแพงเพชร"
     },
     {
       "area_code": "3104",
@@ -1503,7 +1751,9 @@
       "pl_twin_votes": 2543,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0519,
-      "anomaly_score": 2543
+      "anomaly_score": 2543,
+      "province_id": "31",
+      "province_name": "บุรีรัมย์"
     },
     {
       "area_code": "3404",
@@ -1515,7 +1765,9 @@
       "pl_twin_votes": 2523,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0708,
-      "anomaly_score": 2523
+      "anomaly_score": 2523,
+      "province_id": "34",
+      "province_name": "อุบลราชธานี"
     },
     {
       "area_code": "5204",
@@ -1527,7 +1779,9 @@
       "pl_twin_votes": 2501,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0693,
-      "anomaly_score": 2501
+      "anomaly_score": 2501,
+      "province_id": "52",
+      "province_name": "ลำปาง"
     },
     {
       "area_code": "3604",
@@ -1539,7 +1793,9 @@
       "pl_twin_votes": 2495,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0905,
-      "anomaly_score": 2495
+      "anomaly_score": 2495,
+      "province_id": "36",
+      "province_name": "ชัยภูมิ"
     },
     {
       "area_code": "5503",
@@ -1551,7 +1807,9 @@
       "pl_twin_votes": 2480,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1238,
-      "anomaly_score": 2480
+      "anomaly_score": 2480,
+      "province_id": "55",
+      "province_name": "น่าน"
     },
     {
       "area_code": "3803",
@@ -1563,7 +1821,9 @@
       "pl_twin_votes": 2455,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0755,
-      "anomaly_score": 2455
+      "anomaly_score": 2455,
+      "province_id": "38",
+      "province_name": "บึงกาฬ"
     },
     {
       "area_code": "3009",
@@ -1575,7 +1835,9 @@
       "pl_twin_votes": 2448,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0644,
-      "anomaly_score": 2448
+      "anomaly_score": 2448,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "5502",
@@ -1587,7 +1849,9 @@
       "pl_twin_votes": 2444,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0681,
-      "anomaly_score": 2444
+      "anomaly_score": 2444,
+      "province_id": "55",
+      "province_name": "น่าน"
     },
     {
       "area_code": "3016",
@@ -1599,7 +1863,9 @@
       "pl_twin_votes": 2432,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0816,
-      "anomaly_score": 2432
+      "anomaly_score": 2432,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "3206",
@@ -1611,7 +1877,9 @@
       "pl_twin_votes": 2430,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0501,
-      "anomaly_score": 2430
+      "anomaly_score": 2430,
+      "province_id": "32",
+      "province_name": "สุรินทร์"
     },
     {
       "area_code": "5603",
@@ -1623,7 +1891,9 @@
       "pl_twin_votes": 2429,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0438,
-      "anomaly_score": 2429
+      "anomaly_score": 2429,
+      "province_id": "56",
+      "province_name": "พะเยา"
     },
     {
       "area_code": "3406",
@@ -1635,7 +1905,9 @@
       "pl_twin_votes": 2423,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.076,
-      "anomaly_score": 2423
+      "anomaly_score": 2423,
+      "province_id": "34",
+      "province_name": "อุบลราชธานี"
     },
     {
       "area_code": "1404",
@@ -1647,7 +1919,9 @@
       "pl_twin_votes": 2421,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0515,
-      "anomaly_score": 2421
+      "anomaly_score": 2421,
+      "province_id": "14",
+      "province_name": "พระนครศรีอยุธยา"
     },
     {
       "area_code": "3407",
@@ -1659,7 +1933,9 @@
       "pl_twin_votes": 2421,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0567,
-      "anomaly_score": 2421
+      "anomaly_score": 2421,
+      "province_id": "34",
+      "province_name": "อุบลราชธานี"
     },
     {
       "area_code": "6005",
@@ -1671,7 +1947,9 @@
       "pl_twin_votes": 2415,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0427,
-      "anomaly_score": 2415
+      "anomaly_score": 2415,
+      "province_id": "60",
+      "province_name": "นครสวรรค์"
     },
     {
       "area_code": "4604",
@@ -1683,7 +1961,9 @@
       "pl_twin_votes": 2406,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0707,
-      "anomaly_score": 2406
+      "anomaly_score": 2406,
+      "province_id": "46",
+      "province_name": "กาฬสินธุ์"
     },
     {
       "area_code": "3107",
@@ -1695,7 +1975,9 @@
       "pl_twin_votes": 2391,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0563,
-      "anomaly_score": 2391
+      "anomaly_score": 2391,
+      "province_id": "31",
+      "province_name": "บุรีรัมย์"
     },
     {
       "area_code": "4606",
@@ -1707,7 +1989,9 @@
       "pl_twin_votes": 2370,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0435,
-      "anomaly_score": 2370
+      "anomaly_score": 2370,
+      "province_id": "46",
+      "province_name": "กาฬสินธุ์"
     },
     {
       "area_code": "9605",
@@ -1719,7 +2003,9 @@
       "pl_twin_votes": 2351,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0551,
-      "anomaly_score": 2351
+      "anomaly_score": 2351,
+      "province_id": "96",
+      "province_name": "นราธิวาส"
     },
     {
       "area_code": "5704",
@@ -1731,7 +2017,9 @@
       "pl_twin_votes": 2308,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0723,
-      "anomaly_score": 2308
+      "anomaly_score": 2308,
+      "province_id": "57",
+      "province_name": "เชียงราย"
     },
     {
       "area_code": "3002",
@@ -1743,7 +2031,9 @@
       "pl_twin_votes": 2297,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0612,
-      "anomaly_score": 2297
+      "anomaly_score": 2297,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "4103",
@@ -1755,7 +2045,9 @@
       "pl_twin_votes": 2289,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0749,
-      "anomaly_score": 2289
+      "anomaly_score": 2289,
+      "province_id": "41",
+      "province_name": "อุดรธานี"
     },
     {
       "area_code": "4405",
@@ -1767,7 +2059,9 @@
       "pl_twin_votes": 2284,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0692,
-      "anomaly_score": 2284
+      "anomaly_score": 2284,
+      "province_id": "44",
+      "province_name": "มหาสารคาม"
     },
     {
       "area_code": "5303",
@@ -1779,7 +2073,9 @@
       "pl_twin_votes": 2277,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0598,
-      "anomaly_score": 2277
+      "anomaly_score": 2277,
+      "province_id": "53",
+      "province_name": "อุตรดิตถ์"
     },
     {
       "area_code": "3902",
@@ -1791,7 +2087,9 @@
       "pl_twin_votes": 2269,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0653,
-      "anomaly_score": 2269
+      "anomaly_score": 2269,
+      "province_id": "39",
+      "province_name": "หนองบัวลำภู"
     },
     {
       "area_code": "1402",
@@ -1803,7 +2101,9 @@
       "pl_twin_votes": 2262,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0442,
-      "anomaly_score": 2262
+      "anomaly_score": 2262,
+      "province_id": "14",
+      "province_name": "พระนครศรีอยุธยา"
     },
     {
       "area_code": "6101",
@@ -1815,7 +2115,9 @@
       "pl_twin_votes": 2256,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0445,
-      "anomaly_score": 2256
+      "anomaly_score": 2256,
+      "province_id": "61",
+      "province_name": "อุทัยธานี"
     },
     {
       "area_code": "2203",
@@ -1827,7 +2129,9 @@
       "pl_twin_votes": 2247,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0742,
-      "anomaly_score": 2247
+      "anomaly_score": 2247,
+      "province_id": "22",
+      "province_name": "จันทบุรี"
     },
     {
       "area_code": "3207",
@@ -1839,7 +2143,9 @@
       "pl_twin_votes": 2242,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0547,
-      "anomaly_score": 2242
+      "anomaly_score": 2242,
+      "province_id": "32",
+      "province_name": "สุรินทร์"
     },
     {
       "area_code": "2104",
@@ -1851,7 +2157,9 @@
       "pl_twin_votes": 2238,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0824,
-      "anomaly_score": 2238
+      "anomaly_score": 2238,
+      "province_id": "21",
+      "province_name": "ระยอง"
     },
     {
       "area_code": "6002",
@@ -1863,7 +2171,9 @@
       "pl_twin_votes": 2216,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0496,
-      "anomaly_score": 2216
+      "anomaly_score": 2216,
+      "province_id": "60",
+      "province_name": "นครสวรรค์"
     },
     {
       "area_code": "3004",
@@ -1875,7 +2185,9 @@
       "pl_twin_votes": 2212,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0751,
-      "anomaly_score": 2212
+      "anomaly_score": 2212,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "1801",
@@ -1887,7 +2199,9 @@
       "pl_twin_votes": 2210,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0658,
-      "anomaly_score": 2210
+      "anomaly_score": 2210,
+      "province_id": "18",
+      "province_name": "ชัยนาท"
     },
     {
       "area_code": "4005",
@@ -1899,7 +2213,9 @@
       "pl_twin_votes": 2205,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0636,
-      "anomaly_score": 2205
+      "anomaly_score": 2205,
+      "province_id": "40",
+      "province_name": "ขอนแก่น"
     },
     {
       "area_code": "3304",
@@ -1911,7 +2227,9 @@
       "pl_twin_votes": 2201,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0569,
-      "anomaly_score": 2201
+      "anomaly_score": 2201,
+      "province_id": "33",
+      "province_name": "ศรีสะเกษ"
     },
     {
       "area_code": "3109",
@@ -1923,7 +2241,9 @@
       "pl_twin_votes": 2191,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0438,
-      "anomaly_score": 2191
+      "anomaly_score": 2191,
+      "province_id": "31",
+      "province_name": "บุรีรัมย์"
     },
     {
       "area_code": "9405",
@@ -1935,7 +2255,9 @@
       "pl_twin_votes": 2191,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0681,
-      "anomaly_score": 2191
+      "anomaly_score": 2191,
+      "province_id": "94",
+      "province_name": "ปัตตานี"
     },
     {
       "area_code": "3102",
@@ -1947,7 +2269,9 @@
       "pl_twin_votes": 2189,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0402,
-      "anomaly_score": 2189
+      "anomaly_score": 2189,
+      "province_id": "31",
+      "province_name": "บุรีรัมย์"
     },
     {
       "area_code": "7601",
@@ -1959,7 +2283,9 @@
       "pl_twin_votes": 2180,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0372,
-      "anomaly_score": 2180
+      "anomaly_score": 2180,
+      "province_id": "76",
+      "province_name": "เพชรบุรี"
     },
     {
       "area_code": "3006",
@@ -1971,7 +2297,9 @@
       "pl_twin_votes": 2171,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0811,
-      "anomaly_score": 2171
+      "anomaly_score": 2171,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "5007",
@@ -1983,7 +2311,9 @@
       "pl_twin_votes": 2166,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0695,
-      "anomaly_score": 2166
+      "anomaly_score": 2166,
+      "province_id": "50",
+      "province_name": "เชียงใหม่"
     },
     {
       "area_code": "2501",
@@ -1995,7 +2325,9 @@
       "pl_twin_votes": 2156,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0538,
-      "anomaly_score": 2156
+      "anomaly_score": 2156,
+      "province_id": "25",
+      "province_name": "ปราจีนบุรี"
     },
     {
       "area_code": "3202",
@@ -2007,7 +2339,9 @@
       "pl_twin_votes": 2156,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.043,
-      "anomaly_score": 2156
+      "anomaly_score": 2156,
+      "province_id": "32",
+      "province_name": "สุรินทร์"
     },
     {
       "area_code": "6504",
@@ -2019,7 +2353,9 @@
       "pl_twin_votes": 2144,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0527,
-      "anomaly_score": 2144
+      "anomaly_score": 2144,
+      "province_id": "65",
+      "province_name": "พิษณุโลก"
     },
     {
       "area_code": "4501",
@@ -2031,7 +2367,9 @@
       "pl_twin_votes": 2139,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0462,
-      "anomaly_score": 2139
+      "anomaly_score": 2139,
+      "province_id": "45",
+      "province_name": "ร้อยเอ็ด"
     },
     {
       "area_code": "4301",
@@ -2043,7 +2381,9 @@
       "pl_twin_votes": 2134,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0739,
-      "anomaly_score": 2134
+      "anomaly_score": 2134,
+      "province_id": "43",
+      "province_name": "หนองคาย"
     },
     {
       "area_code": "4102",
@@ -2055,7 +2395,9 @@
       "pl_twin_votes": 2126,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0915,
-      "anomaly_score": 2126
+      "anomaly_score": 2126,
+      "province_id": "41",
+      "province_name": "อุดรธานี"
     },
     {
       "area_code": "7402",
@@ -2067,7 +2409,9 @@
       "pl_twin_votes": 2119,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0649,
-      "anomaly_score": 2119
+      "anomaly_score": 2119,
+      "province_id": "74",
+      "province_name": "สมุทรสาคร"
     },
     {
       "area_code": "3205",
@@ -2079,7 +2423,9 @@
       "pl_twin_votes": 2103,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0562,
-      "anomaly_score": 2103
+      "anomaly_score": 2103,
+      "province_id": "32",
+      "province_name": "สุรินทร์"
     },
     {
       "area_code": "9007",
@@ -2091,7 +2437,9 @@
       "pl_twin_votes": 2103,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0611,
-      "anomaly_score": 2103
+      "anomaly_score": 2103,
+      "province_id": "90",
+      "province_name": "สงขลา"
     },
     {
       "area_code": "3013",
@@ -2103,7 +2451,9 @@
       "pl_twin_votes": 2092,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0797,
-      "anomaly_score": 2092
+      "anomaly_score": 2092,
+      "province_id": "30",
+      "province_name": "นครราชสีมา"
     },
     {
       "area_code": "3305",
@@ -2115,7 +2465,9 @@
       "pl_twin_votes": 2089,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0563,
-      "anomaly_score": 2089
+      "anomaly_score": 2089,
+      "province_id": "33",
+      "province_name": "ศรีสะเกษ"
     },
     {
       "area_code": "4105",
@@ -2127,7 +2479,9 @@
       "pl_twin_votes": 2085,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0781,
-      "anomaly_score": 2085
+      "anomaly_score": 2085,
+      "province_id": "41",
+      "province_name": "อุดรธานี"
     },
     {
       "area_code": "9503",
@@ -2139,7 +2493,9 @@
       "pl_twin_votes": 2074,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0625,
-      "anomaly_score": 2074
+      "anomaly_score": 2074,
+      "province_id": "95",
+      "province_name": "ยะลา"
     },
     {
       "area_code": "4104",
@@ -2151,7 +2507,9 @@
       "pl_twin_votes": 2071,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0742,
-      "anomaly_score": 2071
+      "anomaly_score": 2071,
+      "province_id": "41",
+      "province_name": "อุดรธานี"
     },
     {
       "area_code": "4201",
@@ -2163,7 +2521,9 @@
       "pl_twin_votes": 2062,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0505,
-      "anomaly_score": 2062
+      "anomaly_score": 2062,
+      "province_id": "42",
+      "province_name": "เลย"
     },
     {
       "area_code": "9403",
@@ -2175,7 +2535,9 @@
       "pl_twin_votes": 2051,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0725,
-      "anomaly_score": 2051
+      "anomaly_score": 2051,
+      "province_id": "94",
+      "province_name": "ปัตตานี"
     },
     {
       "area_code": "6403",
@@ -2187,7 +2549,9 @@
       "pl_twin_votes": 2050,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0464,
-      "anomaly_score": 2050
+      "anomaly_score": 2050,
+      "province_id": "64",
+      "province_name": "สุโขทัย"
     },
     {
       "area_code": "8102",
@@ -2199,7 +2563,9 @@
       "pl_twin_votes": 2034,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0512,
-      "anomaly_score": 2034
+      "anomaly_score": 2034,
+      "province_id": "81",
+      "province_name": "กระบี่"
     },
     {
       "area_code": "8103",
@@ -2211,7 +2577,9 @@
       "pl_twin_votes": 2028,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0448,
-      "anomaly_score": 2028
+      "anomaly_score": 2028,
+      "province_id": "81",
+      "province_name": "กระบี่"
     },
     {
       "area_code": "3701",
@@ -2223,7 +2591,9 @@
       "pl_twin_votes": 2027,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0503,
-      "anomaly_score": 2027
+      "anomaly_score": 2027,
+      "province_id": "37",
+      "province_name": "อำนาจเจริญ"
     },
     {
       "area_code": "3607",
@@ -2235,7 +2605,9 @@
       "pl_twin_votes": 2010,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0534,
-      "anomaly_score": 2010
+      "anomaly_score": 2010,
+      "province_id": "36",
+      "province_name": "ชัยภูมิ"
     },
     {
       "area_code": "4302",
@@ -2247,7 +2619,9 @@
       "pl_twin_votes": 2008,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0699,
-      "anomaly_score": 2008
+      "anomaly_score": 2008,
+      "province_id": "43",
+      "province_name": "หนองคาย"
     },
     {
       "area_code": "4703",
@@ -2259,7 +2633,9 @@
       "pl_twin_votes": 2002,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0447,
-      "anomaly_score": 2002
+      "anomaly_score": 2002,
+      "province_id": "47",
+      "province_name": "สกลนคร"
     },
     {
       "area_code": "4007",
@@ -2271,7 +2647,9 @@
       "pl_twin_votes": 1996,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0616,
-      "anomaly_score": 1996
+      "anomaly_score": 1996,
+      "province_id": "40",
+      "province_name": "ขอนแก่น"
     },
     {
       "area_code": "4203",
@@ -2283,7 +2661,9 @@
       "pl_twin_votes": 1994,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0417,
-      "anomaly_score": 1994
+      "anomaly_score": 1994,
+      "province_id": "42",
+      "province_name": "เลย"
     },
     {
       "area_code": "9404",
@@ -2295,7 +2675,9 @@
       "pl_twin_votes": 1960,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0713,
-      "anomaly_score": 1960
+      "anomaly_score": 1960,
+      "province_id": "94",
+      "province_name": "ปัตตานี"
     },
     {
       "area_code": "3302",
@@ -2307,7 +2689,9 @@
       "pl_twin_votes": 1953,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0606,
-      "anomaly_score": 1953
+      "anomaly_score": 1953,
+      "province_id": "33",
+      "province_name": "ศรีสะเกษ"
     },
     {
       "area_code": "6001",
@@ -2319,7 +2703,9 @@
       "pl_twin_votes": 1951,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0435,
-      "anomaly_score": 1951
+      "anomaly_score": 1951,
+      "province_id": "60",
+      "province_name": "นครสวรรค์"
     },
     {
       "area_code": "7202",
@@ -2331,7 +2717,9 @@
       "pl_twin_votes": 1951,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0459,
-      "anomaly_score": 1951
+      "anomaly_score": 1951,
+      "province_id": "72",
+      "province_name": "สุพรรณบุรี"
     },
     {
       "area_code": "4803",
@@ -2343,7 +2731,9 @@
       "pl_twin_votes": 1934,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0553,
-      "anomaly_score": 1934
+      "anomaly_score": 1934,
+      "province_id": "48",
+      "province_name": "นครพนม"
     },
     {
       "area_code": "5102",
@@ -2355,7 +2745,9 @@
       "pl_twin_votes": 1921,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0412,
-      "anomaly_score": 1921
+      "anomaly_score": 1921,
+      "province_id": "51",
+      "province_name": "ลำพูน"
     },
     {
       "area_code": "1308",
@@ -2367,7 +2759,9 @@
       "pl_twin_votes": 1916,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.052,
-      "anomaly_score": 1916
+      "anomaly_score": 1916,
+      "province_id": "13",
+      "province_name": "ปทุมธานี"
     },
     {
       "area_code": "3101",
@@ -2379,7 +2773,9 @@
       "pl_twin_votes": 1888,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0355,
-      "anomaly_score": 1888
+      "anomaly_score": 1888,
+      "province_id": "31",
+      "province_name": "บุรีรัมย์"
     },
     {
       "area_code": "3103",
@@ -2391,7 +2787,9 @@
       "pl_twin_votes": 1874,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0361,
-      "anomaly_score": 1874
+      "anomaly_score": 1874,
+      "province_id": "31",
+      "province_name": "บุรีรัมย์"
     },
     {
       "area_code": "4707",
@@ -2403,7 +2801,9 @@
       "pl_twin_votes": 1874,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0814,
-      "anomaly_score": 1874
+      "anomaly_score": 1874,
+      "province_id": "47",
+      "province_name": "สกลนคร"
     },
     {
       "area_code": "4404",
@@ -2415,7 +2815,9 @@
       "pl_twin_votes": 1871,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0649,
-      "anomaly_score": 1871
+      "anomaly_score": 1871,
+      "province_id": "44",
+      "province_name": "มหาสารคาม"
     },
     {
       "area_code": "6401",
@@ -2427,7 +2829,9 @@
       "pl_twin_votes": 1863,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0643,
-      "anomaly_score": 1863
+      "anomaly_score": 1863,
+      "province_id": "64",
+      "province_name": "สุโขทัย"
     },
     {
       "area_code": "6704",
@@ -2439,7 +2843,9 @@
       "pl_twin_votes": 1852,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0412,
-      "anomaly_score": 1852
+      "anomaly_score": 1852,
+      "province_id": "67",
+      "province_name": "เพชรบูรณ์"
     },
     {
       "area_code": "7001",
@@ -2451,7 +2857,9 @@
       "pl_twin_votes": 1846,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0344,
-      "anomaly_score": 1846
+      "anomaly_score": 1846,
+      "province_id": "70",
+      "province_name": "ราชบุรี"
     },
     {
       "area_code": "3301",
@@ -2463,7 +2871,9 @@
       "pl_twin_votes": 1818,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0412,
-      "anomaly_score": 1818
+      "anomaly_score": 1818,
+      "province_id": "33",
+      "province_name": "ศรีสะเกษ"
     },
     {
       "area_code": "9008",
@@ -2475,7 +2885,9 @@
       "pl_twin_votes": 1801,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0469,
-      "anomaly_score": 1801
+      "anomaly_score": 1801,
+      "province_id": "90",
+      "province_name": "สงขลา"
     },
     {
       "area_code": "3502",
@@ -2487,7 +2899,9 @@
       "pl_twin_votes": 1797,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0387,
-      "anomaly_score": 1797
+      "anomaly_score": 1797,
+      "province_id": "35",
+      "province_name": "ยโสธร"
     },
     {
       "area_code": "5706",
@@ -2499,7 +2913,9 @@
       "pl_twin_votes": 1797,
       "mp_twin_candidate_votes": 264,
       "ratio_pl_to_mp": 0.0671,
-      "anomaly_score": 1797
+      "anomaly_score": 1797,
+      "province_id": "57",
+      "province_name": "เชียงราย"
     },
     {
       "area_code": "5602",
@@ -2511,7 +2927,9 @@
       "pl_twin_votes": 1791,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.034,
-      "anomaly_score": 1791
+      "anomaly_score": 1791,
+      "province_id": "56",
+      "province_name": "พะเยา"
     },
     {
       "area_code": "4801",
@@ -2523,7 +2941,9 @@
       "pl_twin_votes": 1716,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.03,
-      "anomaly_score": 1716
+      "anomaly_score": 1716,
+      "province_id": "48",
+      "province_name": "นครพนม"
     },
     {
       "area_code": "4503",
@@ -2535,7 +2955,9 @@
       "pl_twin_votes": 1710,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0518,
-      "anomaly_score": 1710
+      "anomaly_score": 1710,
+      "province_id": "45",
+      "province_name": "ร้อยเอ็ด"
     },
     {
       "area_code": "3204",
@@ -2547,7 +2969,9 @@
       "pl_twin_votes": 1699,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0424,
-      "anomaly_score": 1699
+      "anomaly_score": 1699,
+      "province_id": "32",
+      "province_name": "สุรินทร์"
     },
     {
       "area_code": "1405",
@@ -2559,7 +2983,9 @@
       "pl_twin_votes": 1688,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0383,
-      "anomaly_score": 1688
+      "anomaly_score": 1688,
+      "province_id": "14",
+      "province_name": "พระนครศรีอยุธยา"
     },
     {
       "area_code": "9502",
@@ -2571,7 +2997,9 @@
       "pl_twin_votes": 1676,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0378,
-      "anomaly_score": 1676
+      "anomaly_score": 1676,
+      "province_id": "95",
+      "province_name": "ยะลา"
     },
     {
       "area_code": "4204",
@@ -2583,7 +3011,9 @@
       "pl_twin_votes": 1663,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0591,
-      "anomaly_score": 1663
+      "anomaly_score": 1663,
+      "province_id": "42",
+      "province_name": "เลย"
     },
     {
       "area_code": "3203",
@@ -2595,7 +3025,9 @@
       "pl_twin_votes": 1651,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0374,
-      "anomaly_score": 1651
+      "anomaly_score": 1651,
+      "province_id": "32",
+      "province_name": "สุรินทร์"
     },
     {
       "area_code": "4006",
@@ -2607,7 +3039,9 @@
       "pl_twin_votes": 1650,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0382,
-      "anomaly_score": 1650
+      "anomaly_score": 1650,
+      "province_id": "40",
+      "province_name": "ขอนแก่น"
     },
     {
       "area_code": "5402",
@@ -2619,7 +3053,9 @@
       "pl_twin_votes": 1634,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0325,
-      "anomaly_score": 1634
+      "anomaly_score": 1634,
+      "province_id": "54",
+      "province_name": "แพร่"
     },
     {
       "area_code": "1302",
@@ -2631,7 +3067,9 @@
       "pl_twin_votes": 1611,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0464,
-      "anomaly_score": 1611
+      "anomaly_score": 1611,
+      "province_id": "13",
+      "province_name": "ปทุมธานี"
     },
     {
       "area_code": "9005",
@@ -2643,7 +3081,9 @@
       "pl_twin_votes": 1610,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0332,
-      "anomaly_score": 1610
+      "anomaly_score": 1610,
+      "province_id": "90",
+      "province_name": "สงขลา"
     },
     {
       "area_code": "9204",
@@ -2655,7 +3095,9 @@
       "pl_twin_votes": 1582,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0328,
-      "anomaly_score": 1582
+      "anomaly_score": 1582,
+      "province_id": "92",
+      "province_name": "ตรัง"
     },
     {
       "area_code": "9401",
@@ -2667,7 +3109,9 @@
       "pl_twin_votes": 1550,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0688,
-      "anomaly_score": 1550
+      "anomaly_score": 1550,
+      "province_id": "94",
+      "province_name": "ปัตตานี"
     },
     {
       "area_code": "2201",
@@ -2679,7 +3123,9 @@
       "pl_twin_votes": 1543,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0495,
-      "anomaly_score": 1543
+      "anomaly_score": 1543,
+      "province_id": "22",
+      "province_name": "จันทบุรี"
     },
     {
       "area_code": "9004",
@@ -2691,7 +3137,9 @@
       "pl_twin_votes": 1541,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0351,
-      "anomaly_score": 1541
+      "anomaly_score": 1541,
+      "province_id": "90",
+      "province_name": "สงขลา"
     },
     {
       "area_code": "4406",
@@ -2703,7 +3151,9 @@
       "pl_twin_votes": 1507,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0411,
-      "anomaly_score": 1507
+      "anomaly_score": 1507,
+      "province_id": "44",
+      "province_name": "มหาสารคาม"
     },
     {
       "area_code": "8403",
@@ -2715,7 +3165,9 @@
       "pl_twin_votes": 1483,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0382,
-      "anomaly_score": 1483
+      "anomaly_score": 1483,
+      "province_id": "84",
+      "province_name": "สุราษฎร์ธานี"
     },
     {
       "area_code": "7201",
@@ -2727,7 +3179,9 @@
       "pl_twin_votes": 1461,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0247,
-      "anomaly_score": 1461
+      "anomaly_score": 1461,
+      "province_id": "72",
+      "province_name": "สุพรรณบุรี"
     },
     {
       "area_code": "3106",
@@ -2739,7 +3193,9 @@
       "pl_twin_votes": 1451,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0309,
-      "anomaly_score": 1451
+      "anomaly_score": 1451,
+      "province_id": "31",
+      "province_name": "บุรีรัมย์"
     },
     {
       "area_code": "2103",
@@ -2751,7 +3207,9 @@
       "pl_twin_votes": 1426,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0559,
-      "anomaly_score": 1426
+      "anomaly_score": 1426,
+      "province_id": "21",
+      "province_name": "ระยอง"
     },
     {
       "area_code": "1307",
@@ -2763,7 +3221,9 @@
       "pl_twin_votes": 1398,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0314,
-      "anomaly_score": 1398
+      "anomaly_score": 1398,
+      "province_id": "13",
+      "province_name": "ปทุมธานี"
     },
     {
       "area_code": "1501",
@@ -2775,7 +3235,9 @@
       "pl_twin_votes": 1398,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0265,
-      "anomaly_score": 1398
+      "anomaly_score": 1398,
+      "province_id": "15",
+      "province_name": "อ่างทอง"
     },
     {
       "area_code": "4506",
@@ -2787,7 +3249,9 @@
       "pl_twin_votes": 1372,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0447,
-      "anomaly_score": 1372
+      "anomaly_score": 1372,
+      "province_id": "45",
+      "province_name": "ร้อยเอ็ด"
     },
     {
       "area_code": "9101",
@@ -2799,7 +3263,9 @@
       "pl_twin_votes": 1370,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0376,
-      "anomaly_score": 1370
+      "anomaly_score": 1370,
+      "province_id": "91",
+      "province_name": "สตูล"
     },
     {
       "area_code": "8402",
@@ -2811,7 +3277,9 @@
       "pl_twin_votes": 1335,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0526,
-      "anomaly_score": 1335
+      "anomaly_score": 1335,
+      "province_id": "84",
+      "province_name": "สุราษฎร์ธานี"
     },
     {
       "area_code": "9501",
@@ -2823,7 +3291,9 @@
       "pl_twin_votes": 1327,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0449,
-      "anomaly_score": 1327
+      "anomaly_score": 1327,
+      "province_id": "95",
+      "province_name": "ยะลา"
     },
     {
       "area_code": "8405",
@@ -2835,7 +3305,9 @@
       "pl_twin_votes": 1316,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0458,
-      "anomaly_score": 1316
+      "anomaly_score": 1316,
+      "province_id": "84",
+      "province_name": "สุราษฎร์ธานี"
     },
     {
       "area_code": "8201",
@@ -2847,7 +3319,9 @@
       "pl_twin_votes": 1302,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0374,
-      "anomaly_score": 1302
+      "anomaly_score": 1302,
+      "province_id": "82",
+      "province_name": "พังงา"
     },
     {
       "area_code": "1106",
@@ -2859,7 +3333,9 @@
       "pl_twin_votes": 1267,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0376,
-      "anomaly_score": 1267
+      "anomaly_score": 1267,
+      "province_id": "11",
+      "province_name": "สมุทรปราการ"
     },
     {
       "area_code": "9202",
@@ -2871,7 +3347,9 @@
       "pl_twin_votes": 1254,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0317,
-      "anomaly_score": 1254
+      "anomaly_score": 1254,
+      "province_id": "92",
+      "province_name": "ตรัง"
     },
     {
       "area_code": "9001",
@@ -2883,7 +3361,9 @@
       "pl_twin_votes": 1245,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.03,
-      "anomaly_score": 1245
+      "anomaly_score": 1245,
+      "province_id": "90",
+      "province_name": "สงขลา"
     },
     {
       "area_code": "4507",
@@ -2895,7 +3375,9 @@
       "pl_twin_votes": 1230,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0312,
-      "anomaly_score": 1230
+      "anomaly_score": 1230,
+      "province_id": "45",
+      "province_name": "ร้อยเอ็ด"
     },
     {
       "area_code": "8002",
@@ -2907,7 +3389,9 @@
       "pl_twin_votes": 1230,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0337,
-      "anomaly_score": 1230
+      "anomaly_score": 1230,
+      "province_id": "80",
+      "province_name": "นครศรีธรรมราช"
     },
     {
       "area_code": "9003",
@@ -2919,7 +3403,9 @@
       "pl_twin_votes": 1205,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0343,
-      "anomaly_score": 1205
+      "anomaly_score": 1205,
+      "province_id": "90",
+      "province_name": "สงขลา"
     },
     {
       "area_code": "9201",
@@ -2931,7 +3417,9 @@
       "pl_twin_votes": 1198,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0353,
-      "anomaly_score": 1198
+      "anomaly_score": 1198,
+      "province_id": "92",
+      "province_name": "ตรัง"
     },
     {
       "area_code": "9302",
@@ -2943,7 +3431,9 @@
       "pl_twin_votes": 1185,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0213,
-      "anomaly_score": 1185
+      "anomaly_score": 1185,
+      "province_id": "93",
+      "province_name": "พัทลุง"
     },
     {
       "area_code": "8008",
@@ -2955,7 +3445,9 @@
       "pl_twin_votes": 1173,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0245,
-      "anomaly_score": 1173
+      "anomaly_score": 1173,
+      "province_id": "80",
+      "province_name": "นครศรีธรรมราช"
     },
     {
       "area_code": "3601",
@@ -2967,7 +3459,9 @@
       "pl_twin_votes": 1120,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.1434,
-      "anomaly_score": 1120
+      "anomaly_score": 1120,
+      "province_id": "36",
+      "province_name": "ชัยภูมิ"
     },
     {
       "area_code": "8003",
@@ -2979,7 +3473,9 @@
       "pl_twin_votes": 1056,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0235,
-      "anomaly_score": 1056
+      "anomaly_score": 1056,
+      "province_id": "80",
+      "province_name": "นครศรีธรรมราช"
     },
     {
       "area_code": "9009",
@@ -2991,7 +3487,9 @@
       "pl_twin_votes": 874,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0189,
-      "anomaly_score": 874
+      "anomaly_score": 874,
+      "province_id": "90",
+      "province_name": "สงขลา"
     },
     {
       "area_code": "5601",
@@ -3003,7 +3501,9 @@
       "pl_twin_votes": 870,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0141,
-      "anomaly_score": 870
+      "anomaly_score": 870,
+      "province_id": "56",
+      "province_name": "พะเยา"
     },
     {
       "area_code": "9203",
@@ -3015,7 +3515,1021 @@
       "pl_twin_votes": 784,
       "mp_twin_candidate_votes": 0,
       "ratio_pl_to_mp": 0.0185,
-      "anomaly_score": 784
+      "anomaly_score": 784,
+      "province_id": "92",
+      "province_name": "ตรัง"
+    }
+  ],
+  "province_stats": [
+    {
+      "count": 13,
+      "total_ghost_votes": 38256,
+      "areas": [
+        "3010",
+        "3007",
+        "3011",
+        "3015",
+        "3008",
+        "3005",
+        "3012",
+        "3009",
+        "3016",
+        "3002",
+        "3004",
+        "3006",
+        "3013"
+      ],
+      "id": "30",
+      "name": "นครราชสีมา"
+    },
+    {
+      "count": 9,
+      "total_ghost_votes": 27125,
+      "areas": [
+        "3405",
+        "3410",
+        "3409",
+        "3411",
+        "3402",
+        "3401",
+        "3404",
+        "3406",
+        "3407"
+      ],
+      "id": "34",
+      "name": "อุบลราชธานี"
+    },
+    {
+      "count": 6,
+      "total_ghost_votes": 22158,
+      "areas": [
+        "6004",
+        "6003",
+        "6006",
+        "6005",
+        "6002",
+        "6001"
+      ],
+      "id": "60",
+      "name": "นครสวรรค์"
+    },
+    {
+      "count": 8,
+      "total_ghost_votes": 21222,
+      "areas": [
+        "4009",
+        "4008",
+        "4004",
+        "4003",
+        "4010",
+        "4005",
+        "4007",
+        "4006"
+      ],
+      "id": "40",
+      "name": "ขอนแก่น"
+    },
+    {
+      "count": 7,
+      "total_ghost_votes": 20248,
+      "areas": [
+        "3603",
+        "3606",
+        "3602",
+        "3605",
+        "3604",
+        "3607",
+        "3601"
+      ],
+      "id": "36",
+      "name": "ชัยภูมิ"
+    },
+    {
+      "count": 8,
+      "total_ghost_votes": 20071,
+      "areas": [
+        "3309",
+        "3303",
+        "3308",
+        "3306",
+        "3304",
+        "3305",
+        "3302",
+        "3301"
+      ],
+      "id": "33",
+      "name": "ศรีสะเกษ"
+    },
+    {
+      "count": 9,
+      "total_ghost_votes": 19935,
+      "areas": [
+        "3108",
+        "3110",
+        "3104",
+        "3107",
+        "3109",
+        "3102",
+        "3101",
+        "3103",
+        "3106"
+      ],
+      "id": "31",
+      "name": "บุรีรัมย์"
+    },
+    {
+      "count": 8,
+      "total_ghost_votes": 19159,
+      "areas": [
+        "3208",
+        "3201",
+        "3206",
+        "3207",
+        "3202",
+        "3205",
+        "3204",
+        "3203"
+      ],
+      "id": "32",
+      "name": "สุรินทร์"
+    },
+    {
+      "count": 5,
+      "total_ghost_votes": 18968,
+      "areas": [
+        "7105",
+        "7104",
+        "7102",
+        "7101",
+        "7103"
+      ],
+      "id": "71",
+      "name": "กาญจนบุรี"
+    },
+    {
+      "count": 5,
+      "total_ghost_votes": 16901,
+      "areas": [
+        "6703",
+        "6705",
+        "6701",
+        "6706",
+        "6704"
+      ],
+      "id": "67",
+      "name": "เพชรบูรณ์"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 16412,
+      "areas": [
+        "1904",
+        "1902",
+        "1901",
+        "1903"
+      ],
+      "id": "19",
+      "name": "สระบุรี"
+    },
+    {
+      "count": 5,
+      "total_ghost_votes": 14789,
+      "areas": [
+        "5702",
+        "5705",
+        "5703",
+        "5704",
+        "5706"
+      ],
+      "id": "57",
+      "name": "เชียงราย"
+    },
+    {
+      "count": 6,
+      "total_ghost_votes": 14401,
+      "areas": [
+        "4110",
+        "4106",
+        "4103",
+        "4102",
+        "4105",
+        "4104"
+      ],
+      "id": "41",
+      "name": "อุดรธานี"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 13763,
+      "areas": [
+        "7003",
+        "7002",
+        "7004",
+        "7001"
+      ],
+      "id": "70",
+      "name": "ราชบุรี"
+    },
+    {
+      "count": 5,
+      "total_ghost_votes": 13661,
+      "areas": [
+        "9604",
+        "9602",
+        "9601",
+        "9603",
+        "9605"
+      ],
+      "id": "96",
+      "name": "นราธิวาส"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 13589,
+      "areas": [
+        "2004",
+        "2003",
+        "2008",
+        "2005"
+      ],
+      "id": "20",
+      "name": "ชลบุรี"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 12933,
+      "areas": [
+        "5010",
+        "5009",
+        "5006",
+        "5007"
+      ],
+      "id": "50",
+      "name": "เชียงใหม่"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 11885,
+      "areas": [
+        "6201",
+        "6202",
+        "6203"
+      ],
+      "id": "62",
+      "name": "กำแพงเพชร"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 11712,
+      "areas": [
+        "2401",
+        "2403",
+        "2402"
+      ],
+      "id": "24",
+      "name": "ฉะเชิงเทรา"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 11562,
+      "areas": [
+        "4602",
+        "4605",
+        "4604",
+        "4606"
+      ],
+      "id": "46",
+      "name": "กาฬสินธุ์"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 10952,
+      "areas": [
+        "6402",
+        "6404",
+        "6403",
+        "6401"
+      ],
+      "id": "64",
+      "name": "สุโขทัย"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 10897,
+      "areas": [
+        "1604",
+        "1601",
+        "1602"
+      ],
+      "id": "16",
+      "name": "ลพบุรี"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 10755,
+      "areas": [
+        "1403",
+        "1404",
+        "1402",
+        "1405"
+      ],
+      "id": "14",
+      "name": "พระนครศรีอยุธยา"
+    },
+    {
+      "count": 5,
+      "total_ghost_votes": 10551,
+      "areas": [
+        "9402",
+        "9405",
+        "9403",
+        "9404",
+        "9401"
+      ],
+      "id": "94",
+      "name": "ปัตตานี"
+    },
+    {
+      "count": 5,
+      "total_ghost_votes": 10550,
+      "areas": [
+        "4502",
+        "4501",
+        "4503",
+        "4506",
+        "4507"
+      ],
+      "id": "45",
+      "name": "ร้อยเอ็ด"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 10390,
+      "areas": [
+        "2503",
+        "2502",
+        "2501"
+      ],
+      "id": "25",
+      "name": "ปราจีนบุรี"
+    },
+    {
+      "count": 7,
+      "total_ghost_votes": 10379,
+      "areas": [
+        "9007",
+        "9008",
+        "9005",
+        "9004",
+        "9001",
+        "9003",
+        "9009"
+      ],
+      "id": "90",
+      "name": "สงขลา"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 10350,
+      "areas": [
+        "7603",
+        "7602",
+        "7601"
+      ],
+      "id": "76",
+      "name": "เพชรบุรี"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 10109,
+      "areas": [
+        "4202",
+        "4201",
+        "4203",
+        "4204"
+      ],
+      "id": "42",
+      "name": "เลย"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 9769,
+      "areas": [
+        "7205",
+        "7204",
+        "7202",
+        "7201"
+      ],
+      "id": "72",
+      "name": "สุพรรณบุรี"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 9731,
+      "areas": [
+        "4705",
+        "4706",
+        "4703",
+        "4707"
+      ],
+      "id": "47",
+      "name": "สกลนคร"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 9527,
+      "areas": [
+        "4802",
+        "4804",
+        "4803",
+        "4801"
+      ],
+      "id": "48",
+      "name": "นครพนม"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 8930,
+      "areas": [
+        "3503",
+        "3501",
+        "3502"
+      ],
+      "id": "35",
+      "name": "ยโสธร"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 8725,
+      "areas": [
+        "6602",
+        "6603"
+      ],
+      "id": "66",
+      "name": "พิจิตร"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 8675,
+      "areas": [
+        "4402",
+        "4405",
+        "4404",
+        "4406"
+      ],
+      "id": "44",
+      "name": "มหาสารคาม"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 8629,
+      "areas": [
+        "7304",
+        "7301",
+        "7302"
+      ],
+      "id": "73",
+      "name": "นครปฐม"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 7782,
+      "areas": [
+        "5302",
+        "5301",
+        "5303"
+      ],
+      "id": "53",
+      "name": "อุตรดิตถ์"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 7613,
+      "areas": [
+        "4303",
+        "4301",
+        "4302"
+      ],
+      "id": "43",
+      "name": "หนองคาย"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 7308,
+      "areas": [
+        "2701",
+        "2703"
+      ],
+      "id": "27",
+      "name": "สระแก้ว"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 7255,
+      "areas": [
+        "8101",
+        "8102",
+        "8103"
+      ],
+      "id": "81",
+      "name": "กระบี่"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 7213,
+      "areas": [
+        "5801",
+        "5802"
+      ],
+      "id": "58",
+      "name": "แม่ฮ่องสอน"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 6751,
+      "areas": [
+        "6302",
+        "6301"
+      ],
+      "id": "63",
+      "name": "ตาก"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 6501,
+      "areas": [
+        "2202",
+        "2203",
+        "2201"
+      ],
+      "id": "22",
+      "name": "จันทบุรี"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 6420,
+      "areas": [
+        "6505",
+        "6504"
+      ],
+      "id": "65",
+      "name": "พิษณุโลก"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 6172,
+      "areas": [
+        "3903",
+        "3902"
+      ],
+      "id": "39",
+      "name": "หนองบัวลำภู"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 5465,
+      "areas": [
+        "5202",
+        "5204"
+      ],
+      "id": "52",
+      "name": "ลำปาง"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 5297,
+      "areas": [
+        "1502",
+        "1501"
+      ],
+      "id": "15",
+      "name": "อ่างทอง"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 5276,
+      "areas": [
+        "6102",
+        "6101"
+      ],
+      "id": "61",
+      "name": "อุทัยธานี"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 5186,
+      "areas": [
+        "1802",
+        "1801"
+      ],
+      "id": "18",
+      "name": "ชัยนาท"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 5125,
+      "areas": [
+        "7404",
+        "7402"
+      ],
+      "id": "74",
+      "name": "สมุทรสาคร"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 5090,
+      "areas": [
+        "5603",
+        "5602",
+        "5601"
+      ],
+      "id": "56",
+      "name": "พะเยา"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 5077,
+      "areas": [
+        "9503",
+        "9502",
+        "9501"
+      ],
+      "id": "95",
+      "name": "ยะลา"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 4925,
+      "areas": [
+        "1308",
+        "1302",
+        "1307"
+      ],
+      "id": "13",
+      "name": "ปทุมธานี"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 4924,
+      "areas": [
+        "5503",
+        "5502"
+      ],
+      "id": "55",
+      "name": "น่าน"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 4818,
+      "areas": [
+        "9204",
+        "9202",
+        "9201",
+        "9203"
+      ],
+      "id": "92",
+      "name": "ตรัง"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 4744,
+      "areas": [
+        "3702",
+        "3701"
+      ],
+      "id": "37",
+      "name": "อำนาจเจริญ"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 4134,
+      "areas": [
+        "8403",
+        "8402",
+        "8405"
+      ],
+      "id": "84",
+      "name": "สุราษฎร์ธานี"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 4033,
+      "areas": [
+        "1701"
+      ],
+      "id": "17",
+      "name": "สิงห์บุรี"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 3664,
+      "areas": [
+        "2104",
+        "2103"
+      ],
+      "id": "21",
+      "name": "ระยอง"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 3516,
+      "areas": [
+        "2601"
+      ],
+      "id": "26",
+      "name": "นครนายก"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 3459,
+      "areas": [
+        "8002",
+        "8008",
+        "8003"
+      ],
+      "id": "80",
+      "name": "นครศรีธรรมราช"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 3451,
+      "areas": [
+        "4902"
+      ],
+      "id": "49",
+      "name": "มุกดาหาร"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 3076,
+      "areas": [
+        "2301"
+      ],
+      "id": "23",
+      "name": "ตราด"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 2737,
+      "areas": [
+        "7702"
+      ],
+      "id": "77",
+      "name": "ประจวบคีรีขันธ์"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 2455,
+      "areas": [
+        "3803"
+      ],
+      "id": "38",
+      "name": "บึงกาฬ"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 1921,
+      "areas": [
+        "5102"
+      ],
+      "id": "51",
+      "name": "ลำพูน"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 1634,
+      "areas": [
+        "5402"
+      ],
+      "id": "54",
+      "name": "แพร่"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 1370,
+      "areas": [
+        "9101"
+      ],
+      "id": "91",
+      "name": "สตูล"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 1302,
+      "areas": [
+        "8201"
+      ],
+      "id": "82",
+      "name": "พังงา"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 1267,
+      "areas": [
+        "1106"
+      ],
+      "id": "11",
+      "name": "สมุทรปราการ"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 1185,
+      "areas": [
+        "9302"
+      ],
+      "id": "93",
+      "name": "พัทลุง"
+    }
+  ],
+  "mp_party_stats": [
+    {
+      "count": 140,
+      "total_ghost_votes": 373273,
+      "provinces": {
+        "นครสวรรค์": 5,
+        "ปราจีนบุรี": 3,
+        "พิจิตร": 2,
+        "เพชรบุรี": 3,
+        "กาญจนบุรี": 3,
+        "สระบุรี": 3,
+        "พระนครศรีอยุธยา": 4,
+        "นครราชสีมา": 3,
+        "พิษณุโลก": 2,
+        "อุบลราชธานี": 3,
+        "สุรินทร์": 8,
+        "เพชรบูรณ์": 5,
+        "ชัยภูมิ": 3,
+        "สิงห์บุรี": 1,
+        "ชลบุรี": 4,
+        "อ่างทอง": 2,
+        "ศรีสะเกษ": 8,
+        "ยโสธร": 3,
+        "เชียงราย": 1,
+        "แม่ฮ่องสอน": 1,
+        "หนองคาย": 1,
+        "ลพบุรี": 2,
+        "กาฬสินธุ์": 1,
+        "นครปฐม": 2,
+        "สุพรรณบุรี": 4,
+        "กระบี่": 3,
+        "ตราด": 1,
+        "สุโขทัย": 1,
+        "ตาก": 1,
+        "อุทัยธานี": 2,
+        "มหาสารคาม": 3,
+        "สมุทรสาคร": 2,
+        "ชัยนาท": 1,
+        "นราธิวาส": 1,
+        "บุรีรัมย์": 9,
+        "ปัตตานี": 4,
+        "อำนาจเจริญ": 2,
+        "ขอนแก่น": 2,
+        "จันทบุรี": 3,
+        "อุดรธานี": 3,
+        "อุตรดิตถ์": 1,
+        "สกลนคร": 1,
+        "ราชบุรี": 2,
+        "บึงกาฬ": 1,
+        "ระยอง": 1,
+        "ร้อยเอ็ด": 1,
+        "สงขลา": 3,
+        "เลย": 1,
+        "นครพนม": 2,
+        "ปทุมธานี": 2,
+        "แพร่": 1,
+        "สตูล": 1,
+        "สุราษฎร์ธานี": 1,
+        "พังงา": 1,
+        "สมุทรปราการ": 1,
+        "ตรัง": 2,
+        "นครศรีธรรมราช": 2,
+        "พัทลุง": 1
+      },
+      "party_code": "PARTY-0037"
+    },
+    {
+      "count": 47,
+      "total_ghost_votes": 129346,
+      "provinces": {
+        "กาญจนบุรี": 2,
+        "เลย": 3,
+        "ลพบุรี": 1,
+        "เชียงราย": 1,
+        "ฉะเชิงเทรา": 1,
+        "นครราชสีมา": 10,
+        "สุโขทัย": 3,
+        "ขอนแก่น": 3,
+        "ชัยภูมิ": 3,
+        "กาฬสินธุ์": 3,
+        "นครพนม": 2,
+        "อุดรธานี": 3,
+        "อุบลราชธานี": 3,
+        "กำแพงเพชร": 1,
+        "มหาสารคาม": 1,
+        "อุตรดิตถ์": 1,
+        "หนองบัวลำภู": 1,
+        "ชัยนาท": 1,
+        "สกลนคร": 2,
+        "ปทุมธานี": 1,
+        "ร้อยเอ็ด": 1
+      },
+      "party_code": "PARTY-0009"
+    },
+    {
+      "count": 44,
+      "total_ghost_votes": 132029,
+      "provinces": {
+        "ราชบุรี": 2,
+        "กำแพงเพชร": 2,
+        "นครสวรรค์": 1,
+        "สระบุรี": 1,
+        "เชียงใหม่": 4,
+        "ร้อยเอ็ด": 2,
+        "ฉะเชิงเทรา": 2,
+        "หนองบัวลำภู": 1,
+        "แม่ฮ่องสอน": 1,
+        "ตาก": 1,
+        "นครนายก": 1,
+        "มุกดาหาร": 1,
+        "สกลนคร": 1,
+        "สระแก้ว": 1,
+        "ขอนแก่น": 3,
+        "ลำปาง": 2,
+        "เชียงราย": 3,
+        "นราธิวาส": 3,
+        "ประจวบคีรีขันธ์": 1,
+        "นครปฐม": 1,
+        "น่าน": 1,
+        "พะเยา": 3,
+        "ชัยภูมิ": 1,
+        "ปัตตานี": 1,
+        "สงขลา": 3,
+        "สุราษฎร์ธานี": 1
+      },
+      "party_code": "PARTY-0042"
+    },
+    {
+      "count": 5,
+      "total_ghost_votes": 5722,
+      "provinces": {
+        "ตรัง": 2,
+        "ระยอง": 1,
+        "นครศรีธรรมราช": 1,
+        "สงขลา": 1
+      },
+      "party_code": "PARTY-0027"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 11281,
+      "provinces": {
+        "อุบลราชธานี": 3,
+        "สุราษฎร์ธานี": 1
+      },
+      "party_code": "PARTY-0021"
+    },
+    {
+      "count": 4,
+      "total_ghost_votes": 7428,
+      "provinces": {
+        "นราธิวาส": 1,
+        "ยะลา": 3
+      },
+      "party_code": "PARTY-0033"
+    },
+    {
+      "count": 3,
+      "total_ghost_votes": 8250,
+      "provinces": {
+        "สระแก้ว": 1,
+        "หนองคาย": 2
+      },
+      "party_code": "PARTY-0043"
+    },
+    {
+      "count": 2,
+      "total_ghost_votes": 4401,
+      "provinces": {
+        "น่าน": 1,
+        "ลำพูน": 1
+      },
+      "party_code": "PARTY-0046"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 2855,
+      "provinces": {
+        "อุตรดิตถ์": 1
+      },
+      "party_code": "PARTY-0044"
+    },
+    {
+      "count": 1,
+      "total_ghost_votes": 1230,
+      "provinces": {
+        "ร้อยเอ็ด": 1
+      },
+      "party_code": "PARTY-0048"
     }
   ]
 }

@@ -179,10 +179,59 @@
             </div>
         </div>
 
-        <!-- Party Summary Table -->
+        <!-- New Aggregation Section -->
+        <div class="row mb-5">
+            <!-- Top Provinces -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                        <h5 class="mb-0">📍 10 จังหวัดที่มีความผิดปกติสูงสุด</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0" id="provinceTable">
+                                <thead>
+                                    <tr>
+                                        <th class="ps-4">จังหวัด</th>
+                                        <th class="text-end">จำนวนเขต</th>
+                                        <th class="text-end pe-4">คะแนนแฝดรวม</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Top MP Parties -->
+             <div class="col-lg-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                        <h5 class="mb-0">🗳️ พรรค ส.ส. เขตที่มักเจอ "กาเบอร์เดิม"</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0" id="mpPartyTable">
+                                <thead>
+                                    <tr>
+                                        <th class="ps-4">พรรค ส.ส. เขต</th>
+                                        <th class="text-end">จำนวนเขต</th>
+                                        <th class="text-end pe-4">คะแนนแฝดรวม</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Party Summary Table (Renamed to 'Top Beneficiary Parties') -->
         <div class="card shadow-sm mb-5">
             <div class="card-header">
-                <h4 class="mb-0">🏆 สรุปยอดรวม: พรรคที่ได้อานิสงส์สูงสุด</h4>
+                <h4 class="mb-0">🏆 สรุปพรรคบัญชีรายชื่อที่ได้อานิสงส์สูงสุด (Top Beneficiaries)</h4>
             </div>
             <div class="card-body">
                 <p class="text-secondary mb-3">รวมสถิติพรรคบัญชีรายชื่อที่ได้รับคะแนนที่น่าสงสัย (คะแนนผี) รวมสูงสุด 5 อันดับแรกจากทั่วประเทศ</p>
@@ -262,6 +311,7 @@
 
             allAnomalies = reportData.anomalies;
             renderDashboard(reportData);
+            renderAggregations(reportData);
             renderPartySummary(allAnomalies);
             renderTableBatch();
         } catch (error) {
@@ -298,6 +348,38 @@
 
     function getPartyInfo(code) {
         return partyMap[code] || { name: code, color: '#666666' };
+    }
+
+    function renderAggregations(data) {
+        // Render Provinces
+        const provBody = document.querySelector('#provinceTable tbody');
+        if (data.province_stats) {
+            data.province_stats.slice(0, 10).forEach(p => {
+                provBody.innerHTML += `<tr>
+                    <td class="ps-4 fw-bold text-primary-theme">${p.name}</td>
+                    <td class="text-end text-secondary">${p.count}</td>
+                    <td class="text-end fw-bold text-accent pe-4">${p.total_ghost_votes.toLocaleString()}</td>
+                </tr>`;
+            });
+        }
+
+        // Render MP Parties
+        const mpBody = document.querySelector('#mpPartyTable tbody');
+        if (data.mp_party_stats) {
+            data.mp_party_stats.slice(0, 10).forEach(p => {
+                const pInfo = getPartyInfo(p.party_code);
+                mpBody.innerHTML += `<tr>
+                    <td class="ps-4">
+                        <div class="d-flex align-items-center">
+                            <img src="img/${p.party_code}.webp" class="party-logo-sm me-2" onerror="this.style.display='none'">
+                            <span class="fw-bold text-primary-theme">${pInfo.name}</span>
+                        </div>
+                    </td>
+                    <td class="text-end text-secondary">${p.count}</td>
+                    <td class="text-end fw-bold text-accent pe-4">${p.total_ghost_votes.toLocaleString()}</td>
+                </tr>`;
+            });
+        }
     }
 
     function renderPartySummary(anomalies) {

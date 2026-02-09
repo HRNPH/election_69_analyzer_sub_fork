@@ -5,9 +5,27 @@ from collections import defaultdict
 # Configuration
 MP_DIR = "data/mp"
 PL_DIR = "data/pl"
+COMMON_DATA_FILE = "docs/data/common-data.json"
 OUTPUT_FILE = "data/anomaly_report.json"
 SINGLE_DIGIT_RANGE = [str(i) for i in range(1, 10)] 
 EXCLUDED_PARTIES = ["6", "9"] 
+
+def load_province_map():
+    if not os.path.exists(COMMON_DATA_FILE):
+        return {}
+    try:
+        with open(COMMON_DATA_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            # Map "PROVINCE-10" -> "กรุงเทพฯ"
+            # Return map of "10" -> "กรุงเทพฯ" for easier lookup with area code prefix
+            return {p["code"].replace("PROVINCE-", ""): p["name"] for p in data.get("provinces", [])}
+    except Exception as e:
+        print(f"Warning: Could not load common data: {e}")
+        return {}
+
+def get_province_info(area_code, province_map):
+    prefix = area_code[:2]
+    return prefix, province_map.get(prefix, f"Unknown ({prefix})")
 
 def get_candidate_number_str(candidate_code, area_code):
     """
@@ -22,8 +40,22 @@ def get_candidate_number_str(candidate_code, area_code):
             return None
     return None
 
+    """
+    Extracts candidate number string from code, e.g., 'CANDIDATE-MP-100105' -> '5'
+    """
+    prefix = f"CANDIDATE-MP-{area_code}"
+    if candidate_code and candidate_code.startswith(prefix):
+        raw_num = candidate_code[len(prefix):]
+        try:
+            return str(int(raw_num))
+        except ValueError:
+            return None
+    return None
+
 def main():
     print(f"Scanning data from {MP_DIR} and {PL_DIR}...")
+    
+    province_map = load_province_map()
     
     if not os.path.exists(MP_DIR):
         print(f"Error: Directory {MP_DIR} not found.")
@@ -119,11 +151,42 @@ def main():
                         "pl_twin_votes": pl_votes,
                         "mp_twin_candidate_votes": mp_twin_votes,
                         "ratio_pl_to_mp": round(ratio, 4), # Ratio of Twin PL votes to Winner MP votes
-                        "anomaly_score": pl_votes # Simple score: raw votes obtained by the twin party
+                        "anomaly_score": pl_votes, # Simple score: raw votes obtained by the twin party
+                        "province_id": area_code[:2],
+                        "province_name": province_map.get(area_code[:2], "Unknown")
                     })
 
     # Sort by 'anomaly_score' (votes obtained by the questionable party) descending
     anomalies.sort(key=lambda x: x["anomaly_score"], reverse=True)
+    
+    # --- Aggregations ---
+    
+    # 1. By Province
+    province_stats = defaultdict(lambda: {"count": 0, "total_ghost_votes": 0, "areas": []})
+    for a in anomalies:
+        p_id = a["province_id"]
+        p_name = a["province_name"]
+        entry = province_stats[p_id]
+        entry["id"] = p_id
+        entry["name"] = p_name
+        entry["count"] += 1
+        entry["total_ghost_votes"] += a["pl_twin_votes"]
+        entry["areas"].append(a["area_code"])
+        
+    sorted_provinces = sorted(province_stats.values(), key=lambda x: x["total_ghost_votes"], reverse=True)
+
+    # 2. By Winning MP Party
+    mp_party_stats = defaultdict(lambda: {"count": 0, "total_ghost_votes": 0, "provinces": defaultdict(int)})
+    for a in anomalies:
+        party = a["mp_winner_party"]
+        p_name = a["province_name"]
+        entry = mp_party_stats[party]
+        entry["party_code"] = party
+        entry["count"] += 1
+        entry["total_ghost_votes"] += a["pl_twin_votes"]
+        entry["provinces"][p_name] += 1
+        
+    sorted_mp_parties = sorted(mp_party_stats.values(), key=lambda x: x["count"], reverse=True)
     
     # Save to JSON
     output_data = {
@@ -132,7 +195,9 @@ def main():
             "criteria": "Winner MP Number (1-9, excl 6,9) matches Top 7 Party List Number (Different Party)",
             "total_areas_flagged": len(anomalies)
         },
-        "anomalies": anomalies
+        "anomalies": anomalies,
+        "province_stats": sorted_provinces,
+        "mp_party_stats": sorted_mp_parties
     }
     
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
@@ -141,6 +206,15 @@ def main():
     print(f"\nAnalysis complete. Found {len(anomalies)} anomalies.")
     print(f"Report saved to: {(OUTPUT_FILE)}")
     
+    # Print Summaries
+    print("\n=== Top 5 Provinces by Anomalies ===")
+    for p in sorted_provinces[:5]:
+         print(f"{p['name']}: {p['count']} areas, {p['total_ghost_votes']} ghost votes")
+
+    print("\n=== Top 5 MP Parties involved ===")
+    for p in sorted_mp_parties[:5]:
+         print(f"{p['party_code']}: {p['count']} areas, {p['total_ghost_votes']} ghost votes")
+
     # Print Top 10 Summary
     print("\n=== Top 10 Anomalies (Sorted by Twin Party Votes) ===")
     print(f"{'Area':<6} | {'MP Num':<6} | {'Twin Party':<12} | {'Twin Rank':<10} | {'Twin PL Votes':<14} | {'Twin MP Votes':<14}")
