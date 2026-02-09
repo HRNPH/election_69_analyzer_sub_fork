@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Election 69 Anomaly Analysis</title>
+    <title>วิเคราะห์ความผิดปกติการเลือกตั้ง 69</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; color: #333; }
@@ -22,66 +22,108 @@
 </head>
 <body>
 
-    <h1>🚨 Election 69 Anomaly Detection</h1>
+    <h1>🚨 ตรวจจับความผิดปกติการเลือกตั้ง 69</h1>
     
     <div class="summary-stats">
         <div class="stat-box">
             <div class="stat-value" id="total-anomalies">-</div>
-            <div class="stat-label">Total Suspicious Areas</div>
+            <div class="stat-label">เขตที่น่าสงสัยทั้งหมด</div>
         </div>
         <div class="stat-box">
             <div class="stat-value" id="top-party">-</div>
-            <div class="stat-label">Most Flagged Twin Party</div>
+            <div class="stat-label">พรรคแฝดที่ถูกพบมากที่สุด</div>
         </div>
         <div class="stat-box">
             <div class="stat-value" id="max-votes">-</div>
-            <div class="stat-label">Max Ghost Votes (Single Area)</div>
+            <div class="stat-label">คะแนนผีสูงสุด (เขตเดียว)</div>
         </div>
     </div>
 
     <div class="card">
-        <h3>Hypothesis: "Buy 1 Get 2" (The Twin Number Effect)</h3>
-        <p>If a candidate wins an MP seat with <strong>Number X</strong>, does an irrelevant Party List <strong>Number X</strong> suddenly surge in popularity?</p>
-        <p><em>Check: Excluding major parties (6, 9), do single-digit parties (1-5, 7-8) rank in the Top 7 unexpectedly?</em></p>
+        <h3>สมมติฐาน: "ซื้อ 1 แถม 2" (ปรากฏการณ์เบอร์แฝด)</h3>
+        <p>หากผู้สมัคร ส.ส. ชนะด้วย <strong>เบอร์ X</strong>, พรรคบัญชีรายชื่อที่ได้ <strong>เบอร์ X</strong> (ซึ่งอาจไม่เกี่ยวข้องกัน) จะมีความนิยมพุ่งสูงขึ้นอย่างผิดปกติหรือไม่?</p>
+        <p><em>การตรวจสอบ: ไม่นับรวมพรรคใหญ่ (6, 9), พรรคเลขตัวเดียว (1-5, 7-8) ติดอันดับ Top 7 อย่างเหนือความคาดหมายหรือไม่?</em></p>
     </div>
 
     <div class="card">
-        <h3>Graph 1: Top 10 Suspicious Areas (Ghost Votes by Twin Party)</h3>
+        <h3>กราฟ 1: 10 อันดับเขตที่น่าสงสัย (คะแนนผีจากพรรคแฝด)</h3>
         <canvas id="topAreaChart"></canvas>
     </div>
 
     <div class="card">
-        <h3>Graph 2: Anomalies by Twin Number</h3>
-        <p>Which MP numbers are most frequently associated with suspicious Party List surges?</p>
+        <h3>กราฟ 2: ความผิดปกติตามหมายเลขแฝด</h3>
+        <p>หมายเลข ส.ส. ใดที่มักเกี่ยวข้องกับคะแนนบัญชีรายชื่อที่พุ่งสูงผิดปกติ?</p>
         <canvas id="numberDistChart"></canvas>
     </div>
 
     <div class="card">
-        <h3>Top 20 Detailed Anomalies</h3>
+        <h3>20 อันดับความผิดปกติโดยละเอียด</h3>
         <table id="anomalyTable">
             <thead>
                 <tr>
-                    <th>Area</th>
-                    <th>MP Winner</th>
-                    <th>Twin PL Party</th>
-                    <th>Twin Rank</th>
-                    <th>Ghost Votes</th>
-                    <th>Ratio (PL/MP)</th>
+                    <th>เขต</th>
+                    <th>ส.ส. ผู้ชนะ</th>
+                    <th>พรรคแฝด (ปาร์ตี้ลิสต์)</th>
+                    <th>อันดับแฝด</th>
+                    <th>คะแนนผี</th>
+                    <th>อัตราส่วน (PL/MP)</th>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
+        <div style="text-align: center; margin-top: 20px;">
+            <button id="loadMoreBtn" style="padding: 10px 20px; background: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; display: none;" onclick="renderTableBatch()">โหลดข้อมูลเพิ่มเติม</button>
+        </div>
     </div>
 
 <script>
+    let allAnomalies = [];
+    let displayedCount = 0;
+    const ITEMS_PER_PAGE = 20;
+
     async function loadData() {
         try {
             const response = await fetch('data/anomaly_report.json');
             const data = await response.json();
+            allAnomalies = data.anomalies;
             renderDashboard(data);
+            renderTableBatch();
         } catch (error) {
             console.error('Error loading data:', error);
-            document.body.innerHTML += `<p style="color:red">Error loading data/anomaly_report.json. Please ensure the file exists.</p>`;
+            document.body.innerHTML += `<p style="color:red">เกิดข้อผิดพลาดในการโหลด data/anomaly_report.json โปรดตรวจสอบว่าไฟล์มีอยู่จริง</p>`;
+        }
+    }
+
+    function renderTableBatch() {
+        const tableBody = document.querySelector('#anomalyTable tbody');
+        const nextBatch = allAnomalies.slice(displayedCount, displayedCount + ITEMS_PER_PAGE);
+        
+        nextBatch.forEach(a => {
+            const row = `<tr>
+                <td>${a.area_code}</td>
+                <td>
+                    <strong>#${a.mp_winner_number}</strong> 
+                    (<img src="img/${a.mp_winner_party}.webp" style="height: 20px; vertical-align: middle;" onerror="this.style.display='none'"> ${a.mp_winner_party})
+                </td>
+                <td class="highlight">
+                    <img src="img/${a.pl_twin_party}.webp" style="height: 24px; vertical-align: middle; margin-right: 5px;" onerror="this.style.display='none'"> 
+                    ${a.pl_twin_party}
+                </td>
+                <td>${a.pl_twin_rank}</td>
+                <td>${a.pl_twin_votes.toLocaleString()}</td>
+                <td>${(a.ratio_pl_to_mp * 100).toFixed(1)}%</td>
+            </tr>`;
+            tableBody.innerHTML += row;
+        });
+
+        displayedCount += nextBatch.length;
+        
+        const btn = document.getElementById('loadMoreBtn');
+        if (displayedCount >= allAnomalies.length) {
+            btn.style.display = 'none';
+        } else {
+            btn.style.display = 'inline-block';
+            btn.textContent = `โหลดข้อมูลเพิ่มเติม (แสดง ${displayedCount} จาก ${allAnomalies.length})`;
         }
     }
 
@@ -98,16 +140,16 @@
             partyCounts[a.pl_twin_party] = (partyCounts[a.pl_twin_party] || 0) + 1;
         });
         const topParty = Object.entries(partyCounts).sort((a,b) => b[1] - a[1])[0];
-        document.getElementById('top-party').textContent = topParty ? `${topParty[0]} (${topParty[1]} areas)` : '-';
+        document.getElementById('top-party').textContent = topParty ? `${topParty[0]} (${topParty[1]} เขต)` : '-';
 
         // 2. Chart: Top 10 Areas by Ghost Votes
         const top10 = anomalies.slice(0, 10);
         new Chart(document.getElementById('topAreaChart'), {
             type: 'bar',
             data: {
-                labels: top10.map(a => `Area ${a.area_code} (Twin #${a.mp_winner_number})`),
+                labels: top10.map(a => `เขต ${a.area_code} (แฝด #${a.mp_winner_number})`),
                 datasets: [{
-                    label: 'Suspicious Twin Party Votes',
+                    label: 'คะแนนพรรคแฝดที่น่าสงสัย',
                     data: top10.map(a => a.pl_twin_votes),
                     backgroundColor: 'rgba(239, 68, 68, 0.7)',
                     borderColor: 'rgba(239, 68, 68, 1)',
@@ -123,12 +165,12 @@
                             afterLabel: function(context) {
                                 const index = context.dataIndex;
                                 const item = top10[index];
-                                return `MP Party: ${item.mp_winner_party} | Twin Party: ${item.pl_twin_party} (Rank ${item.pl_twin_rank})`;
+                                return `MP Party: ${item.mp_winner_party} | Twin Party: ${item.pl_twin_party} (อันดับ ${item.pl_twin_rank})`;
                             }
                         }
                     }
                 },
-                scales: { y: { beginAtZero: true, title: { display: true, text: 'Votes Received' } } }
+                scales: { y: { beginAtZero: true, title: { display: true, text: 'คะแนนที่ได้รับ' } } }
             }
         });
 
@@ -150,20 +192,6 @@
                 }]
             },
             options: { responsive: true, maintainAspectRatio: false }
-        });
-
-        // 4. Table: Top 20 Listing
-        const tableBody = document.querySelector('#anomalyTable tbody');
-        anomalies.slice(0, 20).forEach(a => {
-            const row = `<tr>
-                <td>${a.area_code}</td>
-                <td><strong>#${a.mp_winner_number}</strong> (${a.mp_winner_party})</td>
-                <td class="highlight">${a.pl_twin_party}</td>
-                <td>${a.pl_twin_rank}</td>
-                <td>${a.pl_twin_votes.toLocaleString()}</td>
-                <td>${(a.ratio_pl_to_mp * 100).toFixed(1)}%</td>
-            </tr>`;
-            tableBody.innerHTML += row;
         });
     }
 
