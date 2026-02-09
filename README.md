@@ -19,7 +19,7 @@ The analyzer performs two primary functions:
 
 ## 🛠️ Installation
 
-Ensure you have Python 3.12+ installed.
+Ensure you have Python 3.12+ installed and [uv](https://docs.astral.sh/uv/) package manager.
 
 1. **Clone the repository**:
    ```bash
@@ -27,9 +27,9 @@ Ensure you have Python 3.12+ installed.
    cd election_69_analyzer
    ```
 
-2. **Install dependencies**:
+2. **Install dependencies using uv**:
    ```bash
-   pip install requests
+   uv sync
    ```
 
 ## 📖 Usage
@@ -39,14 +39,14 @@ The analysis is performed in two sequential steps:
 ### 1. Data Collection (if raw data updating is needed)
 Execute the scraper to download the latest unofficial results from Thai PBS. This process builds a local database in the `data/` directory.
 ```bash
-python scripts/election_scraper.py
+uv run scripts/election_scraper.py
 ```
 *Note: This process may take 5–10 minutes depending on network conditions.*
 
 ### 2. Statistical Comparison
 Run the comparer to analyze the correlation between winning MP numbers and the top 7 Party List results.
 ```bash
-python scripts/mp_pl_comparer.py
+uv run scripts/mp_pl_comparer.py
 ```
 
 ## 📝 Methodology

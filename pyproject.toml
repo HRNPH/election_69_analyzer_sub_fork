@@ -1,0 +1,27 @@
+[project]
+name = "election-69-analyzer"
+version = "0.1.0"
+description = "Thai Election 69 Correlative Analyzer - Scrapes and evaluates Thai election data"
+readme = "README.md"
+requires-python = ">=3.12.1"
+dependencies = [
+    "requests>=2.32.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.3.0",
+    "black>=24.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
